@@ -1,0 +1,195 @@
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
+
+const HomeApp = () => {
+  const [showImg, setShowImg] = useState("");
+  const [showMore, setShowMore] = useState(false);
+  const [textShow, setTextShow] = useState(true);
+
+  const { state } = useLocation();
+  const { items = {} } = state;
+
+  const showMoreText = (item) => {
+    if (item.length <= 258) return item;
+    if (item.length > 258 && showMore) {
+      return (
+        <>
+          <p>
+            {item}
+            <button
+              className="ml-3 font-medium text-base text-orange"
+              onClick={() => setShowMore(false)}
+            >
+              Show Less
+            </button>
+          </p>
+        </>
+      );
+    }
+    if (item.length > 258) {
+      return (
+        <>
+          <p>
+            {item.slice(0, 258)} ...{" "}
+            <button
+              className="font-medium text-base text-orange"
+              onClick={() => setShowMore(true)}
+            >
+              Show More
+            </button>
+          </p>
+        </>
+      );
+    }
+  };
+
+  const toTitleCase = (items) => {
+    const titleCase = items
+      .toLowerCase()
+      .split(" ")
+      .map((word) => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join(" ");
+    return titleCase;
+  };
+
+  return (
+    <>
+      <div className="flex flex-col md:flex-row  justify-around pt-[150px] mb-20 font-roboto">
+        <div className="w-5/6 md:w-2/6 flex justify-center md:justify-around mt-10 md:mt-0">
+          <div className="space-y-3">
+          <img
+            className="w-[300px] h-[300px]  rounded-xl border"
+            src={showImg ? showImg : items.imgurl && items.imgurl[0]}
+            alt=""
+          />
+          <div className="flex flex-col space-x-3">
+            <div className="float-left">
+            <h1 className="font-semibold text-lg underline ">Images ({items.imgurl.length})</h1>
+            </div>
+           <div className="flex mt-3  space-x-3">
+           {items.imgurl.map((items, index) => (
+              <img
+                className="w-[80px] border border-lightblack rounded"
+                src={items}
+                alt=""
+                onMouseMove={() => setShowImg(items)}
+              />
+            ))}
+           </div>
+           </div>
+           </div>
+          
+        </div>
+        <div className="flex flex-col w-full md:w-1/2  pr-10 pl-10 md:pl-0">
+          <h1 className="font-bold text-xl capitalize">
+            <span className="">{items.name}</span> 
+          </h1>
+          <div className="font-normal text-base mt-5 flex  flex-col  justify-center">
+            <span className="font-normal mr-10">
+              {showMoreText(items.description)}
+            </span>
+          </div>
+          <div className="mt-5 ">
+            <h1
+              className="font-bold text-base bg-gray1 rounded-t p-2 flex items-center cursor-pointer "
+              onClick={() => setTextShow(!textShow)}
+            >
+              {textShow ? (
+                <IoMdArrowDropup size={30} />
+              ) : (
+                <IoMdArrowDropdown size={30} />
+              )}
+              {items.heading}
+            </h1>
+            {textShow ? (
+              <div className="flex flex-col bg-gray1 pl-5 pb-5 rounded-b  transition duration-150 ease-out hover:ease-in">
+                {items.keyfeatures.map((items) => {
+                  return (
+                    <li className="font-normal text-base">
+                      {toTitleCase(items)}
+                    </li>
+                  );
+                })}
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="w-full">
+        {datas.data.map((item, index) => {
+          return (
+            <>
+              <div
+                key={item.id}
+                className="flex w-full  justify-around pt-[30px] pl-10 mb-20 border-t"
+                style={{ flexDirection: item.diraction }}
+              >
+                <div className="w-full md:2/6 h-4/6  flex  justify-center">
+                  <div>
+                    {item.imgurl.map((items, index) => (
+                      <img
+                        className="w-[80px]"
+                        src={items}
+                        alt=""
+                        onMouseMove={(id) => onHandleChange(items, id)}
+                      />
+                    ))}
+                  </div>
+                  <img
+                    className="w-[300px]"
+                    src={showImgs ? showImgs : item.imgurl && item.imgurl[0]}
+                    alt=""
+                  />
+                </div>
+                <div className="w-full md:w-5/6 pl-10 md:pl-0  pt-20 md:pt-0 flex flex-col  justify-center">
+                  <h1 className="font-bold text-xl capitalize">
+                    <span className="w-96"></span> {item.name}
+                  </h1>
+                  <div className="font-normal text-base mt-5 flex  flex-col  justify-center">
+                    <span className="font-normal mr-10">
+                      {showMoreText(item.description)}
+                    </span>
+                  </div>
+                  <div className="flex flex-col capitalize mt-5">
+                    <h1
+                      className="font-bold text-base bg-gray1 p-2 flex items-center cursor-pointer "
+                      onClick={() => setTextShow(!textShow)}
+                    >
+                      {textShow ? (
+                        <IoMdArrowDropup size={30} />
+                      ) : (
+                        <IoMdArrowDropdown size={30} />
+                      )}{" "}
+                      {datas.heading}
+                    </h1>
+
+                    {
+                      <div className="flex flex-col bg-gray1 pl-5 pb-5 rounded transition duration-150 ease-out hover:ease-in">
+                        {item.keyfeatures.map((items) => {
+                          return (
+                            <li className="font-normal text-base capitalize">
+                              {toTitleCase(items)}
+                            </li>
+                          );
+                        })}
+                      </div>
+                    }
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </div> */}
+    </>
+  );
+};
+
+export default HomeApp;

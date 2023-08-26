@@ -1,0 +1,43 @@
+.contact {
+  height: 310px !important;
+  border-radius: 0 0 50% 0/0 0 100% 0 !important;
+  overflow: hidden;
+  border-right-width: 1px !important;
+  border-bottom-width: 10px;
+  border-color: rgb(255, 136, 0);
+  position: relative;
+  background-position: center;
+}
+
+.contact img {
+  height: 350px !important;
+  width: 100% !important;
+  position: absolute;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.map {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px !important;
+}
+
+@media screen and (max-width: 1076px) {
+  .contact {
+    width: 100% !important;
+    height: 100% !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0;
+    border-radius: 0 !important;
+  }
+  .contact img {
+    width: 100% !important;
+    height: 100% !important;
+    position: sticky;
+  }
+}
