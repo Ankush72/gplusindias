@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import Slider from "react-slick";
+import "./HomeApp.css"
+
 
 const HomeApp = () => {
   const [showImg, setShowImg] = useState("");
   const [showMore, setShowMore] = useState(false);
   const [textShow, setTextShow] = useState(true);
+  const [toggle, setToggle] = useState(true);
+  const [boxToggle, setBoxToggle] = useState(1);
 
   const { state } = useLocation();
   const { items = {} } = state;
+  console.log(items)
 
   const showMoreText = (item) => {
     if (item.length <= 258) return item;
@@ -56,37 +63,62 @@ const HomeApp = () => {
     return titleCase;
   };
 
+  var settings = {
+    infinite: false,
+    speed: 500,
+    slidesToScroll: 4,
+    slidesToShow: 4,
+    arrows:true,
+  };
+
   return (
     <>
-      <div className="flex flex-col md:flex-row  justify-around pt-[150px] mb-20 font-roboto">
-        <div className="w-5/6 md:w-2/6 flex justify-center md:justify-around mt-10 md:mt-0">
-          <div className="space-y-3">
-          <img
-            className="w-[300px] h-[300px]  rounded-xl border"
-            src={showImg ? showImg : items.imgurl && items.imgurl[0]}
-            alt=""
-          />
-          <div className="flex flex-col space-x-3">
-            <div className="float-left">
-            <h1 className="font-semibold text-lg underline ">Images ({items.imgurl.length})</h1>
+      <div className="flex flex-col w-full h-full md:flex-row  justify-around pt-[150px] mb-20 font-roboto ">
+        <div className="w-full md:w-3/6 h-full  bg-white shadow flex items-center justify-center md:justify-around sm:mt-10 md:mt-0 pl-3 m-2">
+          <div className="space-y-3 flex flex-col items-center justify-center">
+            <div className="w-[300px] h-[300px] ">
+            <img
+              className=""
+              src={showImg ? showImg : items.imgurl && items.imgurl[0]}
+              alt=""
+            />
             </div>
-           <div className="flex mt-3  space-x-3">
-           {items.imgurl.map((items, index) => (
-              <img
-                className="w-[80px] border border-lightblack rounded"
-                src={items}
-                alt=""
-                onMouseMove={() => setShowImg(items)}
-              />
-            ))}
-           </div>
-           </div>
-           </div>
-          
+            <div className="flex flex-col space-x-3">
+              <div className="float-left">
+                <h1 className="font-semibold text-lg underline ">
+                  Images ({items.imgurl.length})
+                </h1>
+              </div>
+              <div className=" w-[300px]  mt-5 space-x-3"  >
+             <Slider {...settings}> 
+                {
+                  items.imgurl.map((item)=> {
+                    return(
+                      <div className="border w-[100px]  h-[80px] flex items-center justify-center ">
+                        <img className="" src={item}  alt=""  onMouseMove={() => setShowImg(item)}/>
+                      </div>
+                    )
+                  } )
+                }
+              </Slider>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col w-full md:w-1/2  pr-10 pl-10 md:pl-0">
+
+        {/* <div className="flex flex-row mt-3">
+                {items.imgurl.map((items, index) => (
+                  <img
+                    className="w-[80px] border border-lightblack rounded flex"
+                    src={items}
+                    alt=""
+                    onMouseMove={() => setShowImg(items)}
+                  />
+                ))}     
+              </div> */}
+        <div className="flex shadow flex-col w-full md:w-4/6 rounded pr-3 sm:pr-10 pl-3 m-2 sm:pl-10 md:pl-5 pt-3 pb-3">
           <h1 className="font-bold text-xl capitalize">
-            <span className="">{items.name}</span> 
+            <span className="">{items.name}</span>
           </h1>
           <div className="font-normal text-base mt-5 flex  flex-col  justify-center">
             <span className="font-normal mr-10">
@@ -119,6 +151,111 @@ const HomeApp = () => {
               ""
             )}
           </div>
+        </div>
+      </div>
+      <div className="font-roboto bg-gray pt-5 mb-1 sm:mb-10 pb-5">
+        <div className="flex flex-col items-center justify-center space-y-3">
+          <h1 className="font-semibold text-lg text-center capitalize">
+            technical specifications
+          </h1>
+          <p className="font-normal text-base text-center">
+            Measurement items specification and product information
+          </p>
+          <h1 className="font-semibold text-lg capitalize">
+            product Measurement
+          </h1>
+        </div>
+      </div>
+      <div className="flex items-center justify-center pb-20 font-roboto rounded">
+        <div className="w-full sm:w-10/12 flex flex-col items-center justify-center shadow-xl rounded bg-gray">
+          {items.product &&
+            items.product.map((item) => {
+              return (
+                <div className="w-full">
+                  {/* <div>{item.name}</div> */}
+                  <div className="flex  w-full h-[200px] pl-7">
+                    {item.box &&
+                      item.box.map((box, index) => {
+                        return (
+                          <div className="pt-10 flex flex-col ">
+                            <div className="flex">
+                              <button style={{backgroundColor: boxToggle === index ? "#F9EECE" : "#F6F8FA"}}
+                                className="border capitalize hover:bg-[#F9EECE] font-semibold text-base flex  pl-3 pr-3 rounded m-1 sm:m-2  h-8 flex items-center justify-center"
+                                onClick={() => setBoxToggle(index)}
+                              >
+                                {box.boxname}
+                              </button>
+                            </div>
+                            <div
+                              className="flex w-auto  mt-10 pt-7 flex-wrap left-[20px] sm:left-[100px] md:left-[140px]"
+                              style={{ position: "absolute" }}
+                            >
+                              {boxToggle === index &&
+                                box.boxsize.map((boxitem) => {
+
+                                  return (
+                                    <>
+                                      <div>
+                                        <div className="flex flex-col w-[50px] sm:w-[100px]  lg:w-[235px] xl:w-[250px] m-3">
+                                          <h1 className="font-semibold capitalize">
+                                            {boxitem.name}
+                                          </h1>
+                                          <h1 className="pt-2">{boxitem.size}</h1>
+                                        </div>
+                                      </div>
+                                    </>
+                                  );
+                                })}
+                            </div>
+                          </div>
+                        );
+                      })}
+                  </div>
+
+                  <div className="w-full  flex flex-col">
+                    {item.variationsDetails.map((details) => {
+                      return (
+                        <div className="flex w-full flex-wrap">
+                          <div className="flex flex-col w-full">
+                            <h1
+                              className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-1 pl-6 cursor-pointer flex items-center justify-between pr-10"
+                              onClick={() => setToggle(!toggle)}
+                            >
+                              {details.name}
+                              {toggle ? (
+                                <IoIosArrowUp size={30} />
+                              ) : (
+                                <IoIosArrowDown size={30} />
+                              )}
+                            </h1>
+
+                            {toggle ? (
+                              <div className="flex flex-wrap pl-3 pb-3 border-t w-full hover:bg-lightgray hover:text-black">
+                                {details.details &&
+                                  details.details.map((item) => {
+                                    return (
+                                      <div className="w-[250px] mt-2 m-3">
+                                        <h1 className="capitalize font-semibold text-sm opacity-85">
+                                          {item.name}
+                                        </h1>
+                                        <p className="pt-1 font-normal text-sm">
+                                          {item.details}
+                                        </p>
+                                      </div>
+                                    );
+                                  })}
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
 

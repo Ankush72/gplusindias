@@ -1,7 +1,7 @@
 import AC from "../image/Air Condition.png";
-import AC2 from "../image/Out door 01.png"
+import AC2 from "../image/Out door 01.png";
 import washingMachine from "../image/Washing Machine 12.png";
-// import washingMachines from "../image/6 KG.png";
+// import washingMachines from "../image/6kg_white.jpg"
 import Refrigerator from "../image/Fridge.png";
 import Tv1 from "../image/TV 3.jpg";
 import washingMachine1 from "../image/washingMachine2.jpeg";
@@ -20,11 +20,13 @@ import semi7_5kg from "../image/Semi 7.5 Kg 02.png";
 import semi8kg1 from "../image/Semi 8 Kg 01.png";
 import semi8kg2 from "../image/Semi 8 Kg 02.png";
 import ACBanner1 from "../image/AC Banner 1.jpeg";
-import ACBanner2 from "../image/AC Banner 3.jpeg"
-import washingMachineBanner1 from "../image/WashingMachineBanner1.png"
-import washingMachineBanner2 from "../image/WashingMachineBanner2.png"
-import washingMachineBanner3 from "../image/WashingMachineBanner3.png"
-import LEDTVBanner1 from "../image/LEDTVBanner.png"
+import ACBanner2 from "../image/AC Banner 3.jpeg";
+import washingMachineBanner1 from "../image/WashingMachineBanner1.png";
+import washingMachineBanner2 from "../image/WashingMachineBanner2.png";
+import washingMachineBanner3 from "../image/WashingMachineBanner3.png";
+import LEDTVBanner1 from "../image/LEDTVBanner.png";
+// import { "" } from "react-icons/ai";
+// import {BsFillBoxFill} from "react-icons/bs"
 
 const HomeAppliances = [
   // washing machine
@@ -32,10 +34,187 @@ const HomeAppliances = [
     id: 1,
     imgurl: [washingMachine1, washingMachine2],
     name: "washing machine",
-    banner: [washingMachineBanner1,washingMachineBanner2,washingMachineBanner3],
+    banner: [
+      washingMachineBanner1,
+      washingMachineBanner2,
+      washingMachineBanner3,
+    ],
     data: [
       {
         id: 1,
+        diraction: "row-reverse",
+        imgurl: [washingMachine],
+        heading: "Key Features : -",
+        route: "fully-automatic-washing-machine-6kg",
+        name: "Fully Automatic Washing Machine 6 KG",
+        description:
+          "Introducing Gplus Fully Automatic Washing Machine 6 kg: Effortless Laundry, Superior Performance. Experience the convenience of advanced laundry care with Gplus Fully Automatic Washing Machine 6 kg. Designed to handle your daily laundry needs with efficiency and precision, this washing machine delivers outstanding results every time. Upgrade your laundry routine with Gplus Fully Automatic Washing Machine 6 kg. Experience the joy of effortless laundry care and the confidence of knowing your clothes will be washed with care and efficiency. Simplify your life and embrace the convenience of this washing machine, designed to make your laundry tasks a breeze. Invest in Gplus Fully Automatic Washing Machine 6 kg and transform your laundry experience today. Say goodbye to manual washing and enjoy pristine laundry results with this reliable and efficient appliance   ",
+        keyfeatures: [
+          "16 WASH PROGRAM  6 KG CAPACITY",
+          "LARGE LED DISPLAY",
+          "METALIC BODY WITH EMBOSED COVER TO PREVENT RUSTING ",
+          "WITH 3 DIFFERENT MATALIC COLOUR OF WHITE , SILVER , GREY",
+          "SPIN RPM OF 1200 WITH 4 SPEED OF 600, 800, 1000, 1200 RPM",
+          "DIAMOUND STAINLESS STEEL DRUM ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "598mm" },
+                  { name: "height", Icon: "", size: "845mm" },
+                  { name: "Depth", Icon: "", size: "445mm" },
+                  { name: "weight", Icon: "", size: "47kg" },
+                ],
+              },
+              {
+                boxname: "with box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "652mm" },
+                  { name: "height", Icon: "", size: "845mm" },
+                  { name: "Depth", Icon: "", size: "485mm" },
+                  { name: "weight", Icon: "", size: "51kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Gray,silver,white" },
+                  { name: "design", details: "Majestic" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // washingMachineDetails
+              {
+                name: "Washing Machines Details",
+                details: [
+                  { name: "Gross Capacity (Kg)", details: "6 kg" },
+                  { name: "Motor Warranty", details: "10 years" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Washing Details",
+                details: [
+                  {
+                    name: "Types Of Washing Modes/Programs",
+                    details:"Mixed, Eco 40-60, Cotton, 20*c, Gentle, Wool, night, Antibactrial, Drum Clean, Rinse + Spin, Spin, Kids Wear, Shirts, Underwears, Quick 30, Quick 15"
+                  },
+                  { name: "Types Of Stain Removal", details: "100%" },
+                  { name: "No. Of Washing Modes/Programs", details: "16" },
+                  { name: "In-Built Heater", details: "Yes" },
+                  { name: "Express Wash", details: "Yes" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Fully Automatic Front Load Washing Machine",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
+                  
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "User Manual, Ratmesh & screws, Inlet Hose, Transport Caps, warnty card",
+                  },
+                  { name: "Installation Type", details: "Freestanding" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Motor Type",
+                    details: "Inverter",
+                  },
+                  { name: "Maximum Spin Speed", details: "1200 RPM" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+                  {
+                    name: "Launch Year",
+                    details: "2017",
+                  },
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Auto Detergent Dosage",
+                    details: "No",
+                  },
+                  { name: "Rat Mesh", details: "Yes" },
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Wheel Support",
+                    details: "No",
+                  },
+                  { name: "Display ", details: "LED display" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with 
+                  {
+                    name: "Energy Rating",
+                    details: "5 Star",
+                  },
+                  { name: "Voltage Range(V)", details: "220-240v" },
+                  { name: "Consuption power at wash cycle", details: "2000 Watts" },
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                ],
+              },
+              // Special Features
+              {
+                name: "Special Features",
+                details: [
+                  {
+                    name: "",
+                    details:"TRANSPERENT DOOR WITH BOROSIL GLASS, TUMBLE WASH TO BETTER WASH QUALITY, HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C, DRUM CLEANING PROGRAM TO SELF CLEAN BY THE MACHINE, ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF"
+                  }
+                  ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
         diraction: "row-reverse",
         imgurl: [washingMachine1, washingMachine2],
         route: "fully-automatic-washing-machine-7kg",
@@ -56,30 +235,163 @@ const HomeAppliances = [
           "HEAVY DUTY OUTER BODY ",
           "5 SPEED RPM IN SPIN OF 600, 800, 1000, 1200, 1400 RPM",
         ],
-      },
-      {
-        id: 2,
-        diraction: "row-reverse",
-        imgurl: [washingMachine],
-        heading: "Key Features : -",
-        route: "fully-automatic-washing-machine-6kg",
-        name: "Fully Automatic Washing Machine 6 KG",
-        description:
-          "Introducing Gplus Fully Automatic Washing Machine 6 kg: Effortless Laundry, Superior Performance. Experience the convenience of advanced laundry care with Gplus Fully Automatic Washing Machine 6 kg. Designed to handle your daily laundry needs with efficiency and precision, this washing machine delivers outstanding results every time. Upgrade your laundry routine with Gplus Fully Automatic Washing Machine 6 kg. Experience the joy of effortless laundry care and the confidence of knowing your clothes will be washed with care and efficiency. Simplify your life and embrace the convenience of this washing machine, designed to make your laundry tasks a breeze. Invest in Gplus Fully Automatic Washing Machine 6 kg and transform your laundry experience today. Say goodbye to manual washing and enjoy pristine laundry results with this reliable and efficient appliance   ",
-        keyfeatures: [
-          "16 WASH PROGRAM  6 KG CAPACITY",
-          "LARGE LED DISPLAY",
-          "TRANSPERENT DOOR WITH BOROSIL GLASS ",
-          "METALIC BODY WITH EMBOSED COVER TO PREVENT RUSTING ",
-          "TUMBLE WASH TO BETTER WASH QUALITY",
-          "HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C",
-          "DRUM CLEANING OPTION TO SELF CLEAN BY THE MACHINE",
-          "ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF",
-          "WITH 3 DIFFERENT MATALIC COLOUR OF WHITE , SILVER , GREY",
-          "SPIN RPM OF 1200 WITH 4 SPEED OF 600, 800, 1000, 1200 RPM",
-          "DIAMOUND STAINLESS STEEL DRUM ",
+        product: [
+          {
+            box: [
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "595mm" },
+                  { name: "height", Icon: "", size: "850mm" },
+                  { name: "Depth", Icon: "", size: "495mm" },
+                  { name: "weight", Icon: "", size: "60kg" },
+                ],
+              },
+              {
+                boxname: "with box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "650mm" },
+                  { name: "height", Icon: "", size: "885mm" },
+                  { name: "Depth", Icon: "", size: "575mm" },
+                  { name: "weight", Icon: "", size: "60kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Gray" },
+                  { name: "design", details: "Majestic Silver" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // washingMachineDetails
+              {
+                name: "Washing Machines Details",
+                details: [
+                  { name: "Gross Capacity (Kg)", details: "7 kg" },
+                  { name: "Motor Warranty", details: "10 years" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Washing Details",
+                details: [
+                  {
+                    name: "Types Of Washing Modes/Programs",
+                    details:"My cycle, cotton, baby care, senthitic, jeans, Mix, 20*c, Ring & Spin, Spin Only, intensive, Eco 40-60*c, Delicte, Wool, Sport Wear, rapid 45, Quick 15"
+                  },
+                  { name: "Types Of Stain Removal", details: "100 %" },
+                  { name: "No. Of Washing Modes/Programs", details: "15" },
+                  { name: "In-Built Heater", details: "Yes" },
+                  { name: "Express Wash", details: "Yes" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Fully Automatic Front Load Washing Machine",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
+                  
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "User Manual, Ratmesh & screws, Inlet Hose, Transport Caps, warnty card",
+                  },
+                  { name: "Installation Type", details: "Freestanding" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Motor Type",
+                    details: "Inverter",
+                  },
+                  { name: "Maximum Spin Speed", details: "1400" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+                  {
+                    name: "Launch Year",
+                    details: "2017",
+                  },
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Auto Detergent Dosage",
+                    details: "No",
+                  },
+                  { name: "Rat Mesh", details: "Yes" },
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Wheel Support",
+                    details: "No",
+                  },
+                  { name: "Display ", details: "LED display" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with 
+                  {
+                    name: "Energy Rating",
+                    details: "5 Star",
+                  },
+                  { name: "Voltage Range(V)", details: "220-240v" },
+                  { name: "Consuption power at wash cycle", details: "2000 Watts" },
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                ],
+              },
+              // Special Features
+              {
+                name: "Special Features",
+                details: [
+                  {
+                    name: "",
+                    details:"My universal Cycle Program, 7 th senseFOAM SENSOR  technology, Hygiene Steam Wash, 99.9 Antibacterial cycle, Water jet Diamound Drum, 1400  RPM Spin speed"
+                  },
+                ],
+              },
+            ],
+          },
         ],
       },
+     
       // {
       //   id: 3,
       //   diraction: "row",
@@ -117,16 +429,167 @@ const HomeAppliances = [
           "Introducing Gplus 7.5 kg Semi-Automatic Washing Machine: Powerful and Efficient Laundry Companion Discover the perfect balance of performance and capacity with Gplus 7.5 kg Semi-Automatic Washing Machine. Designed to handle larger laundry loads with ease, this washing machine provides superior cleaning performance for your entire household.Experience efficient laundry care with Gplus 7.5 kg Semi-Automatic Washing Machine. Whether you have a larger family or frequent laundry needs, this washing machine offers the perfect solution. Enjoy the benefits of semi-automatic washing with added capacity, and experience clean and fresh clothes effortlessly. Invest in Gplus 7.5 kg Semi-Automatic Washing Machine and streamline your laundry routine today. With its powerful performance and versatility, this reliable appliance will become an indispensable part of your household. Embrace the convenience of Gplus 7.5 kg Semi-Automatic Washing Machine and enjoy pristine laundry results every time",
         keyfeatures: [
           "RUST PROOF BODY",
-          "5 CLOURS OF WASHING MACHINE ",
-          "7.5 KG WASHING MACHINE",
           "SOAKING OPTION WITH 35 MIN IN WASH TIMER",
-          "AUTO BALANCER TO CLOTHS",
           "CASTOR WHEEL TO MOVE EASILE",
-          "SPIN MOTOR OF 150 WATTS",
           "HEAVY DUTY WASH MOTOR",
           "WASH CAPACITY 7.5 KG",
-          "SPIN MOTOR CAPACITY 3.5 KG",
           "5 YEARS WARRANTY ON MOTOR ",
+        ],
+
+        product: [
+          {
+            box: [
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "815mm" },
+                  { name: "height", Icon: "", size: "1050mm" },
+                  { name: "Depth", Icon: "", size: "500mm" },
+                  { name: "weight", Icon: "", size: "19.5kg" },
+                ],
+              },
+              {
+                boxname: "with box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "800mm" },
+                  { name: "height", Icon: "", size: "990mm" },
+                  { name: "Depth", Icon: "", size: "480mm" },
+                  { name: "weight", Icon: "", size: "22.5kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Black transparent, Blue Flower, Pink, Red" },
+                  { name: "design", details: "Acrylonitrile Butadiene Styrene plastic body" },
+                  { name: "finish", details: "Non Metallic, Anti Corassion body" },
+                ],
+              },
+              // washingMachineDetails
+              {
+                name: "Washing Machines Details",
+                details: [
+                  { name: "Gross Capacity (Kg)", details: "7.5 kg" },
+                  { name: "Motor Warranty", details: "5 years" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Washing Details",
+                details: [
+                  {
+                    name: "Types Of Washing Modes/Programs",
+                    details:"Soaking Option With 35 Min In Wash Timer",
+                  },
+                  { name: "Types Of Stain Removal", details: "60%" },
+                  { name: "No. Of Washing Modes/Programs", details: "Soaking Option With 35 Min In Wash Timer" },
+                  { name: "In-Built Heater", details: "No" },
+                  { name: "Express Wash", details: "No" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Semi Automatic Washing Machine",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
+                  
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "User Manual, Inlet Hose, warnty card",
+                  },
+                  { name: "Installation Type", details: "Freestanding with castrol wheels" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Motor Type",
+                    details: "Inverter",
+                  },
+                  { name: "Maximum Spin Speed", details: "750 RPM" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+                  {
+                    name: "Launch Year",
+                    details: "2017",
+                  },
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Auto Detergent Dosage",
+                    details: "No",
+                  },
+                  
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Wheel Support",
+                    details: "Yes",
+                  },
+                  { name: "Timer Model ", details: "35 min" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with 
+                  {
+                    name: "Energy Rating",
+                    details: "5 Star",
+                  },
+                  { name: "Voltage Range(V)", details: "220-240v" },
+                  { name: "Consuption power at wash cycle", details: "350 Watts" },
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                ],
+              },
+              // Special Features
+              {
+                name: "Special Features",
+                details: [
+                  {
+                    name: "",
+                    details:"5 CLOURS OF WASHING MACHINE, AUTO BALANCER TO CLOTHS, SPIN MOTOR OF 150 WATTS,SPIN MOTOR CAPACITY 3.5 KG"
+                  }
+                  ],
+              },
+            ],
+          },
         ],
       },
       {
@@ -140,16 +603,167 @@ const HomeAppliances = [
           "Introducing Gplus 8 kg Semi Automatic Washing Machine: Simplify Your Laundry Tasks Experience efficient and effortless laundry care with Gplus 8 kg Semi Automatic Washing Machine. Designed to handle your daily laundry needs with ease, this washing machine delivers reliable performance and ensures clean and fresh clothes every time.Experience the joy of efficient laundry care with Gplus 8 kg Semi Automatic Washing Machine. Whether you want more control over your laundry process or need a reliable and affordable washing solution, this washing machine is the perfect fit. Simplify your laundry routine and invest in Gplus 8 kg Semi Automatic Washing Machine today. Enjoy clean and fresh clothes with minimal effort, and let this reliable and efficient appliance take care of your laundry needs. Upgrade your laundry experience and embrace the convenience of Gplus 8 kg Semi Automatic Washing Machine for a hassle-free laundry day, every day",
         keyfeatures: [
           "RUST PROOF BODY",
-          "5 CLOURS OF WASHING MACHINE ",
           "8 KG WASHING MACHINE",
           "SOAKING OPTION WITH 35 MIN IN WASH TIMER",
-          "AUTO BALANCER TO CLOTHS",
           "CASTOR WHEEL TO MOVE EASILE",
-          "SPIN MOTOR OF 150 WATTS",
           "HEAVY DUTY WASH MOTOR",
           "WASH CAPACITY 8 KG",
-          "SPIN MOTOR CAPACITY 3.5 KG",
           "5 YEARS WARRANTY ON MOTOR ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "815mm" },
+                  { name: "height", Icon: "", size: "1050mm" },
+                  { name: "Depth", Icon: "", size: "500mm" },
+                  { name: "weight", Icon: "", size: "19.5kg" },
+                ],
+              },
+              {
+                boxname: "with box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "800mm" },
+                  { name: "height", Icon: "", size: "990mm" },
+                  { name: "Depth", Icon: "", size: "480mm" },
+                  { name: "weight", Icon: "", size: "22.5kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Black transparent, Blue Flower, Pink, Red" },
+                  { name: "design", details: "Acrylonitrile Butadiene Styrene plastic body" },
+                  { name: "finish", details: "Non Metallic, Anti Corassion body" },
+                ],
+              },
+              // washingMachineDetails
+              {
+                name: "Washing Machines Details",
+                details: [
+                  { name: "Gross Capacity (Kg)", details: "7.5 kg" },
+                  { name: "Motor Warranty", details: "5 years" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Washing Details",
+                details: [
+                  {
+                    name: "Types Of Washing Modes/Programs",
+                    details:"Soaking Option With 35 Min In Wash Timer",
+                  },
+                  { name: "Types Of Stain Removal", details: "60%" },
+                  { name: "No. Of Washing Modes/Programs", details: "Soaking Option With 35 Min In Wash Timer" },
+                  { name: "In-Built Heater", details: "No" },
+                  { name: "Express Wash", details: "No" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Semi Automatic Washing Machine",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
+                  
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "User Manual, Inlet Hose, warnty card",
+                  },
+                  { name: "Installation Type", details: "Freestanding with castrol wheels" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Motor Type",
+                    details: "Inverter",
+                  },
+                  { name: "Maximum Spin Speed", details: "750 RPM" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+                  {
+                    name: "Launch Year",
+                    details: "2017",
+                  },
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Auto Detergent Dosage",
+                    details: "No",
+                  },
+                  
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Wheel Support",
+                    details: "Yes",
+                  },
+                  { name: "Timer Model ", details: "35 min" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with 
+                  {
+                    name: "Energy Rating",
+                    details: "5 Star",
+                  },
+                  { name: "Voltage Range(V)", details: "220-240v" },
+                  { name: "Consuption power at wash cycle", details: "350 Watts" },
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                ],
+              },
+              // Special Features
+              {
+                name: "Special Features",
+                details: [
+                  {
+                    name: "",
+                    details:"5 CLOURS OF WASHING MACHINE, AUTO BALANCER TO CLOTHS, SPIN MOTOR OF 150 WATTS,SPIN MOTOR CAPACITY 3.5 KG"
+                  }
+                  ],
+              },
+            ],
+          },
         ],
       },
     ],
@@ -182,6 +796,287 @@ const HomeAppliances = [
           "Horizontal Viewing Angles : 178 Degrees",
           "Vertical Viewing Angles : 178 Degrees",
           "Other Display Features : HDR (High Dynamic Range)",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "Dimensions(cm)",
+                boxsize: [
+                  { name: "width", Icon: "", size: "216cm" },
+                  { name: "height", Icon: "", size: "109cm" },
+                  { name: "Depth", Icon: "", size: "10cm" },
+                  { name: "weight", Icon: "", size: "55-5Kg" },
+                ],
+              },
+              {
+                boxname: "Dimensions(inches)",
+                boxsize: [
+                  { name: "width", Icon: "", size: "85 inches" },
+                  { name: "height", Icon: "", size: "43 inches" },
+                  { name: "Depth", Icon: "", size: "4 inches" },
+                  { name: "weight", Icon: "", size: "55-5Kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+             
+              // washingMachineDetails
+              {
+                name: "TELEVISION CATEGORY",
+                details: [
+                  { name: "Television Features", details: "Q LED" },
+                  { name: "Television Format", details: "Ultra HD 4K" },
+                  { name: "Television Type", details: "Flat Panel" },
+                  { name: "Ideal Viewing Distance", details: "8 - 10 Ft" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "SCREEN SPECIFICATIONS",
+                details: [
+                  {
+                    name: "Resolution",
+                    details:"3840 x 2160 pixels"
+                  },
+                  { name: "Additional Screen Specifications", details: "A+ Grade Panel" },
+                  { name: "Screen Size in Inches", details: "85 Inches" },
+                  { name: "Type", details: "Q LED" },
+                  { name: "Refresh Rate", details: "60 Hz" },
+                  { name: "Horizontal Viewing Angle", details: "178 Degrees" },
+                  { name: "Vertical Viewing Angle", details: "178 Degrees" },
+                  { name: "Screen Size in CM", details: "216 cm" },
+                  { name: "Response Time", details: "8 ms" },
+                  { name: "Aspect Ratio", details: "16:9" },
+                ],
+              },
+              // General Information
+              {
+                name: "TELEVISION SOUND",
+                details: [
+                  {
+                    name: "Speaker Type",
+                    details: "Built-In Speakers",
+                  },
+                  {
+                    name: "Speaker Capacity",
+                    details: "20 Watts",
+                  },
+                  { name: "Audio Technology", details: "Dolby Audio" },
+                
+                ],
+              },
+              // Other Details
+              {
+                name: "TELEVISION OPERATING SYSTEM",
+                details: [
+                  {
+                    name: "OS Type",
+                    details: "WebOS",
+                  },
+                  { name: "OS Name & Version", details: "WebOS" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "MANUFACTURER DETAILS",
+                details: [
+                  {
+                    name: "Brand",
+                    details: "VYOM QLED",
+                  },
+                  { name: "Model Number", details: "GM85QLED" },
+                ],
+              },
+            
+              // TELEVISION PROCESSOR DETAILS
+              {
+                name: "TELEVISION PROCESSOR DETAILS",
+                details: [
+                  {
+                    name: "Upscaling uses Vyom power",
+                    details: "Quantum Processor",
+                  },
+                ],
+              },
+              // TELEVISION INTERNAL MEMORY
+              {
+                name: "TELEVISION INTERNAL MEMORY",
+                details: [
+                  // taalk with 
+                  {
+                    name: "RAM",
+                    details: "2 GB",
+                  },
+                  
+                ],
+              },
+              // TELEVISION STORAGE SPECIFICATION
+              {
+                name: "TELEVISION STORAGE SPECIFICATION",
+                details: [
+                  {
+                    name: "Storage Capacity",
+                    details:"16GB"
+                  }
+                  ],
+              },
+              // TELEVISION PORTS & SLOTS
+              {
+                name: "TELEVISION PORTS & SLOTS",
+                details: [
+                  {
+                    name: "Number Of USB Ports",
+                    details:"2 x USB"
+                  },
+                  {
+                    name: "HDMI Type",
+                    details:"HDMI"
+                  },
+                  {
+                    name: "Number Of HDMI Ports",
+                    details:"3 x HDMI"
+                  }
+                  ],
+              },
+
+              // TELEVISION NETWORK CONNECTIVITY
+              {
+                name: "TELEVISION NETWORK CONNECTIVITY",
+                details: [
+                  {
+                    name: "WiFi Supported",
+                    details:"Yes"
+                  },
+                  {
+                    name: "WiFi Features",
+                    details:"Dual Band(2.4GHz/5GHz)"
+                  },
+                  {
+                    name: "Bluetooth Supported",
+                    details:"Yes"
+                  },
+                  {
+                    name: "Bluetooth Specifications",
+                    details:"Bluetooth 5.0"
+                  }
+                  ],
+              },
+              // REMOTE CONTROL DETAILS
+              {
+                name: "REMOTE CONTROL DETAILS",
+                details: [
+                  {
+                    name: "Remote Control Type",
+                    details:"Voice Control"
+                  },
+                  {
+                    name: "Remote Smart Features",
+                    details:"ThinQ & Alexa Voice Controlled Remote"
+                  },
+                  
+                  ],
+              },
+              // TELEVISION ADDITIONAL FEATURES
+              {
+                name: "TELEVISION ADDITIONAL FEATURES",
+                details: [{
+                  name: "",
+                  details:"Netflix"
+                },
+                {
+                  name: "",
+                  details:"Prime Video"
+                },],
+              },
+              // TELEVISION PLUG DETAILS
+              {
+                name: "TELEVISION PLUG DETAILS",
+                details: [
+                  {
+                    name: "Frequency",
+                    details:"50/60 Hz"
+                  },
+                  {
+                    name: "Voltage Rating",
+                    details:"110-240 V"
+                  },
+                  {
+                    name: "Power",
+                    details:"127 Watts"
+                  },
+                  {
+                    name: "Power Consumption (Standby)",
+                    details:"0.5 Watts"
+                  },
+                  
+                  ],
+              },
+              // AESTHETICS
+              {
+                name: "AESTHETICS",
+                details: [
+                  {
+                    name: "Color",
+                    details:"Black"
+                  },
+                  {
+                    name: "Color Family",
+                    details:"BLACK"
+                  },
+                  
+                  ],
+              },
+              // IN THE BOX
+              {
+                name: "IN THE BOX",
+                details: [
+                  {
+                    name: "Documents",
+                    details:"User-Manual"
+                  },
+                  {
+                    name: "Main product",
+                    details:"1 x Television U"
+                  },
+                  {
+                    name: "Accessories",
+                    details:"RemoteControl | RemoteControlBattery"
+                  },
+                  {
+                    name: "Others",
+                    details:"Wall Mounting Brackets | Table Top Stand Pair"
+                  },
+                  {
+                    name: "Generic Name",
+                    details:"Television"
+                  },
+                  
+                  ],
+              },
+              
+              // COMPANY CONTACT INFORMATION
+              {
+                name: "COMPANY CONTACT INFORMATION",
+                details: [
+                  {
+                    name: "Customer Support Number",
+                    details:"1800 123 986 666"
+                  },
+                  {
+                    name: "Customer Support Email",
+                    details:"info@garudamartindia.com"
+                  },
+                  {
+                    name: "Country of Manufacture",
+                    details:"India"
+                  },
+                  
+                  
+                  ],
+              },
+            ],
+          },
         ],
       },
       // {
@@ -372,6 +1267,7 @@ const HomeAppliances = [
           "Environmental friendly",
           "Low Noise And energy saving",
         ],
+        product: [],
       },
     ],
   },
@@ -380,12 +1276,12 @@ const HomeAppliances = [
     id: 4,
     imgurl: [AC],
     name: "Air Condition",
-    banner: [ACBanner1,ACBanner2],
+    banner: [ACBanner1, ACBanner2],
     data: [
       {
         id: 1,
         diraction: "row",
-        imgurl: [AC,AC2],
+        imgurl: [AC, AC2],
         route: "air-condition-1-Ton",
         name: "Air Condition 1 Ton",
         heading: "Key Features : -",
@@ -400,10 +1296,11 @@ const HomeAppliances = [
           "Dimensions 99.8 cm x 32 cm x 22.8 cm.",
           "Technology All DC Inverter",
         ],
+        product: [],
       },
       {
         id: 2,
-        imgurl: [AC,AC2],
+        imgurl: [AC, AC2],
         name: "Air Condition 1.5 Ton",
         route: "air-condition-1.5-Ton",
         heading: "Key Features : -",
@@ -418,6 +1315,7 @@ const HomeAppliances = [
           "Dimensions 99.8 cm x 32 cm x 22.8 cm.",
           "Technology All DC Inverter",
         ],
+        product: [],
       },
     ],
   },

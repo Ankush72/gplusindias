@@ -63,7 +63,7 @@ const ElectronicsAppliances = () => {
                       alt={items.name}
                     />
                     
-                    <p className="z-20 font-medium rounded-xl text-2xl text-black capitalize pb-5  flex items-center justify-center pt-2">
+                    <p className="font-medium rounded-xl text-2xl text-black capitalize pb-5  flex items-center justify-center pt-2">
                       {items.name}
                     </p>
                   </div>

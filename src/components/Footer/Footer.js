@@ -130,7 +130,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-row lg:flex-col  lg:space-y-3 space-x-3 lg:space-x-0 lg:w-[50px]">
+           <div>
+            <h1 className="mb-6 text-xl font-semibold text-black uppercase dark:text-white">Follow Us</h1>
+           <div className="flex flex-row items-center justify-center  space-x-2">
               <a
                 className="w-8 h-8 hover:bg-black shadow-3xl shadow-white rounded-full bg-white flex items-center justify-center"
                 href="https://www.facebook.com/gplushomeappliances/"
@@ -162,6 +164,7 @@ const Footer = () => {
                 <IoLogoYoutube color="red" size={20} />
               </a>
             </div>
+           </div>
           </div>
           <div className="flex items-center justify-center pt-5 pb-5 bg-white ">
             <span className="text-sm text-black text-center">
