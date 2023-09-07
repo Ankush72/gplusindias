@@ -4,8 +4,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Slider from "react-slick";
-import "./HomeApp.css"
-
+import "./HomeApp.css";
 
 const HomeApp = () => {
   const [showImg, setShowImg] = useState("");
@@ -16,7 +15,6 @@ const HomeApp = () => {
 
   const { state } = useLocation();
   const { items = {} } = state;
-  console.log(items)
 
   const showMoreText = (item) => {
     if (item.length <= 258) return item;
@@ -63,12 +61,13 @@ const HomeApp = () => {
     return titleCase;
   };
 
+
   var settings = {
     infinite: false,
     speed: 500,
     slidesToScroll: 4,
     slidesToShow: 4,
-    arrows:true,
+    arrows: true,
   };
 
   return (
@@ -77,11 +76,11 @@ const HomeApp = () => {
         <div className="w-full md:w-3/6 h-full  bg-white shadow flex items-center justify-center md:justify-around sm:mt-10 md:mt-0 pl-3 m-2">
           <div className="space-y-3 flex flex-col items-center justify-center">
             <div className="w-[300px] h-[300px] ">
-            <img
-              className=""
-              src={showImg ? showImg : items.imgurl && items.imgurl[0]}
-              alt=""
-            />
+              <img
+                className=""
+                src={showImg ? showImg : items.imgurl && items.imgurl[0]}
+                alt=""
+              />
             </div>
             <div className="flex flex-col space-x-3">
               <div className="float-left">
@@ -89,18 +88,21 @@ const HomeApp = () => {
                   Images ({items.imgurl.length})
                 </h1>
               </div>
-              <div className=" w-[300px]  mt-5 space-x-3"  >
-             <Slider {...settings}> 
-                {
-                  items.imgurl.map((item)=> {
-                    return(
+              <div className=" w-[300px]  mt-5 space-x-3">
+                <Slider {...settings}>
+                  {items.imgurl.map((item) => {
+                    return (
                       <div className="border w-[100px]  h-[80px] flex items-center justify-center ">
-                        <img className="" src={item}  alt=""  onMouseMove={() => setShowImg(item)}/>
+                        <img
+                          className=""
+                          src={item}
+                          alt=""
+                          onMouseMove={() => setShowImg(item)}
+                        />
                       </div>
-                    )
-                  } )
-                }
-              </Slider>
+                    );
+                  })}
+                </Slider>
               </div>
             </div>
           </div>
@@ -179,7 +181,11 @@ const HomeApp = () => {
                         return (
                           <div className="pt-10 flex flex-col ">
                             <div className="flex">
-                              <button style={{backgroundColor: boxToggle === index ? "#F9EECE" : "#F6F8FA"}}
+                              <button disabled={box.disable}
+                                style={{
+                                  backgroundColor:
+                                    boxToggle === index ? "#F9EECE" : "#F6F8FA",visibility: box.hidden
+                                }}
                                 className="border capitalize hover:bg-[#F9EECE] font-semibold text-base flex  pl-3 pr-3 rounded m-1 sm:m-2  h-8 flex items-center justify-center"
                                 onClick={() => setBoxToggle(index)}
                               >
@@ -192,7 +198,6 @@ const HomeApp = () => {
                             >
                               {boxToggle === index &&
                                 box.boxsize.map((boxitem) => {
-
                                   return (
                                     <>
                                       <div>
@@ -200,7 +205,9 @@ const HomeApp = () => {
                                           <h1 className="font-semibold capitalize">
                                             {boxitem.name}
                                           </h1>
-                                          <h1 className="pt-2">{boxitem.size}</h1>
+                                          <h1 className="pt-2">
+                                            {boxitem.size}
+                                          </h1>
                                         </div>
                                       </div>
                                     </>
@@ -249,6 +256,39 @@ const HomeApp = () => {
                               ""
                             )}
                           </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div >
+                    {item.SpecialFeatures.map((val) => {
+                      return (
+                        <div className="">
+                          <div className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-2 pl-6 cursor-pointer flex items-center justify-between pr-10" onClick={() => setToggle(!toggle)}>
+                          <h1>{val.name}</h1>
+                          {toggle ? (
+                                <IoIosArrowUp size={30} />
+                              ) : (
+                                <IoIosArrowDown size={30} />
+                              )}
+                          </div>
+                          {
+                            toggle ? <div className="pl-10 pt-3 pb-10 border-t">
+                            {
+                              val.details.details.map((item)=>{
+                                return(
+                                    <ul className="list-disc">
+                                      <li className="pt-1 font-normal text-sm">{item}</li>
+                                    </ul>
+                                  )
+                              })
+                            }                       
+                             </div> :""
+                          }
+                         
+                         <div>
+                         
+                         </div>
                         </div>
                       );
                     })}

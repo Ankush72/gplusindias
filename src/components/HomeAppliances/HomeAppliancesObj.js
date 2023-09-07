@@ -102,7 +102,8 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Types Of Washing Modes/Programs",
-                    details:"Mixed, Eco 40-60, Cotton, 20*c, Gentle, Wool, night, Antibactrial, Drum Clean, Rinse + Spin, Spin, Kids Wear, Shirts, Underwears, Quick 30, Quick 15"
+                    details:
+                      "Mixed, Eco 40-60, Cotton, 20*c, Gentle, Wool, night, Antibactrial, Drum Clean, Rinse + Spin, Spin, Kids Wear, Shirts, Underwears, Quick 30, Quick 15",
                   },
                   { name: "Types Of Stain Removal", details: "100%" },
                   { name: "No. Of Washing Modes/Programs", details: "16" },
@@ -123,7 +124,7 @@ const HomeAppliances = [
                     details: "Fully Automatic Front Load Washing Machine",
                   },
                   { name: "Comprehensive Warranty (Year)", details: "2 Years" },
-                  
+
                   {
                     name: "In The Box Contents",
                     details:
@@ -153,10 +154,7 @@ const HomeAppliances = [
                   },
                   { name: "Country Of Origin", details: "India" },
                   { name: "Contact Us", details: "care@garudamartindia.com" },
-                  {
-                    name: "Launch Year",
-                    details: "2017",
-                  },
+
                   {
                     name: "Packed By",
                     details: "Garuda Mart India",
@@ -189,25 +187,31 @@ const HomeAppliances = [
               {
                 name: "Energy Details",
                 details: [
-                  // taalk with 
-                  {
-                    name: "Energy Rating",
-                    details: "5 Star",
-                  },
+                  // taalk with
+
                   { name: "Voltage Range(V)", details: "220-240v" },
-                  { name: "Consuption power at wash cycle", details: "2000 Watts" },
+                  {
+                    name: "Consuption power at wash cycle",
+                    details: "2000 Watts",
+                  },
                   { name: "Frequency (Hz)", details: "50 Hz" },
                 ],
               },
-              // Special Features
+            ],
+            // Special Features
+            SpecialFeatures: [
               {
                 name: "Special Features",
-                details: [
-                  {
-                    name: "",
-                    details:"TRANSPERENT DOOR WITH BOROSIL GLASS, TUMBLE WASH TO BETTER WASH QUALITY, HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C, DRUM CLEANING PROGRAM TO SELF CLEAN BY THE MACHINE, ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF"
-                  }
+                details: {
+                  name: "",
+                  details: [
+                    "TRANSPERENT DOOR WITH BOROSIL GLASS",
+                    "TUMBLE WASH TO BETTER WASH QUALITY",
+                    "HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C",
+                    "DRUM CLEANING PROGRAM TO SELF CLEAN BY THE MACHINE",
+                    "ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF",
                   ],
+                },
               },
             ],
           },
@@ -280,7 +284,8 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Types Of Washing Modes/Programs",
-                    details:"My cycle, cotton, baby care, senthitic, jeans, Mix, 20*c, Ring & Spin, Spin Only, intensive, Eco 40-60*c, Delicte, Wool, Sport Wear, rapid 45, Quick 15"
+                    details:
+                      "My cycle, cotton, baby care, senthitic, jeans, Mix, 20*c, Ring & Spin, Spin Only, intensive, Eco 40-60*c, Delicte, Wool, Sport Wear, rapid 45, Quick 15",
                   },
                   { name: "Types Of Stain Removal", details: "100 %" },
                   { name: "No. Of Washing Modes/Programs", details: "15" },
@@ -301,7 +306,7 @@ const HomeAppliances = [
                     details: "Fully Automatic Front Load Washing Machine",
                   },
                   { name: "Comprehensive Warranty (Year)", details: "2 Years" },
-                  
+
                   {
                     name: "In The Box Contents",
                     details:
@@ -331,10 +336,7 @@ const HomeAppliances = [
                   },
                   { name: "Country Of Origin", details: "India" },
                   { name: "Contact Us", details: "care@garudamartindia.com" },
-                  {
-                    name: "Launch Year",
-                    details: "2017",
-                  },
+
                   {
                     name: "Packed By",
                     details: "Garuda Mart India",
@@ -367,31 +369,37 @@ const HomeAppliances = [
               {
                 name: "Energy Details",
                 details: [
-                  // taalk with 
-                  {
-                    name: "Energy Rating",
-                    details: "5 Star",
-                  },
+                  // taalk with
+
                   { name: "Voltage Range(V)", details: "220-240v" },
-                  { name: "Consuption power at wash cycle", details: "2000 Watts" },
+                  {
+                    name: "Consuption power at wash cycle",
+                    details: "2000 Watts",
+                  },
                   { name: "Frequency (Hz)", details: "50 Hz" },
                 ],
               },
-              // Special Features
+            ],
+            //
+            SpecialFeatures: [
               {
                 name: "Special Features",
-                details: [
-                  {
-                    name: "",
-                    details:"My universal Cycle Program, 7 th senseFOAM SENSOR  technology, Hygiene Steam Wash, 99.9 Antibacterial cycle, Water jet Diamound Drum, 1400  RPM Spin speed"
-                  },
-                ],
+                details: {
+                  name: "",
+                  details: [
+                    "My universal Cycle Program",
+                    "7 th senseFOAM SENSOR  technology",
+                    "Hygiene Steam Wash",
+                    " 99.9 Antibacterial cycle",
+                    " Water jet Diamound Drum, 1400  RPM Spin speed",
+                  ],
+                },
               },
             ],
           },
         ],
       },
-     
+
       // {
       //   id: 3,
       //   diraction: "row",
@@ -462,9 +470,18 @@ const HomeAppliances = [
               {
                 name: "Variations Details",
                 details: [
-                  { name: "color", details: "Black transparent, Blue Flower, Pink, Red" },
-                  { name: "design", details: "Acrylonitrile Butadiene Styrene plastic body" },
-                  { name: "finish", details: "Non Metallic, Anti Corassion body" },
+                  {
+                    name: "color",
+                    details: "Black transparent, Blue Flower, Pink, Red",
+                  },
+                  {
+                    name: "design",
+                    details: "Acrylonitrile Butadiene Styrene plastic body",
+                  },
+                  {
+                    name: "finish",
+                    details: "Non Metallic, Anti Corassion body",
+                  },
                 ],
               },
               // washingMachineDetails
@@ -481,10 +498,13 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Types Of Washing Modes/Programs",
-                    details:"Soaking Option With 35 Min In Wash Timer",
+                    details: "Soaking Option With 35 Min In Wash Timer",
                   },
                   { name: "Types Of Stain Removal", details: "60%" },
-                  { name: "No. Of Washing Modes/Programs", details: "Soaking Option With 35 Min In Wash Timer" },
+                  {
+                    name: "No. Of Washing Modes/Programs",
+                    details: "Soaking Option With 35 Min In Wash Timer",
+                  },
                   { name: "In-Built Heater", details: "No" },
                   { name: "Express Wash", details: "No" },
                 ],
@@ -502,13 +522,15 @@ const HomeAppliances = [
                     details: "Semi Automatic Washing Machine",
                   },
                   { name: "Comprehensive Warranty (Year)", details: "2 Years" },
-                  
+
                   {
                     name: "In The Box Contents",
-                    details:
-                      "User Manual, Inlet Hose, warnty card",
+                    details: "User Manual, Inlet Hose, warnty card",
                   },
-                  { name: "Installation Type", details: "Freestanding with castrol wheels" },
+                  {
+                    name: "Installation Type",
+                    details: "Freestanding with castrol wheels",
+                  },
                 ],
               },
               // Other Details
@@ -532,10 +554,7 @@ const HomeAppliances = [
                   },
                   { name: "Country Of Origin", details: "India" },
                   { name: "Contact Us", details: "care@garudamartindia.com" },
-                  {
-                    name: "Launch Year",
-                    details: "2017",
-                  },
+
                   {
                     name: "Packed By",
                     details: "Garuda Mart India",
@@ -550,7 +569,6 @@ const HomeAppliances = [
                     name: "Auto Detergent Dosage",
                     details: "No",
                   },
-                  
                 ],
               },
               // Exterior Details
@@ -568,25 +586,29 @@ const HomeAppliances = [
               {
                 name: "Energy Details",
                 details: [
-                  // taalk with 
-                  {
-                    name: "Energy Rating",
-                    details: "5 Star",
-                  },
+                  // taalk with
+
                   { name: "Voltage Range(V)", details: "220-240v" },
-                  { name: "Consuption power at wash cycle", details: "350 Watts" },
+                  {
+                    name: "Consuption power at wash cycle",
+                    details: "350 Watts",
+                  },
                   { name: "Frequency (Hz)", details: "50 Hz" },
                 ],
               },
-              // Special Features
+            ],
+            // Special Features
+            SpecialFeatures: [
               {
                 name: "Special Features",
-                details: [
-                  {
-                    name: "",
-                    details:"5 CLOURS OF WASHING MACHINE, AUTO BALANCER TO CLOTHS, SPIN MOTOR OF 150 WATTS,SPIN MOTOR CAPACITY 3.5 KG"
-                  }
+                details: {
+                  name: "",
+                  details: [
+                    "5 CLOURS OF WASHING MACHINE",
+                    "AUTO BALANCER TO CLOTHS",
+                    "SPIN MOTOR OF 150 WATTS,SPIN MOTOR CAPACITY 3.5 KG",
                   ],
+                },
               },
             ],
           },
@@ -636,9 +658,18 @@ const HomeAppliances = [
               {
                 name: "Variations Details",
                 details: [
-                  { name: "color", details: "Black transparent, Blue Flower, Pink, Red" },
-                  { name: "design", details: "Acrylonitrile Butadiene Styrene plastic body" },
-                  { name: "finish", details: "Non Metallic, Anti Corassion body" },
+                  {
+                    name: "color",
+                    details: "Black transparent, Blue Flower, Pink, Red",
+                  },
+                  {
+                    name: "design",
+                    details: "Acrylonitrile Butadiene Styrene plastic body",
+                  },
+                  {
+                    name: "finish",
+                    details: "Non Metallic, Anti Corassion body",
+                  },
                 ],
               },
               // washingMachineDetails
@@ -655,10 +686,13 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Types Of Washing Modes/Programs",
-                    details:"Soaking Option With 35 Min In Wash Timer",
+                    details: "Soaking Option With 35 Min In Wash Timer",
                   },
                   { name: "Types Of Stain Removal", details: "60%" },
-                  { name: "No. Of Washing Modes/Programs", details: "Soaking Option With 35 Min In Wash Timer" },
+                  {
+                    name: "No. Of Washing Modes/Programs",
+                    details: "Soaking Option With 35 Min In Wash Timer",
+                  },
                   { name: "In-Built Heater", details: "No" },
                   { name: "Express Wash", details: "No" },
                 ],
@@ -676,13 +710,15 @@ const HomeAppliances = [
                     details: "Semi Automatic Washing Machine",
                   },
                   { name: "Comprehensive Warranty (Year)", details: "2 Years" },
-                  
+
                   {
                     name: "In The Box Contents",
-                    details:
-                      "User Manual, Inlet Hose, warnty card",
+                    details: "User Manual, Inlet Hose, warnty card",
                   },
-                  { name: "Installation Type", details: "Freestanding with castrol wheels" },
+                  {
+                    name: "Installation Type",
+                    details: "Freestanding with castrol wheels",
+                  },
                 ],
               },
               // Other Details
@@ -706,10 +742,7 @@ const HomeAppliances = [
                   },
                   { name: "Country Of Origin", details: "India" },
                   { name: "Contact Us", details: "care@garudamartindia.com" },
-                  {
-                    name: "Launch Year",
-                    details: "2017",
-                  },
+
                   {
                     name: "Packed By",
                     details: "Garuda Mart India",
@@ -724,7 +757,6 @@ const HomeAppliances = [
                     name: "Auto Detergent Dosage",
                     details: "No",
                   },
-                  
                 ],
               },
               // Exterior Details
@@ -742,25 +774,27 @@ const HomeAppliances = [
               {
                 name: "Energy Details",
                 details: [
-                  // taalk with 
-                  {
-                    name: "Energy Rating",
-                    details: "5 Star",
-                  },
+                  // taalk with
+
                   { name: "Voltage Range(V)", details: "220-240v" },
-                  { name: "Consuption power at wash cycle", details: "350 Watts" },
+                  {
+                    name: "Consuption power at wash cycle",
+                    details: "350 Watts",
+                  },
                   { name: "Frequency (Hz)", details: "50 Hz" },
                 ],
               },
-              // Special Features
+            ],
+            // Special Features
+            SpecialFeatures: [
               {
                 name: "Special Features",
-                details: [
-                  {
-                    name: "",
-                    details:"5 CLOURS OF WASHING MACHINE, AUTO BALANCER TO CLOTHS, SPIN MOTOR OF 150 WATTS,SPIN MOTOR CAPACITY 3.5 KG"
-                  }
+                details: {
+                  name: "",
+                  details: [
+                    "5 CLOURS OF WASHING MACHINE","AUTO BALANCER TO CLOTHS","SPIN MOTOR OF 150 WATTS","SPIN MOTOR CAPACITY 3.5 KG"
                   ],
+                },
               },
             ],
           },
@@ -820,7 +854,6 @@ const HomeAppliances = [
               },
             ],
             variationsDetails: [
-             
               // washingMachineDetails
               {
                 name: "TELEVISION CATEGORY",
@@ -837,9 +870,12 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Resolution",
-                    details:"3840 x 2160 pixels"
+                    details: "3840 x 2160 pixels",
                   },
-                  { name: "Additional Screen Specifications", details: "A+ Grade Panel" },
+                  {
+                    name: "Additional Screen Specifications",
+                    details: "A+ Grade Panel",
+                  },
                   { name: "Screen Size in Inches", details: "85 Inches" },
                   { name: "Type", details: "Q LED" },
                   { name: "Refresh Rate", details: "60 Hz" },
@@ -863,7 +899,6 @@ const HomeAppliances = [
                     details: "20 Watts",
                   },
                   { name: "Audio Technology", details: "Dolby Audio" },
-                
                 ],
               },
               // Other Details
@@ -888,7 +923,7 @@ const HomeAppliances = [
                   { name: "Model Number", details: "GM85QLED" },
                 ],
               },
-            
+
               // TELEVISION PROCESSOR DETAILS
               {
                 name: "TELEVISION PROCESSOR DETAILS",
@@ -903,12 +938,11 @@ const HomeAppliances = [
               {
                 name: "TELEVISION INTERNAL MEMORY",
                 details: [
-                  // taalk with 
+                  // taalk with
                   {
                     name: "RAM",
                     details: "2 GB",
                   },
-                  
                 ],
               },
               // TELEVISION STORAGE SPECIFICATION
@@ -917,9 +951,9 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Storage Capacity",
-                    details:"16GB"
-                  }
-                  ],
+                    details: "16GB",
+                  },
+                ],
               },
               // TELEVISION PORTS & SLOTS
               {
@@ -927,17 +961,17 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Number Of USB Ports",
-                    details:"2 x USB"
+                    details: "2 x USB",
                   },
                   {
                     name: "HDMI Type",
-                    details:"HDMI"
+                    details: "HDMI",
                   },
                   {
                     name: "Number Of HDMI Ports",
-                    details:"3 x HDMI"
-                  }
-                  ],
+                    details: "3 x HDMI",
+                  },
+                ],
               },
 
               // TELEVISION NETWORK CONNECTIVITY
@@ -946,21 +980,21 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "WiFi Supported",
-                    details:"Yes"
+                    details: "Yes",
                   },
                   {
                     name: "WiFi Features",
-                    details:"Dual Band(2.4GHz/5GHz)"
+                    details: "Dual Band(2.4GHz/5GHz)",
                   },
                   {
                     name: "Bluetooth Supported",
-                    details:"Yes"
+                    details: "Yes",
                   },
                   {
                     name: "Bluetooth Specifications",
-                    details:"Bluetooth 5.0"
-                  }
-                  ],
+                    details: "Bluetooth 5.0",
+                  },
+                ],
               },
               // REMOTE CONTROL DETAILS
               {
@@ -968,26 +1002,27 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Remote Control Type",
-                    details:"Voice Control"
+                    details: "Voice Control",
                   },
                   {
                     name: "Remote Smart Features",
-                    details:"ThinQ & Alexa Voice Controlled Remote"
+                    details: "ThinQ & Alexa Voice Controlled Remote",
                   },
-                  
-                  ],
+                ],
               },
               // TELEVISION ADDITIONAL FEATURES
               {
                 name: "TELEVISION ADDITIONAL FEATURES",
-                details: [{
-                  name: "",
-                  details:"Netflix"
-                },
-                {
-                  name: "",
-                  details:"Prime Video"
-                },],
+                details: [
+                  {
+                    name: "",
+                    details: "Netflix",
+                  },
+                  {
+                    name: "",
+                    details: "Prime Video",
+                  },
+                ],
               },
               // TELEVISION PLUG DETAILS
               {
@@ -995,22 +1030,21 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Frequency",
-                    details:"50/60 Hz"
+                    details: "50/60 Hz",
                   },
                   {
                     name: "Voltage Rating",
-                    details:"110-240 V"
+                    details: "110-240 V",
                   },
                   {
                     name: "Power",
-                    details:"127 Watts"
+                    details: "127 Watts",
                   },
                   {
                     name: "Power Consumption (Standby)",
-                    details:"0.5 Watts"
+                    details: "0.5 Watts",
                   },
-                  
-                  ],
+                ],
               },
               // AESTHETICS
               {
@@ -1018,14 +1052,13 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Color",
-                    details:"Black"
+                    details: "Black",
                   },
                   {
                     name: "Color Family",
-                    details:"BLACK"
+                    details: "BLACK",
                   },
-                  
-                  ],
+                ],
               },
               // IN THE BOX
               {
@@ -1033,47 +1066,54 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Documents",
-                    details:"User-Manual"
+                    details: "User-Manual",
                   },
                   {
                     name: "Main product",
-                    details:"1 x Television U"
+                    details: "1 x Television U",
                   },
                   {
                     name: "Accessories",
-                    details:"RemoteControl | RemoteControlBattery"
+                    details: "RemoteControl | RemoteControlBattery",
                   },
                   {
                     name: "Others",
-                    details:"Wall Mounting Brackets | Table Top Stand Pair"
+                    details: "Wall Mounting Brackets | Table Top Stand Pair",
                   },
                   {
                     name: "Generic Name",
-                    details:"Television"
+                    details: "Television",
                   },
-                  
-                  ],
+                ],
               },
-              
+
               // COMPANY CONTACT INFORMATION
               {
                 name: "COMPANY CONTACT INFORMATION",
                 details: [
                   {
                     name: "Customer Support Number",
-                    details:"1800 123 986 666"
+                    details: "1800 123 986 666",
                   },
                   {
                     name: "Customer Support Email",
-                    details:"info@garudamartindia.com"
+                    details: "info@garudamartindia.com",
                   },
                   {
                     name: "Country of Manufacture",
-                    details:"India"
+                    details: "India",
                   },
-                  
-                  
-                  ],
+                ],
+              },
+            ],
+            // Special Features
+            SpecialFeatures: [
+              {
+                name: "",
+                details: {
+                  name:"",
+                  details:[]
+                },
               },
             ],
           },
@@ -1267,7 +1307,183 @@ const HomeAppliances = [
           "Environmental friendly",
           "Low Noise And energy saving",
         ],
-        product: [],
+        product: [
+          {
+            box: [
+              {
+                disable: true,
+                hidden: "hidden",
+                boxname: "",
+                boxsize: [],
+              },
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "548mm" },
+                  { name: "height", Icon: "", size: "1673mm" },
+                  { name: "Depth", Icon: "", size: "599mm" },
+                  { name: "weight", Icon: "", size: "45kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Gray,Silver" },
+                  { name: "design", details: "Majestic" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // Refrigerator Details
+              {
+                name: "Refrigerator Details",
+                details: [
+                  { name: "Capacity(L)", details: "270 L" },
+                  { name: "Compressor Warranty", details: "10 years" },
+                  { name: " inBiult Stabilizer ", details: "Yes" },
+                  { name: "Base Drawer", details: "No" },
+                ],
+              },
+              // Cooling Details
+              {
+                name: "Cooling Details",
+                details: [
+                  {
+                    name: "Cooling Type",
+                    details: "Frost Free",
+                  },
+                  { name: "Convertible", details: "No" },
+                  { name: "Type Of Defrost", details: "Auto Defrost" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Double Door Refrigerator",
+                  },
+                  {
+                    name: "Comprehensive Warranty (Year)",
+                    details: "24 Months",
+                  },
+
+                  {
+                    name: "In The Box Contents",
+                    details: "1 Refrigerator, 1 Warranty Card, 1 User Manual",
+                  },
+                  { name: "Installation Type", details: "Freestanding" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Information",
+                details: [
+                  {
+                    name: "Door Alarm",
+                    details: "Yes",
+                  },
+                  { name: "Compressor Type", details: "Inverter" },
+                  { name: "Auto Connect To Home Inverter", details: "Yes" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Shelf Material",
+                    details: "Toughened Glass",
+                  },
+                  { name: "Vegetable / Fruit Drawer", details: "Yes" },
+                  { name: "Interior Light", details: "LED Blue Light" },
+                  { name: "Egg Tray", details: "Yes" },
+                  { name: "Icemaker Tray", details: "Yes" },
+                  { name: "Variable Temperature Zone", details: "Yes" },
+                  {
+                    name: "No. Of Door Pockets(Freezer Compartment)",
+                    details: "2",
+                  },
+                  {
+                    name: "No. Of Door Pockets(Fridge Compartment)",
+                    details: "4",
+                  },
+                  {
+                    name: "No. Of Shelves (Freezer Compartment)",
+                    details: "1",
+                  },
+                  { name: "No. Of Shelves (Fridge Compartment)", details: "4" },
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Exterior Body Build",
+                    details: "Steel",
+                  },
+                  { name: "Door Handle Type", details: "Side Pocket Handle" },
+                  { name: "Lock & Key", details: "No" },
+                  { name: "Display Type", details: "Internal UI Touch Panel" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with
+
+                  { name: "Power Consumption(KW h/24h)", details: "0.87" },
+                  {
+                    name: "Energy Year",
+                    details: "2023",
+                  },
+                  {
+                    name: "Voltage Range(V)",
+                    details: "160-300V",
+                  },
+                  { name: "Frequency (Hz)", details: "50-60 Hz" },
+                ],
+              },
+            ],
+            // Special Features
+            SpecialFeatures: [
+              {
+                name: "Special Features",
+                details: {
+                  name: "",
+                  details: [
+                    "Up To 7 Days Of Freshness  Inverter Technology Freshflow Air Tower With Flexi Vents Get Ice In Up To 45 Mins",
+                  ],
+                },
+              },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -1296,7 +1512,174 @@ const HomeAppliances = [
           "Dimensions 99.8 cm x 32 cm x 22.8 cm.",
           "Technology All DC Inverter",
         ],
-        product: [],
+        product: [
+          {
+            box: [
+              // Indoor
+              {
+                boxname: "INDOOR UNIT",
+                boxsize: [
+                  { name: "width", Icon: "", size: "900mm" },
+                  { name: "height", Icon: "", size: "300mm" },
+                  { name: "Depth", Icon: "", size: "240mm" },
+                  { name: "weight", Icon: "", size: "13kg" },
+                ],
+              },
+              // {
+              //   boxname: "with box",
+              //   boxsize: [
+              //     { name: "width", Icon: "", size: "652mm" },
+              //     { name: "height", Icon: "", size: "845mm" },
+              //     { name: "Depth", Icon: "", size: "485mm" },
+              //     { name: "weight", Icon: "", size: "51kg" },
+              //   ],
+              // },
+              // OutDoor
+              {
+
+                boxname: "OUTDOOR UNIT",
+                boxsize: [
+                  { name: "width", Icon: "", size: "835mm" },
+                  { name: "height", Icon: "", size: "555mm" },
+                  { name: "Depth", Icon: "", size: "295mm" },
+                  { name: "weight", Icon: "", size: "28Kg" },
+                ],
+              },
+              // {
+              //   boxname: "with box",
+              //   boxsize: [
+              //     { name: "width", Icon: "", size: "652mm" },
+              //     { name: "height", Icon: "", size: "845mm" },
+              //     { name: "Depth", Icon: "", size: "485mm" },
+              //     { name: "weight", Icon: "", size: "51kg" },
+              //   ],
+              // },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Pristine white" },
+                  { name: "design", details: "Majestic" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // Air Conditioners Details
+              {
+                name: "Air Conditioners Details",
+                details: [
+                  { name: "Compressor Warranty (Year)", details: "1+9 Years" },
+                  { name: "Capacity (T)", details: "1Ton" },
+                  { name: "Star Rating", details: "3 Star" },
+                  {
+                    name: "Cooling Capacity",
+                    details: "8000 Btu/h",
+                  },
+                ],
+              },
+              // Control Type
+              {
+                name: "Control Type",
+                details: [
+                  {
+                    name: "Remote Control",
+                    details: "Yes",
+                  },
+                  { name: "Wifi Connectivity", details: "No" },
+                  { name: "Voice Enabled", details: "No" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Split Air Conditioner",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "1 Year" },
+
+                  {
+                    name: "Other Warranty Details",
+                    details: "1 Year Comprehensive, 10 Year on Compressor",
+                  },
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "Indoor Unit, Outdoor unit, Connecting wire, Installation kit, User Manual, Remote",
+                  },
+                  {
+                    name: "Installation Type",
+                    details: "Wall Mount",
+                  },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Refrigerant Details",
+                    details: "R-32",
+                  },
+                  { name: "Noise Level (Outdoor Unit)", details: "58" },
+                  { name: "Piping Size", details: "2 Meter" },
+                  { name: "Auto Restart", details: "Yes" },
+                  { name: "Installation Type", details: "Wall Mount" },
+                  { name: "Condenser Coil", details: "Copper" },
+                  { name: "Noise Level (Indoor Unit)", details: "45" },
+                  { name: "Hidden Display", details: "Yes" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with
+
+                  { name: "Voltage Range(V)", details: "200-230v" },
+
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                  { name: "Current (A)", details: "4.10" },
+                ],
+              },
+            ],
+
+            // Special Features
+            SpecialFeatures: [
+              {
+                name: "Special Features",
+                details: {
+                  name: "",
+                  details: ["Energy efficient.","Easy to use.","Fast cooling.","Compact product.","Comes in pristine white color.","Premium quality."
+                  ],
+                },
+              },
+            ],
+          },
+        ],
       },
       {
         id: 2,
@@ -1315,7 +1698,157 @@ const HomeAppliances = [
           "Dimensions 99.8 cm x 32 cm x 22.8 cm.",
           "Technology All DC Inverter",
         ],
-        product: [],
+        product: [
+          {
+            box: [
+              // Indoor
+              {
+                boxname: "INDOOR UNIT",
+                boxsize: [
+                  { name: "width", Icon: "", size: "900mm" },
+                  { name: "height", Icon: "", size: "300mm" },
+                  { name: "Depth", Icon: "", size: "240mm" },
+                  { name: "weight", Icon: "", size: "13kg" },
+                ],
+              },
+             
+              // OutDoor
+              {
+                boxname: "OUTDOOR UNIT",
+                boxsize: [
+                  { name: "width", Icon: "", size: "835mm" },
+                  { name: "height", Icon: "", size: "555mm" },
+                  { name: "Depth", Icon: "", size: "295mm" },
+                  { name: "weight", Icon: "", size: "28kg" },
+                ],
+              },
+             
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Pristine white" },
+                  { name: "design", details: "Majestic" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // Air Conditioners Details
+              {
+                name: "Air Conditioners Details",
+                details: [
+                  { name: "Compressor Warranty (Year)", details: "1+9 Years" },
+                  { name: "Capacity (T)", details: "1.5Ton" },
+                  { name: "Star Rating", details: "4 Star" },
+                  {
+                    name: "Cooling Capacity",
+                    details: "8000 Btu/h",
+                  },
+                ],
+              },
+              // Control Type
+              {
+                name: "Control Type",
+                details: [
+                  {
+                    name: "Remote Control",
+                    details: "Yes",
+                  },
+                  { name: "Wifi Connectivity", details: "No" },
+                  { name: "Voice Enabled", details: "No" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Split Air Conditioner",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "1 Year" },
+
+                  {
+                    name: "Other Warranty Details",
+                    details: "1 Year Comprehensive, 10 Years on Compressor",
+                  },
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "Indoor Unit, Outdoor unit, Connecting wire, Installation kit, User Manual, Remote",
+                  },
+                  {
+                    name: "Installation Type",
+                    details: "Wall Mount",
+                  },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Refrigerant Details",
+                    details: "R-32",
+                  },
+                  { name: "Noise Level (Outdoor Unit)", details: "58" },
+                  { name: "Piping Size", details: "2 Meter" },
+                  { name: "Auto Restart", details: "Yes" },
+                  { name: "Installation Type", details: "Wall Mount" },
+                  { name: "Condenser Coil", details: "Copper" },
+                  { name: "Noise Level (Indoor Unit)", details: "45" },
+                  { name: "Hidden Display", details: "Yes" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with
+
+                  { name: "Voltage Range(V)", details: "200-230v" },
+
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                  { name: "Current (A)", details: "4.10 A" },
+                ],
+              },
+            ],
+
+            // Special Features
+            SpecialFeatures: [
+              {
+                name: "Special Features",
+                details: {
+                  name: "",
+                  details: ["Energy efficient.","Easy to use.","Fast cooling.","Compact product.","Comes in pristine white color.","Premium quality."
+                  ],
+                },
+              },
+            ],
+          },
+        ],
       },
     ],
   },
