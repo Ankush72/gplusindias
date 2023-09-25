@@ -18,27 +18,25 @@ import Kadai1 from "../image/Kadai 1.png";
 import Kadai2 from "../image/Kadai 2.png";
 import TAWA from "../image/Tawa 01.png";
 import fryPan from "../image/Fry pan 01.png";
-import gasStoveBanner from "../image/4 Burner gas stove.jpeg"
-import gasStoveBanner2 from "../image/2 Burner Gas stove.png"
+import gasStoveBanner from "../image/4 Burner gas stove.jpeg";
+import gasStoveBanner2 from "../image/2 Burner Gas stove.png";
 import MixerGrinderBanner1 from "../image/Mixer Grinder 1.jpeg";
 import MixerGrinderBanner2 from "../image/Mixer Grinder 2.jpeg";
-import ElectricRiceCookerBanner1 from "../image/Electric Rice cooker 2.jpeg"
-import ElectricRiceCookerBanner2 from "../image/Electric Rice cooker.jpeg"
-import WetGrinderBanner1 from "../image/Wet Grinder 1.jpeg"
-import WetGrinderBanner2 from "../image/Wet Grinder 2.jpeg"
-import PressureCookerBanner1 from "../image/Pressure Cooker 1.jpeg"
-import PressureCookerBanner2 from "../image/Pressure Cooker 2.jpeg"
-import ElectricKettleBanner1 from "../image/Electric Kettle 1.jpeg"
-import ElectricKettleBanner2 from "../image/Electric Kettle 2.jpeg"
-import ElectricGeyserBanner1 from "../image/Electric Geyser 1.jpeg"
-import ElectricGeyserBanner2 from "../image/Electric Geyser 2.jpeg"
-import TawaBanner1 from "../image/Tawa Banner 1.jpeg"
-import CeilingFan1 from "../image/Fan 01.png" 
-import AirCooler1 from "../image/Air cooler 1.png"
-import AirCooler2 from "../image/Air cooler 2.png"
-import AirCooler3 from "../image/Air cooler 3.png"
-
-
+import ElectricRiceCookerBanner1 from "../image/Electric Rice cooker 2.jpeg";
+import ElectricRiceCookerBanner2 from "../image/Electric Rice cooker.jpeg";
+import WetGrinderBanner1 from "../image/Wet Grinder 1.jpeg";
+import WetGrinderBanner2 from "../image/Wet Grinder 2.jpeg";
+import PressureCookerBanner1 from "../image/Pressure Cooker 1.jpeg";
+import PressureCookerBanner2 from "../image/Pressure Cooker 2.jpeg";
+import ElectricKettleBanner1 from "../image/Electric Kettle 1.jpeg";
+import ElectricKettleBanner2 from "../image/Electric Kettle 2.jpeg";
+import ElectricGeyserBanner1 from "../image/Electric Geyser 1.jpeg";
+import ElectricGeyserBanner2 from "../image/Electric Geyser 2.jpeg";
+import TawaBanner1 from "../image/Tawa Banner 1.jpeg";
+import CeilingFan1 from "../image/Fan 01.png";
+import AirCooler1 from "../image/Air cooler 1.png";
+import AirCooler2 from "../image/Air cooler 2.png";
+import AirCooler3 from "../image/Air cooler 3.png";
 
 const HomeAppliances = [
   // mixer grinder
@@ -46,7 +44,7 @@ const HomeAppliances = [
     id: 1,
     imgurl: [Mixer850],
     name: "mixer grinder",
-    banner: [MixerGrinderBanner1,MixerGrinderBanner2],
+    banner: [MixerGrinderBanner1, MixerGrinderBanner2],
     data: [
       {
         id: 1,
@@ -64,6 +62,84 @@ const HomeAppliances = [
           "ABS PLASTIC ",
           "3 SET JAR",
           "2 YEARS WARRANTY",
+        ],
+
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "" },
+              { name: "Height", item: "" },
+              { name: "Length", item: "" },
+              { name: "Net Quantity", item: "" },
+              { name: "Net Weight", item: "" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "2 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
         ],
       },
       {
@@ -83,6 +159,84 @@ const HomeAppliances = [
           "3 SET JAR",
           "2 YEARS WARRANTY",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -91,7 +245,7 @@ const HomeAppliances = [
     id: 2,
     imgurl: [gasStove],
     name: "gas stove",
-    banner: [gasStoveBanner] ,
+    banner: [gasStoveBanner],
     data: [
       {
         id: 1,
@@ -108,6 +262,46 @@ const HomeAppliances = [
           "HIGH EFFICIENCY BRASS BRUNER",
           "INDIVIDUAL PAN SUPPORTS FOR EASY CLEANING",
           "ELEGANT BLACK TOUGHHEND GLASS TOP",
+        ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "36.5 cm" },
+              { name: "height", item: "13.5 cm" },
+              { name: "length", item: "71 cm" },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "7500 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [{ name: "Brand", item: "Gplus" }],
+          },
+          {
+            name: "Usage Details",
+            details: [
+              { name: "No. of burners", item: "4" },
+              {
+                name: "Control Type",
+                item: "Manual Knob",
+              },
+              { name: "Surface Type", item: "Toughened Glass" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "2 Years" }],
+          },
+
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
         ],
       },
       {
@@ -127,6 +321,46 @@ const HomeAppliances = [
           "INDIVIDUAL PAN SUPPORTS FOR EASY CLEANING",
           "ELEGANT BLACK TOUGHHEND GLASS TOP",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "36.5 cm" },
+              { name: "height", item: "13.5 cm" },
+              { name: "length", item: "71 cm" },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "7500 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [{ name: "Brand", item: "Wet" }],
+          },
+          {
+            name: "Usage Details",
+            details: [
+              { name: "No. of burners", item: "4" },
+              {
+                name: "Control Type",
+                item: "Manual Knob",
+              },
+              { name: "Surface Type", item: "Toughened Glass" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "2 Years" }],
+          },
+
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
       {
         id: 3,
@@ -145,6 +379,46 @@ const HomeAppliances = [
           "INDIVIDUAL PAN SUPPORTS FOR EASY CLEANING",
           "ELEGANT BLACK TOUGHHEND GLASS TOP",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "36.5 cm" },
+              { name: "height", item: "13.5 cm" },
+              { name: "length", item: "71 cm" },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "7500 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [{ name: "Brand", item: "Wet" }],
+          },
+          {
+            name: "Usage Details",
+            details: [
+              { name: "No. of burners", item: "4" },
+              {
+                name: "Control Type",
+                item: "Manual Knob",
+              },
+              { name: "Surface Type", item: "Toughened Glass" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "2 Years" }],
+          },
+
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -153,7 +427,7 @@ const HomeAppliances = [
     id: 3,
     imgurl: [banner],
     name: "electric geyser",
-    banner: [ElectricGeyserBanner1,ElectricGeyserBanner2],
+    banner: [ElectricGeyserBanner1, ElectricGeyserBanner2],
     data: [
       {
         id: 1,
@@ -172,6 +446,85 @@ const HomeAppliances = [
           "Anti Vacuum System",
           "Rust Proof Powder Coated Body",
           "Fusible Plug",
+        ],
+        product: [
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+
+          {
+            name: "Security & Protection",
+            details: [{ name: "Safety Valve", item: "Yes" }],
+          },
+          {
+            name: "Certificates & Ratings",
+            details: [{ name: "BEE STAR Rating", item: "5 Star" }],
+          },
+          {
+            name: "Technical Specifications",
+            details: [
+              { name: "Max. Rated Pressure", item: "6.5 bar" },
+              { name: "Thermostat", item: "Yes" },
+              { name: "Water Tank Capacity", item: "3 litres, 3 litres" },
+              { name: "Geyser Wattage", item: "3000 Watt" },
+            ],
+          },
+          {
+            name: "Features",
+            details: [
+              {
+                name: "Corrosion Resistance On Tank",
+                item: "Stainless Steel Inner Tank",
+              },
+            ],
+          },
+          {
+            name: "Power Details",
+            details: [
+              { name: "Power Supply", item: "230 V, 1 Phase, 50 Hz AC" },
+            ],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [
+              { name: "width", item: "22.5 cm" },
+              { name: "Depth", item: "19 cm" },
+              { name: "Height", item: "37.3 cm" },
+              { name: "Weight", item: "3000 gram" },
+              { name: "Colour", item: "Black And Grey" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [
+              { name: "In The Box", item: "Manual , Wall mounting accessory" },
+              { name: "Warranty", item: "2 Year" },
+            ],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
         ],
       },
       {
@@ -192,6 +545,85 @@ const HomeAppliances = [
           "Rust Proof Powder Coated Body",
           "Fusible Plug",
         ],
+        product: [
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "LYF" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+
+          {
+            name: "Security & Protection",
+            details: [{ name: "Safety Valve", item: "Yes" }],
+          },
+          {
+            name: "Certificates & Ratings",
+            details: [{ name: "BEE STAR Rating", item: "5 Star" }],
+          },
+          {
+            name: "Technical Specifications",
+            details: [
+              { name: "Max. Rated Pressure", item: "6.5 bar" },
+              { name: "Thermostat", item: "Yes" },
+              { name: "Water Tank Capacity", item: "3 litres, 3 litres" },
+              { name: "Geyser Wattage", item: "3000 Watt" },
+            ],
+          },
+          {
+            name: "Features",
+            details: [
+              {
+                name: "Corrosion Resistance On Tank",
+                item: "Stainless Steel Inner Tank",
+              },
+            ],
+          },
+          {
+            name: "Power Details",
+            details: [
+              { name: "Power Supply", item: "230 V, 1 Phase, 50 Hz AC" },
+            ],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [
+              { name: "width", item: "22.5 cm" },
+              { name: "Depth", item: "19 cm" },
+              { name: "Height", item: "37.3 cm" },
+              { name: "Weight", item: "3000 gram" },
+              { name: "Colour", item: "Black And Grey" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [
+              { name: "In The Box", item: "Manual , Wall mounting accessory" },
+              { name: "Warranty", item: "2 Year" },
+            ],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -201,7 +633,7 @@ const HomeAppliances = [
     id: 4,
     imgurl: [riceCooker1, riceCooker2, riceCooker3],
     name: "Electric Rice Cooker",
-    banner: [ElectricRiceCookerBanner1,ElectricRiceCookerBanner2],
+    banner: [ElectricRiceCookerBanner1, ElectricRiceCookerBanner2],
     data: [
       {
         id: 1,
@@ -222,15 +654,96 @@ const HomeAppliances = [
           "LED display and countdown clock",
           "steam cooking for other items, e.g. vegetable",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "26.7 cm" },
+              { name: "Height", item: "24.5 cm" },
+              { name: "Length", item: "27.8 cm " },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "2530 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Series", item: "Superio" },
+              { name: "Model", item: "KRCO001182B" },
+              {
+                name: "Capacity ",
+                item: "1.8 litres",
+              },
+              {
+                name: "Brand",
+                item: "Gplus",
+              },
+            ],
+          },
+          {
+            name: "Cooker Settings",
+            details: [
+              { name: "Timer", item: "No" },
+              {
+                name: "Accessories Included",
+                item: "1N Spoon, 1N Measuring Cup, 1N Cooking Plate, 2N Inner Pots",
+              },
+              { name: "Control Type", item: "Button" },
+              { name: "Keep-warm Function", item: "Yes" },
+              {
+                name: "Non Stick Coating",
+                item: "No",
+              },
+            ],
+          },
+          {
+            name: "Cooker Dimensions",
+            details: [
+              { name: "Material of Lid", item: "Stainless Steel" },
+              {
+                name: "Colour",
+                item: "Grey",
+              },
+            ],
+          },
+          {
+            name: "Additional Features",
+            details: [
+              {
+                name: "Features",
+                item: "Cook Function with Auto Warm, Stainless Steel Lid,  Double Layer Body,  Cool Touch Housing and Handle,  Detachable Cord",
+              },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [
+              {
+                name: "In The Box",
+                item: "1N Cooker, 1N Spoon, 1N Measuring Cup, 1N Cooking Plate, 2N Inner Pots",
+              },
+              { name: "Warranty", item: "1 Year" },
+            ],
+          },
+
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
     ],
   },
-// Wet grinder
+  // Wet grinder
   {
     id: 5,
     imgurl: [wetGrinder, wetGrinder2, wetGrinder1],
     name: "Wet grinder",
-    banner: [WetGrinderBanner1,WetGrinderBanner2],
+    banner: [WetGrinderBanner1, WetGrinderBanner2],
     data: [
       {
         id: 1,
@@ -240,7 +753,82 @@ const HomeAppliances = [
         name: "Wet grinder",
         description:
           "Introducing Gplus Wet Grinder: Unleash the Flavors in Your Kitchen Experience the art of effortless grinding with Gplus Wet Grinder. Designed to make your culinary journey smooth and enjoyable, this appliance is a must-have for every kitchen.Make every meal a delight with Gplus Wet Grinder. Whether you're a professional chef or a passionate home cook, this appliance promises to elevate your culinary creations to new heights. Get ready to unleash the authentic flavors of traditional dishes and experiment with exciting recipes effortlessly. Invest in Gplus Wet Grinder today and take your cooking experience to the next level!",
-        keyfeatures: ["THIS WET GRINDER IS 2HP MOTOR.","OUTER STEEL BODY IS MADE UP OF STRONG SS METAL.","TILTING OF MIXTURE OF BATTER IS VERY EASY","FOR GRINDING WE HAVE USED VERY GOOD QUALITY OF STONE.","OVER ALL THE LOOK OF THE MACHINE IS BEST"],
+        keyfeatures: [
+          "THIS WET GRINDER IS 2HP MOTOR.",
+          "OUTER STEEL BODY IS MADE UP OF STRONG SS METAL.",
+          "TILTING OF MIXTURE OF BATTER IS VERY EASY",
+          "FOR GRINDING WE HAVE USED VERY GOOD QUALITY OF STONE.",
+          "OVER ALL THE LOOK OF THE MACHINE IS BEST",
+        ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "Width", item: "31 cm" },
+              { name: "Height", item: "30.9 cm" },
+              { name: "Length", item: "59.7 cm" },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "12500 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "" },
+              { name: "Brand", item: "Gplus" },
+            ],
+          },
+          {
+            name: "Grinder Features",
+            details: [{ name: "Grinder Capacity", item: "2 litres" }],
+          },
+          {
+            name: "Grinder Dimensions",
+            details: [{ name: "Drum Material", item: "Stainless Steel" }],
+          },
+          {
+            name: "Motor Details",
+            details: [{ name: "Motor Speed", item: "1450 RPM" }],
+          },
+          {
+            name: "Functions",
+            details: [{ name: "Functions Supported", item: "Grinding" }],
+          },
+          {
+            name: "Power Details",
+            details: [
+              { name: "Power Consumption", item: "150 Watt, 150 Watt" },
+            ],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [
+              { name: "Colour", item: "Pink" },
+              { name: "Body Material", item: "Plastic" },
+            ],
+          },
+          {
+            name: "Additional Features",
+            details: [
+              {
+                name: "Features",
+                item: "Convenient and stylish design Easy to use Interchangeable Drums",
+              },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "2 Years" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -249,7 +837,7 @@ const HomeAppliances = [
     id: 6,
     imgurl: [PressureCooker, PressureCooker1],
     name: "Pressure cooker",
-    banner: [PressureCookerBanner1,PressureCookerBanner2],
+    banner: [PressureCookerBanner1, PressureCookerBanner2],
     data: [
       {
         id: 1,
@@ -266,6 +854,59 @@ const HomeAppliances = [
           "Eliminate Harmful Microorganisms",
           "available in  2 , 3 ,5 LITRES",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "200 millimeter" },
+              { name: "Height", item: "120 millimeter" },
+
+              { name: "Length", item: "310 millimeter" },
+              { name: "Net Weight", item: "1 kilogram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [{ name: "Brand", item: "Gplus" }],
+          },
+          {
+            name: "PRODUCT SPECIFICATIONS",
+            details: [
+              { name: "Dishwasher Safe", item: "No" },
+              {
+                name: "Microwave Safe",
+                item: "No",
+              },
+              { name: "Freezer Safe	", item: "No" },
+              { name: "Broiler Safe", item: "Yes" },
+              {
+                name: "Flame Safe",
+                item: "Yes",
+              },
+              {
+                name: "Induction Compatible",
+                item: "No",
+              },
+            ],
+          },
+
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -275,7 +916,7 @@ const HomeAppliances = [
     id: 7,
     imgurl: [electricKettle],
     name: "Electric Kettle",
-    banner: [ElectricKettleBanner1,ElectricKettleBanner2],
+    banner: [ElectricKettleBanner1, ElectricKettleBanner2],
     data: [
       {
         id: 1,
@@ -291,6 +932,84 @@ const HomeAppliances = [
           "1500 WATTS",
           "AUTO CUT FUNCTION ",
           "1 YEAR WARRANTY",
+        ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
         ],
       },
     ],
@@ -319,6 +1038,84 @@ const HomeAppliances = [
           "Advanced Easy Clean Exterior.",
           "Stain Free Interior.",
           "Dishwasher Safe",
+        ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
         ],
       },
     ],
@@ -349,6 +1146,84 @@ const HomeAppliances = [
           "Stain Free Interior.",
           "Dishwasher Safe",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -357,7 +1232,7 @@ const HomeAppliances = [
     id: 10,
     imgurl: [fryPan],
     name: "Fry Pan",
-    banner:[],
+    banner: [],
     data: [
       {
         id: 1,
@@ -376,6 +1251,84 @@ const HomeAppliances = [
           "Evenly distributes heat and saves on fuel.",
           "Easy to use.",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -385,7 +1338,7 @@ const HomeAppliances = [
     id: 10,
     imgurl: [CeilingFan1],
     name: "Fan",
-    banner:[],
+    banner: [],
     data: [
       {
         id: 1,
@@ -404,14 +1357,68 @@ const HomeAppliances = [
           "100 Percent Copper Motor",
           "Quick Start High Torque Motor",
           "High Air Delivery",
-          "Bye-Bye Dust Technology for Easy Cleaning"
+          "Bye-Bye Dust Technology for Easy Cleaning",
+        ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [
+              { name: "width", item: "20 cm" },
+              { name: "Height", item: "15 cm" },
+              { name: "Length", item: "120 cm" },
+              { name: "Net Quantity", item: "1N" },
+              { name: "Net Weight", item: "1800 gram" },
+            ],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Fan Type", item: "Ceiling Fan" },
+              { name: "Brand", item: "Gplus" },
+            ],
+          },
+          {
+            name: "Convenience Features",
+            details: [
+              {
+                name: "Recommended Blade Size",
+                item: "1200mm For Room Size 65-120 Sq. Ft.",
+              },
+            ],
+          },
+          {
+            name: "Variations Details",
+            details: [
+              { name: "Color", item: "red" },
+              { name: "Material", item: "Aluminium" },
+            ],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [
+              {
+                name: "In The Box",
+                item: "1N Canopy Set + 1N Safety Wire + 1N Downrod + 1N Shackle Assembly Without Regulator",
+              },
+              { name: "Warranty", item: "2 Years" },
+            ],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+            ],
+          },
         ],
       },
     ],
   },
+  // Air Cooler
   {
     id: 11,
-    imgurl: [AirCooler1,AirCooler2,AirCooler3],
+    imgurl: [AirCooler1, AirCooler2, AirCooler3],
     name: "Air Cooler",
     banner: [],
     data: [
@@ -419,7 +1426,7 @@ const HomeAppliances = [
         id: 1,
         disraction: "row-reverse",
         route: "air-cooler",
-        imgurl: [AirCooler1,AirCooler2,AirCooler3],
+        imgurl: [AirCooler1, AirCooler2, AirCooler3],
         name: "Air Cooler 35L",
         heading: "Key Features : -",
         description:
@@ -430,9 +1437,87 @@ const HomeAppliances = [
           "Safety : Overheat Protection, Dry Run Protection, Dust and Mosquito Filter",
           "High Air Delivery",
         ],
+        product: [
+          {
+            name: "Weight & Dimension",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "General Information",
+            details: [
+              { name: "Grinder Type", item: "Wet" },
+              { name: "Brand", item: "Gplus" },
+              {
+                name: "Material of Accessories",
+                item: "Stainless Steel Jars",
+              },
+              {
+                name: "Material of main body",
+                item: "ROHS compliant ABS body",
+              },
+              {
+                name: "Number of speed settings",
+                item: "3",
+              },
+            ],
+          },
+          {
+            name: "Attachment Details",
+            details: [
+              { name: "No. of Blades", item: "3" },
+              {
+                name: "Other Attachments",
+                item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+              },
+              { name: "No. of Jars", item: "3" },
+              { name: "Jar Types", item: "Grinding Jar" },
+              {
+                name: "Blade Types",
+                item: "Dry & Wet Grinding blade",
+              },
+            ],
+          },
+          {
+            name: "Functions",
+            details: [
+              { name: "Functions Supported", item: "Grinding, Mixing" },
+            ],
+          },
+          {
+            name: "Security & Protection",
+            details: [{ name: "Overload Protection", item: "Yes" }],
+          },
+          {
+            name: "Features",
+            details: [{ name: "Speed Control", item: "3" }],
+          },
+          {
+            name: "Power Details",
+            details: [{ name: "Power Supply", item: "230 Volts" }],
+          },
+          {
+            name: "Physical Dimensions",
+            details: [{ name: "Colour", item: "Black And Grey" }],
+          },
+          {
+            name: "In The Box & Warranty",
+            details: [{ name: "Warranty", item: "1 Year" }],
+          },
+          {
+            name: "Manufacturing & Packing Information",
+            details: [
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care email", item: "care@garudamartindia.com" },
+              { name: "Country of origin", item: "India" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+              { name: "Customer care Phone", item: "1800-889-1056" },
+            ],
+          },
+        ],
       },
     ],
-  }
+  },
 ];
 
 export default HomeAppliances;

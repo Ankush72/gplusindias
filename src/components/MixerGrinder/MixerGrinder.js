@@ -1,8 +1,9 @@
 import React from "react";
-import Mixer1 from "../image/Mixer 1.png";
-import Mixer2 from "../image/Mixer 2.png";
-import Mixer3 from "../image/Mixer 3.png";
+import Mixer1 from "../image/Mixer_1.png";
+import Mixer2 from "../image/Mixer_2.png";
+import Mixer3 from "../image/Mixer_3.png";
 import MixerBanner from "../image/Mixer Grinder 1.jpeg";
+import { Link } from "react-router-dom";
 
 const MixerGrinder = () => {
   return (
@@ -12,15 +13,15 @@ const MixerGrinder = () => {
           mixer grinder
         </h1>
         <div className="flex flex-wrap items-center justify-center md:justify-between space-y-2 space-x-3 md:space-x-0">
-          <div className="shadow-2xl rounded-lg">
-            <img className="w-auto sm:w-[300px] md:w-[350px] rounded-lg" src={Mixer1} alt="" />
-          </div>
-          <div className="shadow-2xl rounded-lg">
-            <img className="w-auto sm:w-[300px] md:w-[350px] rounded-lg" src={Mixer2} alt="" />
-          </div>
-          <div className="shadow-2xl rounded-lg">
-            <img className="w-auto sm:w-[300px] md:w-[350px] rounded-lg" src={Mixer3} alt="" />
-          </div>
+          <Link to="/small-appliances" className="p-2  w-[250px] sm:w-[300px] md:w-[350px] md:h-[400px] m-2 flex flex-col shadow-xl hover:bg-gray hover:text-blue rounded-lg cursor-pointer items-center justify-between">
+            <img className="" src={Mixer1} alt="" />
+          </Link>
+          <Link to="/small-appliances" className="p-2  w-[250px] sm:w-[300px] md:w-[350px] md:h-[400px] m-2 flex flex-col shadow-xl hover:bg-gray hover:text-blue rounded-lg cursor-pointer items-center justify-between">
+            <img className="" src={Mixer2} alt="" />
+          </Link>
+          <Link to="/small-appliances" className="p-2  w-[250px] sm:w-[300px] md:w-[350px] md:h-[400px] m-2 flex flex-col shadow-xl hover:bg-gray hover:text-blue rounded-lg cursor-pointer items-center justify-between">
+            <img className="" src={Mixer3} alt="" />
+          </Link>
         </div>
       </div>
       {/* Banner mixer grinder */}
