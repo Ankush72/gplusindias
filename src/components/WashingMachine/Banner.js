@@ -1,7 +1,7 @@
 import React from 'react'
 
 import washingMachine1 from "../image/washingMachine22.png"
-import washingMachine2 from "../image/Washing_Machine23.png"
+import washingMachine2 from "../image/washingMachine6kg.png"
 import washingMachine3 from "../image/Washing_Machine_24.png"
 import { Link } from 'react-router-dom'
 
