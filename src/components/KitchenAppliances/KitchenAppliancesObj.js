@@ -9,15 +9,15 @@ import riceCooker1 from "../image/Rice Cooker0.png";
 import riceCooker2 from "../image/Rice Cooker1.png";
 import riceCooker3 from "../image/Rice Cooker2.png";
 import wetGrinder from "../image/Wet Grinder.png";
-import PressureCooker from "../image/Pressure cooker.png";
-import PressureCooker1 from "../image/Pressure cooker 1.png";
+// import PressureCooker from "../image/Pressure cooker.png";
+// import PressureCooker1 from "../image/Pressure cooker 1.png";
 import electricKettle from "../image/Electric Kettle.png";
 import wetGrinder1 from "../image/Wet Grinder 2.png";
 import wetGrinder2 from "../image/Wet Grinder 3.png";
-import Kadai1 from "../image/Kadai 1.png";
-import Kadai2 from "../image/Kadai 2.png";
-import TAWA from "../image/Tawa 01.png";
-import fryPan from "../image/Fry pan 01.png";
+// import Kadai1 from "../image/Kadai 1.png";
+// import Kadai2 from "../image/Kadai 2.png";
+// import TAWA from "../image/Tawa 01.png";
+// import fryPan from "../image/Fry pan 01.png";
 import gasStoveBanner from "../image/4 Burner gas stove.jpeg";
 import gasStoveBanner2 from "../image/2 Burner Gas stove.png";
 import MixerGrinderBanner1 from "../image/Mixer Grinder 1.jpeg";
@@ -26,13 +26,13 @@ import ElectricRiceCookerBanner1 from "../image/Electric Rice cooker 2.jpeg";
 import ElectricRiceCookerBanner2 from "../image/Electric Rice cooker.jpeg";
 import WetGrinderBanner1 from "../image/Wet Grinder 1.jpeg";
 import WetGrinderBanner2 from "../image/Wet Grinder 2.jpeg";
-import PressureCookerBanner1 from "../image/Pressure Cooker 1.jpeg";
-import PressureCookerBanner2 from "../image/Pressure Cooker 2.jpeg";
+// import PressureCookerBanner1 from "../image/Pressure Cooker 1.jpeg";
+// import PressureCookerBanner2 from "../image/Pressure Cooker 2.jpeg";
 import ElectricKettleBanner1 from "../image/Electric Kettle 1.jpeg";
 import ElectricKettleBanner2 from "../image/Electric Kettle 2.jpeg";
 import ElectricGeyserBanner1 from "../image/Electric Geyser 1.jpeg";
 import ElectricGeyserBanner2 from "../image/Electric Geyser 2.jpeg";
-import TawaBanner1 from "../image/Tawa Banner 1.jpeg";
+// import TawaBanner1 from "../image/Tawa Banner 1.jpeg";
 import CeilingFan1 from "../image/Fan 01.png";
 import AirCooler1 from "../image/Air cooler 1.png";
 import AirCooler2 from "../image/Air cooler 2.png";
@@ -833,83 +833,83 @@ const HomeAppliances = [
     ],
   },
   // presser cooker
-  {
-    id: 6,
-    imgurl: [PressureCooker, PressureCooker1],
-    name: "Pressure cooker",
-    banner: [PressureCookerBanner1, PressureCookerBanner2],
-    data: [
-      {
-        id: 1,
-        disraction: "row-reverse",
-        route: "Pressure-cooker",
-        imgurl: [PressureCooker, PressureCooker1],
-        name: "Pressure cooker",
-        heading: "Key Features : -",
-        description:
-          "Introducing Gplus Pressure Cooker: The Ultimate Cooking Companion Unlock the true potential of your kitchen with Gplus Pressure Cooker. Designed to make cooking faster, easier, and more flavourful, this appliance is your key to delicious and nutritious meals in a fraction of the time.Experience the convenience and flavour enhancement of pressure cooking with Gplus Pressure Cooker. Whether you're a busy professional or a home cook seeking efficiency, this appliance is designed to revolutionize your cooking experience. Join the countless satisfied customers who have embraced the power of pressure cooking with Gplus. Upgrade your kitchen today and savor the joy of delicious, time-saving meals with Gplus Pressure Cooker!",
-        keyfeatures: [
-          "Retain Vitamins & Nutrients",
-          "Preserve Food's Appearance and Taste",
-          "Eliminate Harmful Microorganisms",
-          "available in  2 , 3 ,5 LITRES",
-        ],
-        product: [
-          // {
-          //   name: "Weight & Dimension",
-          //   details: [
-          //     { name: "width", item: "200 millimeter" },
-          //     { name: "Height", item: "120 millimeter" },
+  // {
+  //   id: 6,
+  //   imgurl: [PressureCooker, PressureCooker1],
+  //   name: "Pressure cooker",
+  //   banner: [PressureCookerBanner1, PressureCookerBanner2],
+  //   data: [
+  //     {
+  //       id: 1,
+  //       disraction: "row-reverse",
+  //       route: "Pressure-cooker",
+  //       imgurl: [PressureCooker, PressureCooker1],
+  //       name: "Pressure cooker",
+  //       heading: "Key Features : -",
+  //       description:
+  //         "Introducing Gplus Pressure Cooker: The Ultimate Cooking Companion Unlock the true potential of your kitchen with Gplus Pressure Cooker. Designed to make cooking faster, easier, and more flavourful, this appliance is your key to delicious and nutritious meals in a fraction of the time.Experience the convenience and flavour enhancement of pressure cooking with Gplus Pressure Cooker. Whether you're a busy professional or a home cook seeking efficiency, this appliance is designed to revolutionize your cooking experience. Join the countless satisfied customers who have embraced the power of pressure cooking with Gplus. Upgrade your kitchen today and savor the joy of delicious, time-saving meals with Gplus Pressure Cooker!",
+  //       keyfeatures: [
+  //         "Retain Vitamins & Nutrients",
+  //         "Preserve Food's Appearance and Taste",
+  //         "Eliminate Harmful Microorganisms",
+  //         "available in  2 , 3 ,5 LITRES",
+  //       ],
+  //       product: [
+  //         // {
+  //         //   name: "Weight & Dimension",
+  //         //   details: [
+  //         //     { name: "width", item: "200 millimeter" },
+  //         //     { name: "Height", item: "120 millimeter" },
 
-          //     { name: "Length", item: "310 millimeter" },
-          //     { name: "Net Weight", item: "1 kilogram" },
-          //   ],
-          // },
-          // {
-          //   name: "General Information",
-          //   details: [{ name: "Brand", item: "Gplus" }],
-          // },
-          // {
-          //   name: "PRODUCT SPECIFICATIONS",
-          //   details: [
-          //     { name: "Dishwasher Safe", item: "No" },
-          //     {
-          //       name: "Microwave Safe",
-          //       item: "No",
-          //     },
-          //     { name: "Freezer Safe	", item: "No" },
-          //     { name: "Broiler Safe", item: "Yes" },
-          //     {
-          //       name: "Flame Safe",
-          //       item: "Yes",
-          //     },
-          //     {
-          //       name: "Induction Compatible",
-          //       item: "No",
-          //     },
-          //   ],
-          // },
+  //         //     { name: "Length", item: "310 millimeter" },
+  //         //     { name: "Net Weight", item: "1 kilogram" },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "General Information",
+  //         //   details: [{ name: "Brand", item: "Gplus" }],
+  //         // },
+  //         // {
+  //         //   name: "PRODUCT SPECIFICATIONS",
+  //         //   details: [
+  //         //     { name: "Dishwasher Safe", item: "No" },
+  //         //     {
+  //         //       name: "Microwave Safe",
+  //         //       item: "No",
+  //         //     },
+  //         //     { name: "Freezer Safe	", item: "No" },
+  //         //     { name: "Broiler Safe", item: "Yes" },
+  //         //     {
+  //         //       name: "Flame Safe",
+  //         //       item: "Yes",
+  //         //     },
+  //         //     {
+  //         //       name: "Induction Compatible",
+  //         //       item: "No",
+  //         //     },
+  //         //   ],
+  //         // },
 
-          // {
-          //   name: "Physical Dimensions",
-          //   details: [{ name: "Colour", item: "Black And Grey" }],
-          // },
-          // {
-          //   name: "In The Box & Warranty",
-          //   details: [{ name: "Warranty", item: "1 Year" }],
-          // },
-          // {
-          //   name: "Manufacturing & Packing Information",
-          //   details: [
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care email", item: "care@garudamartindia.com" },
-          //     { name: "Country of origin", item: "India" },
-          //   ],
-          // },
-        ],
-      },
-    ],
-  },
+  //         // {
+  //         //   name: "Physical Dimensions",
+  //         //   details: [{ name: "Colour", item: "Black And Grey" }],
+  //         // },
+  //         // {
+  //         //   name: "In The Box & Warranty",
+  //         //   details: [{ name: "Warranty", item: "1 Year" }],
+  //         // },
+  //         // {
+  //         //   name: "Manufacturing & Packing Information",
+  //         //   details: [
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care email", item: "care@garudamartindia.com" },
+  //         //     { name: "Country of origin", item: "India" },
+  //         //   ],
+  //         // },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   // Electric Kettle
   {
@@ -1015,323 +1015,323 @@ const HomeAppliances = [
     ],
   },
   // Kadai
-  {
-    id: 8,
-    imgurl: [Kadai1, Kadai2],
-    name: "Kadai",
-    banner: [],
-    data: [
-      {
-        id: 1,
-        disraction: "row-reverse",
-        route: "Kadai",
-        imgurl: [Kadai1, Kadai2],
-        heading: "Key Features : -",
-        name: "Kadai",
-        description:
-          "Introducing Gplus Kadai – where culinary excellence meets modern convenience. Elevate your cooking game with this versatile and innovative kitchen essential.Crafted with precision and designed for durability, Gplus Kadai is your go-to tool for creating mouth-watering dishes. Its advanced non-stick surface ensures that your culinary creations release effortlessly, while the sturdy construction guarantees even heat distribution for perfect cooking results every time",
-        keyfeatures: [
-          "Gas and Induction Compatible.",
-          "Durable Non-Stick Coating.",
-          "Metal Spoon Friendly",
-          "No harmful Chemicals",
-          "Advanced Easy Clean Exterior.",
-          "Stain Free Interior.",
-          "Dishwasher Safe",
-        ],
-        product: [
-          // {
-          //   name: "Weight & Dimension",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "General Information",
-          //   details: [
-          //     { name: "Grinder Type", item: "Wet" },
-          //     { name: "Brand", item: "Gplus" },
-          //     {
-          //       name: "Material of Accessories",
-          //       item: "Stainless Steel Jars",
-          //     },
-          //     {
-          //       name: "Material of main body",
-          //       item: "ROHS compliant ABS body",
-          //     },
-          //     {
-          //       name: "Number of speed settings",
-          //       item: "3",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Attachment Details",
-          //   details: [
-          //     { name: "No. of Blades", item: "3" },
-          //     {
-          //       name: "Other Attachments",
-          //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
-          //     },
-          //     { name: "No. of Jars", item: "3" },
-          //     { name: "Jar Types", item: "Grinding Jar" },
-          //     {
-          //       name: "Blade Types",
-          //       item: "Dry & Wet Grinding blade",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Functions",
-          //   details: [
-          //     { name: "Functions Supported", item: "Grinding, Mixing" },
-          //   ],
-          // },
-          // {
-          //   name: "Security & Protection",
-          //   details: [{ name: "Overload Protection", item: "Yes" }],
-          // },
-          // {
-          //   name: "Features",
-          //   details: [{ name: "Speed Control", item: "3" }],
-          // },
-          // {
-          //   name: "Power Details",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "Physical Dimensions",
-          //   details: [{ name: "Colour", item: "Black And Grey" }],
-          // },
-          // {
-          //   name: "In The Box & Warranty",
-          //   details: [{ name: "Warranty", item: "1 Year" }],
-          // },
-          // {
-          //   name: "Manufacturing & Packing Information",
-          //   details: [
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care email", item: "care@garudamartindia.com" },
-          //     { name: "Country of origin", item: "India" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //   ],
-          // },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 8,
+  //   imgurl: [Kadai1, Kadai2],
+  //   name: "Kadai",
+  //   banner: [],
+  //   data: [
+  //     {
+  //       id: 1,
+  //       disraction: "row-reverse",
+  //       route: "Kadai",
+  //       imgurl: [Kadai1, Kadai2],
+  //       heading: "Key Features : -",
+  //       name: "Kadai",
+  //       description:
+  //         "Introducing Gplus Kadai – where culinary excellence meets modern convenience. Elevate your cooking game with this versatile and innovative kitchen essential.Crafted with precision and designed for durability, Gplus Kadai is your go-to tool for creating mouth-watering dishes. Its advanced non-stick surface ensures that your culinary creations release effortlessly, while the sturdy construction guarantees even heat distribution for perfect cooking results every time",
+  //       keyfeatures: [
+  //         "Gas and Induction Compatible.",
+  //         "Durable Non-Stick Coating.",
+  //         "Metal Spoon Friendly",
+  //         "No harmful Chemicals",
+  //         "Advanced Easy Clean Exterior.",
+  //         "Stain Free Interior.",
+  //         "Dishwasher Safe",
+  //       ],
+  //       product: [
+  //         // {
+  //         //   name: "Weight & Dimension",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "General Information",
+  //         //   details: [
+  //         //     { name: "Grinder Type", item: "Wet" },
+  //         //     { name: "Brand", item: "Gplus" },
+  //         //     {
+  //         //       name: "Material of Accessories",
+  //         //       item: "Stainless Steel Jars",
+  //         //     },
+  //         //     {
+  //         //       name: "Material of main body",
+  //         //       item: "ROHS compliant ABS body",
+  //         //     },
+  //         //     {
+  //         //       name: "Number of speed settings",
+  //         //       item: "3",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Attachment Details",
+  //         //   details: [
+  //         //     { name: "No. of Blades", item: "3" },
+  //         //     {
+  //         //       name: "Other Attachments",
+  //         //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+  //         //     },
+  //         //     { name: "No. of Jars", item: "3" },
+  //         //     { name: "Jar Types", item: "Grinding Jar" },
+  //         //     {
+  //         //       name: "Blade Types",
+  //         //       item: "Dry & Wet Grinding blade",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Functions",
+  //         //   details: [
+  //         //     { name: "Functions Supported", item: "Grinding, Mixing" },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Security & Protection",
+  //         //   details: [{ name: "Overload Protection", item: "Yes" }],
+  //         // },
+  //         // {
+  //         //   name: "Features",
+  //         //   details: [{ name: "Speed Control", item: "3" }],
+  //         // },
+  //         // {
+  //         //   name: "Power Details",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "Physical Dimensions",
+  //         //   details: [{ name: "Colour", item: "Black And Grey" }],
+  //         // },
+  //         // {
+  //         //   name: "In The Box & Warranty",
+  //         //   details: [{ name: "Warranty", item: "1 Year" }],
+  //         // },
+  //         // {
+  //         //   name: "Manufacturing & Packing Information",
+  //         //   details: [
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care email", item: "care@garudamartindia.com" },
+  //         //     { name: "Country of origin", item: "India" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //   ],
+  //         // },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   // Tawa
-  {
-    id: 9,
-    imgurl: [TAWA],
-    name: "Tawa",
-    banner: [TawaBanner1],
-    data: [
-      {
-        id: 1,
-        disraction: "row",
-        route: "Tawa",
-        imgurl: [TAWA],
-        name: "Tawa",
-        heading: "Key Features : -",
-        description:
-          "Introducing GPlus Tawa: Elevate Your Culinary Experience! Elevate your cooking experience with GPlus Tawa. Unleash your creativity, experiment with flavors, and craft dishes that are sure to delight your taste buds and impress your loved ones",
-        keyfeatures: [
-          "Gas and Induction Compatible.",
-          "Durable Non-Stick Coating.",
-          "Metal Spoon Friendly.",
-          "No harmful Chemicals.",
-          "Advanced Easy Clean Exterior.",
-          "Stain Free Interior.",
-          "Dishwasher Safe",
-        ],
-        product: [
-          // {
-          //   name: "Weight & Dimension",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "General Information",
-          //   details: [
-          //     { name: "Grinder Type", item: "Wet" },
-          //     { name: "Brand", item: "Gplus" },
-          //     {
-          //       name: "Material of Accessories",
-          //       item: "Stainless Steel Jars",
-          //     },
-          //     {
-          //       name: "Material of main body",
-          //       item: "ROHS compliant ABS body",
-          //     },
-          //     {
-          //       name: "Number of speed settings",
-          //       item: "3",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Attachment Details",
-          //   details: [
-          //     { name: "No. of Blades", item: "3" },
-          //     {
-          //       name: "Other Attachments",
-          //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
-          //     },
-          //     { name: "No. of Jars", item: "3" },
-          //     { name: "Jar Types", item: "Grinding Jar" },
-          //     {
-          //       name: "Blade Types",
-          //       item: "Dry & Wet Grinding blade",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Functions",
-          //   details: [
-          //     { name: "Functions Supported", item: "Grinding, Mixing" },
-          //   ],
-          // },
-          // {
-          //   name: "Security & Protection",
-          //   details: [{ name: "Overload Protection", item: "Yes" }],
-          // },
-          // {
-          //   name: "Features",
-          //   details: [{ name: "Speed Control", item: "3" }],
-          // },
-          // {
-          //   name: "Power Details",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "Physical Dimensions",
-          //   details: [{ name: "Colour", item: "Black And Grey" }],
-          // },
-          // {
-          //   name: "In The Box & Warranty",
-          //   details: [{ name: "Warranty", item: "1 Year" }],
-          // },
-          // {
-          //   name: "Manufacturing & Packing Information",
-          //   details: [
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care email", item: "care@garudamartindia.com" },
-          //     { name: "Country of origin", item: "India" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //   ],
-          // },
-        ],
-      },
-    ],
-  },
-  // Fry pan
-  {
-    id: 10,
-    imgurl: [fryPan],
-    name: "Fry Pan",
-    banner: [],
-    data: [
-      {
-        id: 1,
-        disraction: "row-reverse",
-        route: "Fry-Pan",
-        imgurl: [fryPan],
-        name: "Fry Pan",
-        heading: "Key Features : -",
-        description:
-          "Introducing GPlus Fry Pan: Elevate Your Culinary Adventures!. Are you ready to take your cooking to the next level? Look no further than GPlus Fry Pan. Crafted with precision and designed for excellence, our fry pan is your key to unlocking a world of culinary possibilities and flavorful creations",
-        keyfeatures: [
-          "Cooks tasty meals without using oil.",
-          "Resists scratches.",
-          "Easy to wash and clean.",
-          "Complements modern kitchens.",
-          "Evenly distributes heat and saves on fuel.",
-          "Easy to use.",
-        ],
-        product: [
-          // {
-          //   name: "Weight & Dimension",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "General Information",
-          //   details: [
-          //     { name: "Grinder Type", item: "Wet" },
-          //     { name: "Brand", item: "Gplus" },
-          //     {
-          //       name: "Material of Accessories",
-          //       item: "Stainless Steel Jars",
-          //     },
-          //     {
-          //       name: "Material of main body",
-          //       item: "ROHS compliant ABS body",
-          //     },
-          //     {
-          //       name: "Number of speed settings",
-          //       item: "3",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Attachment Details",
-          //   details: [
-          //     { name: "No. of Blades", item: "3" },
-          //     {
-          //       name: "Other Attachments",
-          //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
-          //     },
-          //     { name: "No. of Jars", item: "3" },
-          //     { name: "Jar Types", item: "Grinding Jar" },
-          //     {
-          //       name: "Blade Types",
-          //       item: "Dry & Wet Grinding blade",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Functions",
-          //   details: [
-          //     { name: "Functions Supported", item: "Grinding, Mixing" },
-          //   ],
-          // },
-          // {
-          //   name: "Security & Protection",
-          //   details: [{ name: "Overload Protection", item: "Yes" }],
-          // },
-          // {
-          //   name: "Features",
-          //   details: [{ name: "Speed Control", item: "3" }],
-          // },
-          // {
-          //   name: "Power Details",
-          //   details: [{ name: "Power Supply", item: "230 Volts" }],
-          // },
-          // {
-          //   name: "Physical Dimensions",
-          //   details: [{ name: "Colour", item: "Black And Grey" }],
-          // },
-          // {
-          //   name: "In The Box & Warranty",
-          //   details: [{ name: "Warranty", item: "1 Year" }],
-          // },
-          // {
-          //   name: "Manufacturing & Packing Information",
-          //   details: [
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care email", item: "care@garudamartindia.com" },
-          //     { name: "Country of origin", item: "India" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //     { name: "Customer care Phone", item: "1800-889-1056" },
-          //   ],
-          // },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 9,
+  //   imgurl: [TAWA],
+  //   name: "Tawa",
+  //   banner: [TawaBanner1],
+  //   data: [
+  //     {
+  //       id: 1,
+  //       disraction: "row",
+  //       route: "Tawa",
+  //       imgurl: [TAWA],
+  //       name: "Tawa",
+  //       heading: "Key Features : -",
+  //       description:
+  //         "Introducing GPlus Tawa: Elevate Your Culinary Experience! Elevate your cooking experience with GPlus Tawa. Unleash your creativity, experiment with flavors, and craft dishes that are sure to delight your taste buds and impress your loved ones",
+  //       keyfeatures: [
+  //         "Gas and Induction Compatible.",
+  //         "Durable Non-Stick Coating.",
+  //         "Metal Spoon Friendly.",
+  //         "No harmful Chemicals.",
+  //         "Advanced Easy Clean Exterior.",
+  //         "Stain Free Interior.",
+  //         "Dishwasher Safe",
+  //       ],
+  //       product: [
+  //         // {
+  //         //   name: "Weight & Dimension",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "General Information",
+  //         //   details: [
+  //         //     { name: "Grinder Type", item: "Wet" },
+  //         //     { name: "Brand", item: "Gplus" },
+  //         //     {
+  //         //       name: "Material of Accessories",
+  //         //       item: "Stainless Steel Jars",
+  //         //     },
+  //         //     {
+  //         //       name: "Material of main body",
+  //         //       item: "ROHS compliant ABS body",
+  //         //     },
+  //         //     {
+  //         //       name: "Number of speed settings",
+  //         //       item: "3",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Attachment Details",
+  //         //   details: [
+  //         //     { name: "No. of Blades", item: "3" },
+  //         //     {
+  //         //       name: "Other Attachments",
+  //         //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+  //         //     },
+  //         //     { name: "No. of Jars", item: "3" },
+  //         //     { name: "Jar Types", item: "Grinding Jar" },
+  //         //     {
+  //         //       name: "Blade Types",
+  //         //       item: "Dry & Wet Grinding blade",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Functions",
+  //         //   details: [
+  //         //     { name: "Functions Supported", item: "Grinding, Mixing" },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Security & Protection",
+  //         //   details: [{ name: "Overload Protection", item: "Yes" }],
+  //         // },
+  //         // {
+  //         //   name: "Features",
+  //         //   details: [{ name: "Speed Control", item: "3" }],
+  //         // },
+  //         // {
+  //         //   name: "Power Details",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "Physical Dimensions",
+  //         //   details: [{ name: "Colour", item: "Black And Grey" }],
+  //         // },
+  //         // {
+  //         //   name: "In The Box & Warranty",
+  //         //   details: [{ name: "Warranty", item: "1 Year" }],
+  //         // },
+  //         // {
+  //         //   name: "Manufacturing & Packing Information",
+  //         //   details: [
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care email", item: "care@garudamartindia.com" },
+  //         //     { name: "Country of origin", item: "India" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //   ],
+  //         // },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // // Fry pan
+  // {
+  //   id: 10,
+  //   imgurl: [fryPan],
+  //   name: "Fry Pan",
+  //   banner: [],
+  //   data: [
+  //     {
+  //       id: 1,
+  //       disraction: "row-reverse",
+  //       route: "Fry-Pan",
+  //       imgurl: [fryPan],
+  //       name: "Fry Pan",
+  //       heading: "Key Features : -",
+  //       description:
+  //         "Introducing GPlus Fry Pan: Elevate Your Culinary Adventures!. Are you ready to take your cooking to the next level? Look no further than GPlus Fry Pan. Crafted with precision and designed for excellence, our fry pan is your key to unlocking a world of culinary possibilities and flavorful creations",
+  //       keyfeatures: [
+  //         "Cooks tasty meals without using oil.",
+  //         "Resists scratches.",
+  //         "Easy to wash and clean.",
+  //         "Complements modern kitchens.",
+  //         "Evenly distributes heat and saves on fuel.",
+  //         "Easy to use.",
+  //       ],
+  //       product: [
+  //         // {
+  //         //   name: "Weight & Dimension",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "General Information",
+  //         //   details: [
+  //         //     { name: "Grinder Type", item: "Wet" },
+  //         //     { name: "Brand", item: "Gplus" },
+  //         //     {
+  //         //       name: "Material of Accessories",
+  //         //       item: "Stainless Steel Jars",
+  //         //     },
+  //         //     {
+  //         //       name: "Material of main body",
+  //         //       item: "ROHS compliant ABS body",
+  //         //     },
+  //         //     {
+  //         //       name: "Number of speed settings",
+  //         //       item: "3",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Attachment Details",
+  //         //   details: [
+  //         //     { name: "No. of Blades", item: "3" },
+  //         //     {
+  //         //       name: "Other Attachments",
+  //         //       item: "1N 1200 ml Liquidizng Jar, 1N 800 ml Dry Grinding Jar, 1N 300ml Chutney Grinding Jar",
+  //         //     },
+  //         //     { name: "No. of Jars", item: "3" },
+  //         //     { name: "Jar Types", item: "Grinding Jar" },
+  //         //     {
+  //         //       name: "Blade Types",
+  //         //       item: "Dry & Wet Grinding blade",
+  //         //     },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Functions",
+  //         //   details: [
+  //         //     { name: "Functions Supported", item: "Grinding, Mixing" },
+  //         //   ],
+  //         // },
+  //         // {
+  //         //   name: "Security & Protection",
+  //         //   details: [{ name: "Overload Protection", item: "Yes" }],
+  //         // },
+  //         // {
+  //         //   name: "Features",
+  //         //   details: [{ name: "Speed Control", item: "3" }],
+  //         // },
+  //         // {
+  //         //   name: "Power Details",
+  //         //   details: [{ name: "Power Supply", item: "230 Volts" }],
+  //         // },
+  //         // {
+  //         //   name: "Physical Dimensions",
+  //         //   details: [{ name: "Colour", item: "Black And Grey" }],
+  //         // },
+  //         // {
+  //         //   name: "In The Box & Warranty",
+  //         //   details: [{ name: "Warranty", item: "1 Year" }],
+  //         // },
+  //         // {
+  //         //   name: "Manufacturing & Packing Information",
+  //         //   details: [
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care email", item: "care@garudamartindia.com" },
+  //         //     { name: "Country of origin", item: "India" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //     { name: "Customer care Phone", item: "1800-889-1056" },
+  //         //   ],
+  //         // },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   // Fan
   {
