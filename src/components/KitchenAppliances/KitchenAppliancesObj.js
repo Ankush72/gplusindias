@@ -240,6 +240,13 @@ const HomeAppliances = [
       },
     ],
   },
+
+
+
+
+
+
+  
   // gas stove
   {
     id: 2,

@@ -22,6 +22,7 @@ import "react-toastify/dist/ReactToastify.css";
 import HomeAppliancesDetails from "./components/HomeAppliances/HomeAppliancesPage";
 import HomeApp from "./components/HomeAppliances/HomeApp";
 import KitchenApp from "./components/KitchenAppliances/KitchenApp";
+import DiwaliPage from "./components/Header/Diwali.js"
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             path="/small-appliances/:id"
             element={<KitchenAppliancesDetails />}
           />
+          <Route path="/diwali-offer" element={<DiwaliPage />} />
           <Route path="/small-appliances/:id/:name" element={<KitchenApp />} />
           <Route path="/support" element={<Support />} />
           <Route path="/privacy-policy" element={<Privacypolicy />} />

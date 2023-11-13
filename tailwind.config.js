@@ -13,6 +13,7 @@ module.exports = {
       
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        Agbalumo:["Lobster","Sans"],
         poppins: ["Poppins", "serif"],
         Montserrat : ["Montserrat","sans-serif"]
       },
