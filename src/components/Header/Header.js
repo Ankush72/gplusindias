@@ -12,6 +12,7 @@ import "./Header.css"
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
+  
   return (
     <div className="pt-[100px] pb-5">
       <ImageScroll>

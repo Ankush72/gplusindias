@@ -322,7 +322,7 @@ const Diwali = () => {
             <div className="flex flex-col items-end justify-center w-full pr-5 pt-5">
               <h1 className="text-white font-extrabold text-sm  text-center smallcase mr-2">
                 <a href="https://wa.me/8722221199">
-                  <BsWhatsapp size={40} color="green" />
+                  <BsWhatsapp size={40} color="white" />
                 </a>
               </h1>
 
@@ -449,7 +449,7 @@ const Diwali = () => {
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-white font-extrabold text-sm text-center  smallcase flex flex-col items-center justify-center">
                 <a href="https://wa.me/8722221199">
-                  <BsWhatsapp size={40} color="green" />
+                  <BsWhatsapp size={40} color="white" />
                 </a>
               </h1>
 
