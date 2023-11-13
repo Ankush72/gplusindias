@@ -12,80 +12,94 @@ const Diwali = () => {
   return (
     <div className="pt-[100px] flex flex-col sm:flex-row  font-roboto">
       <div className="hidden sm:block w-auto  h-auto flex flex-col items-center justify-center text-black bg-[#510050]">
-      <div className="w-full space-y-10 pl-2 pt-10">
-      <img className="pl-5 pr-5 w-[200px]" src={Diwali2} alt="" />
-        <h1 className="font-bold text-lg uppercase text-center underline text-white">
-        karnataka stores
-        </h1>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            RANEBENNUR
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            80503 97190
+        <div className="w-full space-y-10 pl-2 pt-10">
+          <img className="pl-5 pr-5 w-[200px]" src={Diwali2} alt="" />
+          <h1 className="font-bold text-lg uppercase text-center underline text-white">
+            karnataka stores
           </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            HONNALI
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            81476 81971
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            KUSHTAGI
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            97405 45439
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            DAVANGERE
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            78925 70683
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            NUZIVEEDU
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            99664 52193
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            REPALLE
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            99631 60260
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            HANDPOST
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            86609 36025
-          </h1>
-        </div>
-        <img className="mt-5 pl-5 pr-5 w-[300px]" src={Diwali2} alt="" />
-        <div className="bg-[#510050] w-full h-[85px]">
-          {/* <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              RANEBENNUR
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              80503 97190
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              HONNALI
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              81476 81971
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              KUSHTAGI
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              97405 45439
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              DAVANGERE
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              78925 70683
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              NUZIVEEDU
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              99664 52193
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              REPALLE
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              99631 60260
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              HANDPOST
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              86609 36025
+            </h1>
+          </div>
+          <img className="mt-5 pl-5 pr-5 w-[300px]" src={Diwali2} alt="" />
+          <div className="bg-[#510050] w-full h-[85px]">
+            {/* <div className="flex flex-col items-center justify-center">
             <h1 className="text-white font-extrabold text-sm text-center  smallcase flex flex-col items-center justify-center">
               <FiPhoneCall size={33} color="#44C054" />{" "}
             </h1>
@@ -96,8 +110,8 @@ const Diwali = () => {
               </a>
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
       </div>
       <img className="sm:w-[820px] h-auto " src={Diwali1} alt="" />
       <div className="flex items-center justify-between w-full sm:w-auto bg-[#510050]">
@@ -108,12 +122,17 @@ const Diwali = () => {
             our branches
           </h1>
           <div className="flex items-center justify-center">
-          <div className="flex flex-col  space-y-[-10px] sm:space-y-10 block sm:hidden mt-2 ml-0 w-[180px] sm:w-[240px]">
+            <div className="flex flex-col  space-y-[-10px] sm:space-y-10 block sm:hidden mt-2 ml-0 w-[180px] sm:w-[240px]">
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-black  w-[50px] sm:w-[100px] text-white">
-                RANEBENNUR
+                  RANEBENNUR
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white text-white">
                   {" "}
                   80503 97190
@@ -121,47 +140,72 @@ const Diwali = () => {
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs    w-[50px] sm:w-[100px] text-white">
-                HONNALI
+                  HONNALI
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white text-white">
                   {" "}
                   81476 81971
                 </h1>
               </div>
-         
+
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  w-[50px] sm:w-[100px] text-white">
-                KUSHTAGI
+                  KUSHTAGI
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs   text-white">
-                97405 45439
+                  97405 45439
                 </h1>
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs    w-[50px] sm:w-[100px] text-white">
-                DAVANGERE
+                  DAVANGERE
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
-                78925 70683
+                  78925 70683
                 </h1>
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs    w-[50px] sm:w-[100px] text-white">
-                NUZIVEEDU
+                  NUZIVEEDU
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs   text-white">
-                99664 52193
+                  99664 52193
                 </h1>
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs text-white  w-[50px] sm:w-[100px]">
-                REPALLE
+                  REPALLE
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   {" "}
                   99631 60260
@@ -169,9 +213,14 @@ const Diwali = () => {
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white  w-[50px] sm:w-[100px]">
-                HANDPOST
+                  HANDPOST
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   {" "}
                   86609 36025
@@ -179,13 +228,17 @@ const Diwali = () => {
               </div>
             </div>
 
-
             <div className="flex flex-col  space-y-[-10px] sm:space-y-10 block sm:hidden mt-2 ml-0 w-[180px] sm:w-[240px]">
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   GORANTLA
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   {" "}
                   90527 69094
@@ -193,20 +246,30 @@ const Diwali = () => {
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
-                KALYANDURGAM
+                  KALYANDURGAM
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   {" "}
                   63049 13826
                 </h1>
               </div>
-         
+
               <div className="flex items-center justify-center">
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   KADIRI
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   90322 20043
                 </h1>
@@ -215,7 +278,12 @@ const Diwali = () => {
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   PALAMANER
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   72880 84653
                 </h1>
@@ -224,7 +292,12 @@ const Diwali = () => {
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   GALIVEEDU
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   93816 72821
                 </h1>
@@ -233,7 +306,12 @@ const Diwali = () => {
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   ANANTAPUR
                 </h1>{" "}
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   {" "}
                   96526 14269
@@ -243,7 +321,12 @@ const Diwali = () => {
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white w-[50px] sm:w-[100px]">
                   VIJAYAWADA
                 </h1>
-                <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center"> - </span>
+                <h1>
+                  <span className="ml-1 mr-1 text-white w-[50px] flex items-center justify-center">
+                    {" "}
+                    -{" "}
+                  </span>
+                </h1>
                 <h1 className="font-semibold text-[9px] sm:text-xs  text-white">
                   99852 76842
                 </h1>
@@ -254,183 +337,109 @@ const Diwali = () => {
         {/* <img className="mt-5 h-full block sm:hidden w-[60px]" src={Diwali2} alt="" /> */}
       </div>
       <div className="hidden sm:block w-auto  h-auto flex flex-col items-center justify-center text-black bg-[#510050]">
-      <div className="w-full space-y-10 pl-1 pt-10">
-      <img className="pl-5 pr-5 w-[200px]" src={Diwali2} alt="" />
-        <h1 className="font-bold text-lg uppercase text-center underline text-white">
-        andhra stores
-        </h1>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          GORANTLA
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          90527 69094
+        <div className="w-full space-y-10 pl-1 pt-10">
+          <img className="pl-5 pr-5 w-[200px]" src={Diwali2} alt="" />
+          <h1 className="font-bold text-lg uppercase text-center underline text-white">
+            andhra stores
           </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          KALYANDURGAM
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          63049 13826
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          KADIRI
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            90322 20043
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          PALAMANER
-          </h1>{" "}
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          72880 84653
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          GALIVEEDU
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            93816 72821
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          ANANTAPUR
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-            {" "}
-            96526 14269
-          </h1>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          VIJAYAWADA
-          </h1>
-          <span className="ml-1 mr-2 text-white"> - </span>
-          <h1 className="font-semibold text-xs w-[100px] text-white">
-          99852 76842
-          </h1>
-        </div>
-        <img className="mt-5 pl-5 pr-5 w-[300px]" src={Diwali2} alt="" />
-        <div className="bg-[#510050] w-full h-[85px]">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-white font-extrabold text-sm text-center  smallcase flex flex-col items-center justify-center">
-            <a href="https://wa.me/8722221199">
-          <BsWhatsapp size={40} color="green" />
-        </a>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              GORANTLA
             </h1>
-           
-            <div className="flex items-center justify-center text-white mt-2">
-              <span className="mr-2">Ping Us </span>{" "}
-             
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              90527 69094
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              KALYANDURGAM
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              63049 13826
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              KADIRI
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              90322 20043
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              PALAMANER
+            </h1>{" "}
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              72880 84653
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              GALIVEEDU
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              93816 72821
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              ANANTAPUR
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              {" "}
+              96526 14269
+            </h1>
+          </div>
+          <div className="flex items-center justify-center">
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              VIJAYAWADA
+            </h1>
+            <h1>
+              <span className="ml-1 mr-2 text-white"> - </span>
+            </h1>
+            <h1 className="font-semibold text-xs w-[100px] text-white">
+              99852 76842
+            </h1>
+          </div>
+          <img className="mt-5 pl-5 pr-5 w-[300px]" src={Diwali2} alt="" />
+          <div className="bg-[#510050] w-full h-[85px]">
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="text-white font-extrabold text-sm text-center  smallcase flex flex-col items-center justify-center">
+                <a href="https://wa.me/8722221199">
+                  <BsWhatsapp size={40} color="green" />
+                </a>
+              </h1>
+
+              <div className="flex items-center justify-center text-white mt-2">
+                <span className="mr-2">Ping Us </span>{" "}
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
 };
 
 export default Diwali;
-{/* <div className="hidden sm:block w-full h-full flex flex-col items-center justify-center text-black bg-[#510050]">
-<div className="flex flex-col item-center justify-center space-y-10 h-[100vh]">
-  <img className="mt-5 pl-5 pr-5 h-full" src={Diwali2} alt="" />
-  <h1 className="font-bold text-lg uppercase text-center underline text-white">
-    our branches
-  </h1>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      GORANTLA
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      {" "}
-      90527 69094
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      KALYANDURGAM
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      63049 13826
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      KADIRI
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      90322 20043
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      PALAMANER
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      72880 84653
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      GALIVEEDU
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      93816 72821
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      ANANTAPUR
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      {" "}
-      96526 14269
-    </h1>
-  </div>
-  <div className="flex items-center justify-center">
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      VIJAYAWADA
-    </h1>{" "}
-    <span className="ml-1 mr-2 text-white"> - </span>
-    <h1 className="font-semibold text-xs w-[100px] text-white">
-      {" "}
-      99852 76842
-    </h1>
-  </div>
-</div>
-<img className="mt-5 pl-5 pr-5" src={Diwali2} alt="" />
-<div className="bg-[#510050] w-full h-[146px]">
-  <div className="w-full p-2 rounded mt-10 flex flex-col items-center justify-center">
-    <a href="https://wa.me/1111111111">
-      <BsWhatsapp size={40} color="#44C054" />
-    </a>
-    <div>
-      <h1 className="text-white font-extrabold text-sm text-center mt-5 smallcase">
-        Ping us
-      </h1>
-    </div>
-  </div>
-</div>
-</div> */}
