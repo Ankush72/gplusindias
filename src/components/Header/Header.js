@@ -25,11 +25,11 @@ const Header = () => {
       </ImageScroll>
       <div>
         {toggle ? (
-          <div className="fixed top-[100px] z-10 bg-[#85858590] left-0 right-0 bottom-[-15px] flex items-center justify-center fade-in">
+          <div className="fixed top-[100px] z-10 bg-[#85858590] left-0 right-0 bottom-[-15px] flex items-center justify-center ">
             <div className="w-[400px] h-[500px] flex items-center justify-center">
               {/* <ImageScroll> */}
-              <div className="flex ">
-                {toggle ? (
+              <div className="flex hover:scale-110	ease-in-out		">
+                {toggle ? ( 
                   <div>
                     <img className="w-[350px] h-[350px] " src={Diwali2} alt="" />
                     <Link to="/diwali-offer" onClick={() => setToggle(false)}>
