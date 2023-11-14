@@ -3,21 +3,26 @@ import contact from "../image/The Best Appliances3.png";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import contactbg from "../image/Support 1.png";
-import { toast } from "react-toastify";
-import validator from "validator";
-
+// import { toast } from "react-toastify";
+// import validator from "validator";
+import { Country, City, State } from "country-state-city";
+// console.log(Country);
+const countryCode = "IN";
+const country = Country.getCountryByCode(countryCode);
+const states = State.getStatesOfCountry(country.isoCode);
 const Support = () => {
   const [data, setdata] = useState({
     name: "",
     email: "",
     mobile: "",
-    service: "",
-    invoiceNumber: "",
-    address: "",
-    message: "",
+    // invoiceNumber: "",
   });
-
-  const [error, setError] = useState({});
+const [products,setProducts] = useState()
+  const [state, setState] = useState();
+  const [city, setCity] = useState();
+  console.log("city", city);
+  console.log(state);
+  // const [error, setError] = useState({});
 
   const onHandleData = (e) => {
     const datas = { ...data };
@@ -25,58 +30,83 @@ const Support = () => {
     setdata(datas);
   };
 
-  const ValidationForm = () => {
-    let err = {};
+  // const ValidationForm = () => {
+  //   let err = {};
 
-    if (data.name === "") {
-      err.name = "Name is required .";
-    }
-    if (data.email === "") {
-      err.email = "Email is required .";
-    } else {
-      if(validator.isEmail(data.email)){
-        err.email = ""
-      }else{
-        err.email = "Enter valid email ."
-      }
-    }
-    if (data.mobile === "") {
-      err.mobile = "Mobile is required .";
-    } else {
-      if (data.mobile.length < 10) {
-        err.mobile = "Enter the correct Number .";
-      }
-    }
-    if (data.service === "") {
-      err.service = "Service is required .";
-    }
-    if (data.invoiceNumber === "") {
-      err.invoiceNumber = "Invoice Number is required .";
-    } else {
-      if (data.invoiceNumber.length <= 15) {
-        err.invoiceNumber = "Enter the correct Invoice Number .";
-      }
-    }
-    if (data.address === "") {
-      err.address = "Address is required .";
-    }
-    if (data.message === "") {
-      err.message = "Message is required .";
-    }
+  //   if (data.name === "") {
+  //     err.name = "Name is required .";
+  //   }
+  //   if (data.email === "") {
+  //     err.email = "Email is required .";
+  //   } else {
+  //     if (validator.isEmail(data.email)) {
+  //       err.email = "";
+  //     } else {
+  //       err.email = "Enter valid email .";
+  //     }
+  //   }
+  //   if (data.mobile === "") {
+  //     err.mobile = "Mobile is required .";
+  //   } else {
+  //     if (data.mobile.length < 10) {
+  //       err.mobile = "Enter the correct Number .";
+  //     }
+  //   }
+  //   if (data.service === "") {
+  //     err.service = "Service is required .";
+  //   }
+  //   // if (data.invoiceNumber === "") {
+  //   //   err.invoiceNumber = "Invoice Number is required .";
+  //   // } else {
+  //   //   if (data.invoiceNumber.length <= 15) {
+  //   //     err.invoiceNumber = "Enter the correct Invoice Number .";
+  //   //   }
+  //   // }
+  //   if (data.address === "") {
+  //     err.address = "Address is required .";
+  //   }
+  //   if (data.message === "") {
+  //     err.message = "Message is required .";
+  //   }
 
-    setError({ ...err });
-    return Object.keys(err).length < 1;
-  };
+  //   setError({ ...err });
+  //   return Object.keys(err).length < 1;
+  // };
 
   const submitData = (e) => {
     e.preventDefault();
-    console.log(data);
-    let isValid = ValidationForm();
-    if (isValid) {
-      toast.success("Submitted.");
-    } else {
-      toast.error("All details are required .");
-    }
+
+    window.Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "netops.gm@gmail.com",
+      Password: "94D6BD9DD202FD73831B27D3BAB2FF91C6EA",
+      Port: 2525,
+      To: "netops.gm@gmail.com",
+      From: "netops.gm@gmail.com",
+      Subject: `${data.name}`,
+      Body: `<div className="bg-[#04789D]">
+          <p className="font-bold text-base text-[#04789D]">Name : ${data.name}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">email : ${data.email}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">Mobile : ${data.mobile}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">City : ${data.state}</p> <br> 
+          <p className="font-bold text-base text-[#04789D]">City : ${data.city}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">Product name : ${data.products}</p> <br>  
+    </div>
+     `,
+    }).then((message) => {
+      if (message === "OK") {
+        alert("message has been send, thank you for connecting");
+      } else {
+        alert("there is some error");
+      }
+    });
+    // let isValid = ValidationForm();
+    // if (isValid) {
+
+    //   toast.success("Submitted.");
+    // } else {
+    //   toast.error("All details are required .");
+    // }
   };
 
   return (
@@ -153,15 +183,15 @@ const Support = () => {
               <div className=" px-4 mx-auto max-w-screen-md">
                 <form
                   action="#"
-                  className="space-y-4 w-full"
+                  className="space-y-2 w-full"
                   onSubmit={submitData}
                 >
                   <div>
                     <label
                       htmlFor="name"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                     Full Name
+                      Full Name
                     </label>
                     <input
                       type="text"
@@ -171,15 +201,16 @@ const Support = () => {
                       placeholder="Name"
                       value={data.name}
                       onChange={onHandleData}
+                      required
                     />
-                    <span className="font-normal text-sm text-[#FF0000]">
+                    {/* <span className="font-normal text-sm text-[#FF0000]">
                       {error.name}
-                    </span>
+                    </span> */}
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Your email
                     </label>
@@ -191,15 +222,16 @@ const Support = () => {
                       placeholder="name@gmail.com"
                       value={data.email}
                       onChange={onHandleData}
+                      required
                     />
-                    <span className="font-normal text-sm text-[#FF0000]">
+                    {/* <span className="font-normal text-sm text-[#FF0000]">
                       {error.email}
-                    </span>
+                    </span> */}
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Mobile Number
                     </label>
@@ -211,16 +243,17 @@ const Support = () => {
                       placeholder="Number"
                       value={data.mobile}
                       onChange={onHandleData}
+                      required
                     />
-                    <span className="font-normal text-sm text-[#FF0000]">
+                    {/* <span className="font-normal text-sm text-[#FF0000]">
                       {error.mobile}
-                    </span>
+                    </span> */}
                   </div>
 
-                  <div>
+                  {/* <div>
                     <label
                       htmlFor="service"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Service
                     </label>
@@ -232,15 +265,16 @@ const Support = () => {
                       placeholder="service"
                       value={data.service}
                       onChange={onHandleData}
+                      required
                     />
                     <span className="font-normal text-sm text-[#FF0000]">
                       {error.service}
                     </span>
-                  </div>
-                  <div>
+                  </div> */}
+                  {/* <div>
                     <label
                       htmlFor="Invoice Number"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Invoice Number
                     </label>
@@ -256,39 +290,147 @@ const Support = () => {
                     <span className="font-normal text-sm text-[#FF0000]">
                       {error.invoiceNumber}
                     </span>
+                  </div> */}
+                  {/* <div>
+                  <label
+                    htmlFor="email/number"
+                    className="font-medium text-base capitalize"
+                  >
+                    State
+                  </label>
+                  <select
+                    required
+                    value={state}
+                    className="border-2 border-black border-opacity-70 mt-2 rounded h-10 pl-2"
+                    onChange={(e) => setCountry(e.target.value)}
+                  >
+                    <option value="">State</option>
+                    {Country &&
+                      Country.getAllCountries().map((item) => {
+                        return (
+                          <option key={item.isoCode} value={item.isoCode}>
+                            {item.name}
+                          </option>
+                        );
+                      })}
+                  </select>
+                  </div> */}
+
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor="email/number"
+                      className="font-medium text-base capitalize"
+                    >
+                      state
+                    </label>
+                    <select
+                      required
+                      value={state}
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      onChange={(e) => setState(e.target.value)}
+                    >
+                      <option value="">State</option>
+                      {states &&
+                        states.map((item) => {
+                          return (
+                            <option key={item.isoCode} value={item.isoCode}>
+                              {item.name}
+                            </option>
+                          );
+                        })}
+                    </select>
                   </div>
+
                   <div>
+                    {state && (
+                      <div>
+                        <label
+                          htmlFor="email/number"
+                          className="font-medium text-base capitalize"
+                        >
+                          City
+                        </label>
+
+                        <select
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      required
+                          value={city}
+                          onChange={(e) => setCity(e.target.value)}
+                        >
+                          <option value="">-- select City --</option>
+                          {City.getCitiesOfState(countryCode, state).map(
+                            (item) => {
+                              console.log(item)
+                              return (
+                                <option
+                                  key={item?.countryCode}
+                                  value={item?.stateCode}
+                                >
+                                  {item.name}
+                                </option>
+                              );
+                            }
+                          )}
+                        </select>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* <div>
                     <label
                       htmlFor="Address"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      Address
+                      State
                     </label>
                     <input
                       type="text"
                       id="address"
                       name="address"
                       className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder="Address"
+                      placeholder="State"
                       value={data.address}
                       onChange={onHandleData}
+                      required
                     />
                     <span className="font-normal text-sm text-[#FF0000]">
                       {error.address}
                     </span>
-                  </div>
+                  </div> */}
+                  {/* <div>
+                    <label
+                      htmlFor="Address"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      City
+                    </label> */}
 
-                  <div className="sm:col-span-2">
+                  {/* <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      placeholder="City"
+                      value={data.address}
+                      onChange={onHandleData}
+                      required
+                    /> */}
+                  {/* <span className="font-normal text-sm text-[#FF0000]">
+                      {error.address}
+                    </span>
+                  </div> */}
+
+                  {/* <div className="sm:col-span-2">
                     <label
                       htmlFor="message"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                      className="block  text-sm font-medium text-gray-900 dark:text-gray-400"
                     >
                       Your message
                     </label>
                     <textarea
                       name="message"
                       id="message"
-                      rows="6"
+                      rows="3"
                       className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                       placeholder="Message..."
                       value={data.message}
@@ -297,6 +439,36 @@ const Support = () => {
                     <span className="font-normal text-sm text-[#FF0000]">
                       {error.message}
                     </span>
+                  </div> */}
+
+                  <div className="sm:col-span-2">
+                    <label
+                      htmlFor="message"
+                      className="font-medium text-base capitalize">
+                      Product you are looking for
+                    </label>
+                    <select
+                      name="products"
+                      value={products}
+                      onChange={(e) => setProducts(e.target.value)}
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    >
+                      <option disabled selected>
+                        Select products
+                      </option>
+                      <option value="Gplus">Washing Machine</option>
+                      <option value="Samsung">Refrigerator</option>
+                      <option value="whirlpool">Dish washer</option>
+                      <option value="Haier">Gas Stove</option>
+                      <option value="Crompton">Rice Cooker</option>
+                      <option value="TTK Prestige">Smart Tv</option>
+                      <option value="Butterfly">AC</option>
+                      <option value="Butterfly">Mixer</option>
+                      <option value="Butterfly">Wet Grinder</option>
+                    </select>
+                    {/* <span className="font-normal text-sm text-[#FF0000]">
+                      {error.message}
+                    </span> */}
                   </div>
                   <div className="w-full">
                     <button
