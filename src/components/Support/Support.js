@@ -10,13 +10,18 @@ import { Country, City, State } from "country-state-city";
 const countryCode = "IN";
 const country = Country.getCountryByCode(countryCode);
 const states = State.getStatesOfCountry(country.isoCode);
+
+
 const Support = () => {
+
+
   const [data, setdata] = useState({
     name: "",
     email: "",
     mobile: "",
     // invoiceNumber: "",
   });
+
 const [products,setProducts] = useState()
   const [state, setState] = useState();
   const [city, setCity] = useState();
@@ -88,9 +93,9 @@ const [products,setProducts] = useState()
           <p className="font-bold text-base text-[#04789D]">Name : ${data.name}</p> <br>  
           <p className="font-bold text-base text-[#04789D]">email : ${data.email}</p> <br>  
           <p className="font-bold text-base text-[#04789D]">Mobile : ${data.mobile}</p> <br>  
-          <p className="font-bold text-base text-[#04789D]">City : ${data.state}</p> <br> 
-          <p className="font-bold text-base text-[#04789D]">City : ${data.city}</p> <br>  
-          <p className="font-bold text-base text-[#04789D]">Product name : ${data.products}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">State : ${state}</p> <br> 
+          <p className="font-bold text-base text-[#04789D]">City : ${city}</p> <br>  
+          <p className="font-bold text-base text-[#04789D]">Product name : ${products}</p> <br>  
     </div>
      `,
     }).then((message) => {
@@ -456,15 +461,15 @@ const [products,setProducts] = useState()
                       <option disabled selected>
                         Select products
                       </option>
-                      <option value="Gplus">Washing Machine</option>
-                      <option value="Samsung">Refrigerator</option>
-                      <option value="whirlpool">Dish washer</option>
-                      <option value="Haier">Gas Stove</option>
-                      <option value="Crompton">Rice Cooker</option>
-                      <option value="TTK Prestige">Smart Tv</option>
-                      <option value="Butterfly">AC</option>
-                      <option value="Butterfly">Mixer</option>
-                      <option value="Butterfly">Wet Grinder</option>
+                      <option value="Washing Machine">Washing Machine</option>
+                      <option value="Refrigerator">Refrigerator</option>
+                      <option value="Dish washer">Dish washer</option>
+                      <option value="Gas Stove">Gas Stove</option>
+                      <option value="Rice Cooker">Rice Cooker</option>
+                      <option value="Smart Tv">Smart Tv</option>
+                      <option value="Air Condition">Air Condition</option>
+                      <option value="Mixer">Mixer</option>
+                      <option value="Wet Grinder">Wet Grinder</option>
                     </select>
                     {/* <span className="font-normal text-sm text-[#FF0000]">
                       {error.message}
