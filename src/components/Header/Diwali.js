@@ -1,7 +1,7 @@
 import React from "react";
 // import Diwaali from "../image/Diwali Dhamaka Back Side A4size.jpg";
-import Diwali1 from "../image/back diwali.jpg";
-import Diwali2 from "../image/camp diwali.jpg";
+import Diwali1 from "../image/diwal.png";
+import Diwali2 from "../image/camp diwali.png";
 // import { FaFacebookF } from "react-icons/fa";
 // import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";

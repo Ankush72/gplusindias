@@ -25,8 +25,8 @@ const Support = () => {
 const [products,setProducts] = useState()
   const [state, setState] = useState();
   const [city, setCity] = useState();
-  console.log("city", city);
-  console.log(state);
+  // console.log("city", city);
+  // console.log(state);
   // const [error, setError] = useState({});
 
   const onHandleData = (e) => {

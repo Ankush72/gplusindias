@@ -47,6 +47,9 @@ const KitchenApp = () => {
     }
   };
 
+
+
+  
   const toTitleCase = (items) => {
     const titleCase = items
       .toLowerCase()

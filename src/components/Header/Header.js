@@ -3,7 +3,7 @@ import ImageScroll from "../ImageScroll/ImageScroll.js";
 import ImageObj from "./ImageObj.js";
 // import Diwaali from "../image/Diwali Dhamaka Back Side A4size.jpg"
 // import Diwali1 from "../image/back diwali.jpg"
-import Diwali2 from "../image/camp diwali.jpg";
+import Diwali2 from "../image/camp diwali.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { Link } from "react-router-dom";
