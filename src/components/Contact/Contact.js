@@ -7,6 +7,7 @@ import contactbg from "../image/Contact us 8.svg";
 import { toast } from "react-toastify";
 import validator from "validator";
 
+
 const Contact = () => {
   const [data, setdata] = useState({
     name: "",
@@ -291,6 +292,21 @@ const Contact = () => {
             </section>
           </div>
         </div>
+
+      
+
+        {/* <div className="bg-blue mt-10 w-full h-full flex justify-center flex-col p-10">
+            <div className="w-full">
+              <h1 className="text-white font-bold text-xl">Registered Head Office Address:</h1>
+              <p className="text-white font-semibold text-base mt-3 w-96">Survey No. 183/1, Lake Side Road, Behind NCC Apartment, Mahadevapura Bangalore(KA). 560048</p>
+            </div>
+            <div className="mt-10">
+           
+              <button className="font-bold text-lg text-white bg-red-600 hover:bg-gray hover:text-black pl-5 pr-5 pt-2 pb-2">  <a 
+               href="https://www.g-digital.in/">{ `OUR SHOWROOMS LOCATIONS  >`}</a></button>
+            </div>
+        </div> */}
+
       </div>
     </>
   );
