@@ -37,10 +37,7 @@ import CeilingFan1 from "../image/Fan 01.png";
 import AirCooler1 from "../image/Air cooler 1.png";
 import AirCooler2 from "../image/Air cooler 2.png";
 import AirCooler3 from "../image/Air cooler 3.png";
-import Dishwasher1 from "../image/Dishwasher1.png";
-import Diswasher2 from "../image/Dishwasher2.png";
-// import Diswasher3 from "../image/Dis"
-import Dishwasher4 from "../image/Dishwasher4.png";
+
 
 const HomeAppliances = [
   // mixer grinder
@@ -1521,137 +1518,7 @@ const HomeAppliances = [
     ],
   },
 
-  {
-    id: 11,
-    imgurl: [Dishwasher1, Diswasher2, Dishwasher4],
-    name: "DISH WASHER",
-    banner: [],
-    data: [
-      {
-        id: 1,
-        disraction: "row-reverse",
-        route: "dish-washer",
-        imgurl: [Dishwasher1, Diswasher2, Dishwasher4],
-        name: "Dish Washer",
-        heading: "Key Features : -",
-        description:
-          "Basically, a dishwasher is a Machine that cleans and rinses dirty dishes. We have to load the dishes, add detergent, set the proper washing cycles and turn it on, the dishwasher accomplishes a whole series of functions by itself. Heats the water to the appropriate temperature, Automatically opens the detergent dispenser at the right time, Shoots the water through spray arms to get the dishes clean, Drains the dirty water ",
-        keyfeatures: [
-          "16 PLACE SETTINGS",
-          "AI WASH ARTIFICAL INTELLIGENCE",
-          "LED indicator for rinse aid & salt to refill",
-          "Rapid wash, delay start & error display features",
-          "5 SUPER SPRAY SHOWERS",
-        ],
-        product: [
-          {
-            name: "General Information",
-            details: [
-              { name: "PROGRAMMES", item: "5 PROGRAMS" },
-              { name: "ITEM CAPACITY", item: "16 PLACE" },
-              {
-                name: "UNIQUE SPRAY",
-                item: "360 DEGREE SPRAY ARM WITH 5 SHOWER",
-              },
-              {
-                name: "Brand",
-                item: "GPLUS",
-              },
-              {
-                name: "Capacity",
-                item: "16 Place Settings",
-              },
-              {
-                name: "Noise Level ",
-                item: "45 DB",
-              },
-              {
-                name: "WATER CONSUMPTION  ",
-                item: "12 L",
-              },
-              {
-                name: "Type",
-                item: "Free Standing",
-              },
-              {
-                name: "EXTRA HYGIENE ",
-                item: "75 DEGREE HOT WATER 99.9 % GREM FREE",
-              },
-              {
-                name: "Color",
-                item: "Black",
-              },
-              {
-                name: "INTELLIGENT SENSOR   ",
-                item: "AUTOMATICALLY DETECT RESIDUE FOOD ,WATER ,DURATION, INTESITY ACCORDINGLY                ",
-              },
-              {
-                name: "JET WASH   ",
-                item: "HIGH TEMP ALT WASH  ",
-              },
-              {
-                name: "BUILT IN SOFTNER   ",
-                item: "BULIT IN SOFTNER  ",
-              },
-              {
-                name: "HYGIENIC STEAM DRY",
-                item: "SPOTLESS DRYING OF UTENSILS WITH STEAM",
-              },
-              {
-                name: "Button",
-                item: "Touch screen buttons ",
-              },
-            ],
-          },
-          {
-            name: "Energy Consumption  ",
-            details: [
-              {
-                name: "POWER CONSUMPTION   ",
-                item: "1750 WATTS  ",
-              },
-              {
-                name: "POWER SUPPLY ",
-                item: "220 -240 VOLTS  ",
-              },
-            ],
-          },
-          {
-            name: "Rack Features",
-            details: [
-              { name: "Number Of Racks", item: "3 Racks" },
-              { name: "Showers ", item: "5 showers" },
-            ],
-          },
-          {
-            name: "Dimensions   ",
-            details: [
-              { name: "Width", item: "59.8 cm " },
-              { name: "Height", item: "85 cm  " },
-              { name: "Depth", item: "59.8 cm  " },
-              { name: "Weight", item: "40 kg  " },
-            ],
-          },
-
-          {
-            name: "In The Box & Warranty",
-            details: [{ name: "Warranty", item: "1 Year" }],
-          },
-          {
-            name: "Manufacturing & Packing Information",
-            details: [
-              { name: "Customer care Phone", item: "1800-889-1056" },
-              { name: "Customer care email", item: "care@garudamartindia.com" },
-              { name: "Country of origin", item: "India" },
-              { name: "Customer care Phone", item: "1800-889-1056" },
-              { name: "Customer care Phone", item: "1800-889-1056" },
-              { name: "Customer care Phone", item: "1800-889-1056" },
-            ],
-          },
-        ],
-      },
-    ],
-  },
+  
 ];
 
 export default HomeAppliances;

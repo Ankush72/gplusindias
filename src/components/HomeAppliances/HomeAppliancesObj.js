@@ -27,6 +27,10 @@ import washingMachineBanner3 from "../image/WashingMachineBanner3.png";
 import LEDTVBanner1 from "../image/LEDTVBanner.png";
 // import { "" } from "react-icons/ai";
 // import {BsFillBoxFill} from "react-icons/bs"
+import Dishwasher1 from "../image/Dishwasher1.png";
+import Diswasher2 from "../image/Dishwasher2.png";
+// import Diswasher3 from "../image/Dis"
+import Dishwasher4 from "../image/Dishwasher4.png";
 
 const HomeAppliances = [
   // washing machine
@@ -1848,6 +1852,188 @@ const HomeAppliances = [
               },
             ],
           },
+        ],
+      },
+    ],
+  },
+
+  // dish washer
+  {
+    id: 5,
+    imgurl: [Dishwasher1, Diswasher2, Dishwasher4],
+    name: "DISH WASHER",
+    banner: [],
+    data: [
+      {
+        id: 1,
+        diraction: "row-reverse",
+        route: "dish-washer",
+        imgurl: [Dishwasher1, Diswasher2, Dishwasher4],
+        name: "Dish Washer",
+        heading: "Key Features : -",
+        description:
+          "Basically, a dishwasher is a Machine that cleans and rinses dirty dishes. We have to load the dishes, add detergent, set the proper washing cycles and turn it on, the dishwasher accomplishes a whole series of functions by itself. Heats the water to the appropriate temperature, Automatically opens the detergent dispenser at the right time, Shoots the water through spray arms to get the dishes clean, Drains the dirty water ",
+        keyfeatures: [
+          "16 PLACE SETTINGS",
+          "AI WASH ARTIFICAL INTELLIGENCE",
+          "LED indicator for rinse aid & salt to refill",
+          "Rapid wash, delay start & error display features",
+          "5 SUPER SPRAY SHOWERS",
+        ],
+        product: [
+        {
+          box: [
+            // Indoor
+
+             {
+              boxname: "",
+              boxsize: [
+                { name: "width", Icon: "", size: "" },
+                { name: "height", Icon: "", size: "" },
+                { name: "Depth", Icon: "", size: "" },
+                { name: "weight", Icon: "", size: "" },
+              ],
+            },
+            {
+              boxname: "Dimensions",
+              boxsize: [
+                { name: "width", Icon: "", size: "59.8 cm" },
+                { name: "height", Icon: "", size: "85 cm " },
+                { name: "Depth", Icon: "", size: "59.8 cm" },
+                { name: "weight", Icon: "", size: "40 kg" },
+              ],
+            },
+
+           
+            // {
+            //   boxname: "with box",
+            //   boxsize: [
+            //     { name: "width", Icon: "", size: "652mm" },
+            //     { name: "height", Icon: "", size: "845mm" },
+            //     { name: "Depth", Icon: "", size: "485mm" },
+            //     { name: "weight", Icon: "", size: "51kg" },
+            //   ],
+            // },
+            // OutDoor
+            // {
+
+            //   boxname: "OUTDOOR UNIT",
+            //   boxsize: [
+            //     { name: "width", Icon: "", size: "835mm" },
+            //     { name: "height", Icon: "", size: "555mm" },
+            //     { name: "Depth", Icon: "", size: "295mm" },
+            //     { name: "weight", Icon: "", size: "28Kg" },
+            //   ],
+            // },
+            // {
+            //   boxname: "with box",
+            //   boxsize: [
+            //     { name: "width", Icon: "", size: "652mm" },
+            //     { name: "height", Icon: "", size: "845mm" },
+            //     { name: "Depth", Icon: "", size: "485mm" },
+            //     { name: "weight", Icon: "", size: "51kg" },
+            //   ],
+            // },
+          ],
+          variationsDetails : [
+            {
+              name: "General Information",
+              details: [
+                { name: "PROGRAMMES", details: "5 PROGRAMS" },
+                { name: "ITEM CAPACITY", details: "16 PLACE" },
+                {
+                  name: "UNIQUE SPRAY",
+                  details: "360 DEGREE SPRAY ARM WITH 5 SHOWER",
+                },
+                {
+                  name: "Brand",
+                  details: "GPLUS",
+                },
+                {
+                  name: "Capacity",
+                  details: "16 Place Settings",
+                },
+                {
+                  name: "Noise Level ",
+                  details: "45 DB",
+                },
+                {
+                  name: "WATER CONSUMPTION  ",
+                  details: "12 L",
+                },
+                {
+                  name: "Type",
+                  details: "Free Standing",
+                },
+                {
+                  name: "EXTRA HYGIENE ",
+                  details: "75 DEGREE HOT WATER 99.9 % GREM FREE",
+                },
+                {
+                  name: "Color",
+                  details: "Black",
+                },
+                {
+                  name: "INTELLIGENT SENSOR   ",
+                  details: "AUTOMATICALLY DETECT RESIDUE FOOD ,WATER ,DURATION, INTESITY ACCORDINGLY                ",
+                },
+                {
+                  name: "JET WASH   ",
+                  details: "HIGH TEMP ALT WASH  ",
+                },
+                {
+                  name: "BUILT IN SOFTNER   ",
+                  details: "BULIT IN SOFTNER  ",
+                },
+                {
+                  name: "HYGIENIC STEAM DRY",
+                  details: "SPOTLESS DRYING OF UTENSILS WITH STEAM",
+                },
+                {
+                  name: "Button",
+                  details: "Touch screen buttons ",
+                },
+              ],
+            },
+            {
+              name: "Energy Consumption  ",
+              details: [
+                {
+                  name: "POWER CONSUMPTION   ",
+                  details: "1750 WATTS  ",
+                },
+                {
+                  name: "POWER SUPPLY ",
+                  details: "220 -240 VOLTS  ",
+                },
+              ],
+            },
+            {
+              name: "Rack Features",
+              details: [
+                { name: "Number Of Racks", details: "3 Racks" },
+                { name: "Showers ", details: "5 showers" },
+              ],
+            },
+           
+  
+            {
+              name: "In The Box & Warranty",
+              details: [{ name: "Warranty", details: "1 Year" }],
+            },
+            {
+              name: "Manufacturing & Packing Information",
+              details: [
+                { name: "Customer care Phone", details: "1800-889-1056" },
+                { name: "Customer care email", details: "care@garudamartindia.com" },
+                { name: "Country of origin", details: "India" },
+                { name: "Customer care Phone", details: "1800-889-1056" },
+                { name: "Customer care Phone", details: "1800-889-1056" },
+                { name: "Customer care Phone", details: "1800-889-1056" },
+              ],
+            },
+           ]
+        }
         ],
       },
     ],

@@ -177,13 +177,13 @@ const HomeApp = () => {
                   {/* <div>{item.name}</div> */}
                   <div className="flex  w-full h-[200px] pl-7">
                     {item.box &&
-                      item.box.map((box, index) => {
+                      item?.box.map((box, index) => {
                         return (
                           <div className="pt-10 flex flex-col ">
                             <div className="flex">
                               <button disabled={box.disable}
                                 style={{
-                                  backgroundColor:
+                                  backgroundColor :
                                     boxToggle === index ? "#F9EECE" : "#F6F8FA",visibility: box.hidden
                                 }}
                                 className="border capitalize hover:bg-[#F9EECE] font-semibold text-base flex  pl-3 pr-3 rounded m-1 sm:m-2  h-8 flex items-center justify-center"
@@ -220,7 +220,7 @@ const HomeApp = () => {
                   </div>
 
                   <div className="w-full  flex flex-col">
-                    {item.variationsDetails.map((details) => {
+                    {item.variationsDetails && item?.variationsDetails.map((details) => {
                       return (
                         <div className="flex w-full flex-wrap">
                           <div className="flex flex-col w-full">
@@ -261,7 +261,7 @@ const HomeApp = () => {
                     })}
                   </div>
                   <div >
-                    {item.SpecialFeatures.map((val) => {
+                    {item?.SpecialFeatures &&  item?.SpecialFeatures.map((val) => {
                       return (
                         <div className="">
                           <div className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-2 pl-6 cursor-pointer flex items-center justify-between pr-10" onClick={() => setToggle(!toggle)}>
