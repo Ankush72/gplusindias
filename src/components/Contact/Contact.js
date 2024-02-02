@@ -6,6 +6,12 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import contactbg from "../image/Contact us 8.svg";
 import { toast } from "react-toastify";
 import validator from "validator";
+import { store } from "./Store";
+import { FaArrowRight } from "react-icons/fa";
+import Slider from "react-slick";
+import { IoClose } from "react-icons/io5";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
 
 
 const Contact = () => {
@@ -18,6 +24,11 @@ const Contact = () => {
   });
 
   const [error, setError] = useState({});
+  const [showImage, setShowImage] = useState();
+  const [showImageToggle, setShowImageToggle] = useState(false);
+  const [filterStore,setFilterStore] = useState(store)  
+  const [activeColor,setActiveColor] = useState(null)
+
 
   const onHandleData = (e) => {
     const datas = { ...data };
@@ -58,6 +69,27 @@ const Contact = () => {
     setError({ ...err });
     return Object.keys(err).length < 1;
   };
+console.log(activeColor)
+
+  // filter by category store
+  const filterItems = (category) =>{
+    const filterval = store.filter((currElm) => currElm.category === category );
+    // console.log(filterval)
+ 
+    setFilterStore(filterval);
+    setActiveColor(filterval)
+  }
+
+  // const StoreList = [...new Set(store.map((val)=>val.category))]
+  // console.log(StoreList)
+
+  const settingsStoreImage = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   const submitData = (e) => {
     e.preventDefault();
@@ -66,13 +98,13 @@ const Contact = () => {
     if (isValid) {
       toast.success("submited");
     } else {
-      toast.error("All details are required .");
+      toast.error("All details are required.");
     }
   };
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center pt-[90px] mb-20 font-roboto">
+      <div className="flex flex-col items-center justify-center pt-[90px]  font-roboto">
         <div className="w-full h-full flex flex-col lg:flex-row  items-center   justify-center relative mb-5 ">
           <div className="w-full lg:w-4/6 z-10 ">
             <div className="contact">
@@ -293,20 +325,92 @@ const Contact = () => {
           </div>
         </div>
 
-      
-
-        {/* <div className="bg-blue mt-10 w-full h-full flex justify-center flex-col p-10">
-            <div className="w-full">
-              <h1 className="text-white font-bold text-xl">Registered Head Office Address:</h1>
-              <p className="text-white font-semibold text-base mt-3 w-96">Survey No. 183/1, Lake Side Road, Behind NCC Apartment, Mahadevapura Bangalore(KA). 560048</p>
+        <div className="bg-gray mt-10 w-full h-full flex justify-center flex-col pb-10">
+          {/* <div className="w-full">
+              <h1 className=" font-bold text-xl">Registered Head Office Address:</h1>
+              <p className="font-semibold text-base mt-3 w-96">Survey No. 183/1, Lake Side Road, Behind NCC Apartment, Mahadevapura Bangalore(KA). 560048</p>
+            </div> */}
+          <div className="flex flex-col items-center justify-center ">
+            <div className="font-bold flex items-center justify-center  text-lg text-black shadow w-full pt-4 pb-4">
+              {`OUR SHOWROOMS LOCATIONS`}
             </div>
-            <div className="mt-10">
-           
-              <button className="font-bold text-lg text-white bg-red-600 hover:bg-gray hover:text-black pl-5 pr-5 pt-2 pb-2">  <a 
-               href="https://www.g-digital.in/">{ `OUR SHOWROOMS LOCATIONS  >`}</a></button>
-            </div>
-        </div> */}
 
+            <div className="flex items-center space-x-3 mt-10 ">
+              <button  className={`pl-10 pr-10  text-black shadow font-medium text-base  pt-2 pb-2 ${activeColor === 'Karnataka' ? "buttonColor " : "black"}`} onClick={() => filterItems("Karnataka")}>Karnataka</button> 
+              <button  className={` pl-10 pr-10  text-black shadow font-medium text-base  pt-2 pb-2 ${activeColor === 'Andhra' ? "buttonColor" : "black"}`}  onClick={() => filterItems("Andhra")}>Andhra</button> 
+            </div>
+            <div className="mt-5 w-full h-[2px] bg-black opacity-75"></div>
+            <div className="flex flex-wrap justify-between mt-5 pl-5 pr-5">
+              { filterStore &&
+                filterStore.map((item) => {
+                  return (
+                    <div key={item.id} className="w-full sm:w-[300px] md:w-[370px] m-1 shadow rounded">
+                      <h1 className="font-bold text-lg flex items-center pt-4 pl-1"> <FaMapMarkerAlt size={20} /> <span className="ml-1">{item.location}</span></h1>
+                      <div className="pl-7">
+                      <a
+                        href={`${item.map}`}
+                        className=" hover:text-blue "
+                      >
+                        {item.address}
+                      </a>
+                      </div>
+                      {/* <h1 className="font-semibold text-base">
+                          Pin Code : {item.PinCode}
+                        </h1> */}
+                    <div className="flex items-center ">
+                    <a href={`tel:${item?.number1}`} className="flex items-center mt-1"> <p className="font-bold text-lg flex items-center pl-1"><FaMobileAlt size={20}/> </p> <span className="font-semibold text-base ml-1">{item.number1}</span></a>
+                     <h1 className="ml-1">,</h1>
+                       <a href={`tel:${item?.number2}`} className="flex items-center mt-1"> <span className="font-semibold text-base ml-1">{item?.number2}</span></a>
+                      
+                    </div>
+                        <div className="pl-7 pb-4">
+                      <button
+                        className="see_btn bg-[#FF8800] capitalize mt-3 font-medium text-white pl-2 pr-10 flex items-center pt-2 pb-2"
+                        onClick={() => {
+                          setShowImage(item.image);
+                          setShowImageToggle(true);
+                        }}
+                      >
+                        see store image
+                        <span className="ml-2">
+                          <FaArrowRight />
+                        </span>
+                      </button>
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+            {showImageToggle ? (
+              <div className="fixed flex justify-center items-center bg-[#1f1e1ecb] w-full h-full top-[80px] z-20">
+                <div className="w-full  md:w-3/6 md:h-5/6">
+                  <Slider {...settingsStoreImage}>
+                    {showImage &&
+                      showImage.map((item) => {
+                        return (
+                          <div key={item.id} className="w-full object-contain flex items-center justify-center">
+                            <img
+                              className="object-fill w-full h-[400px]"
+                              src={item.url}
+                              alt=""
+                            />
+                          </div>
+                        );
+                      })}
+                  </Slider>
+                </div>
+                <div
+                  className="absolute z-20 top-20  cursor-pointer w-10 h-10 rounded-full bg-white flex items-center justify-center"
+                  onClick={() => setShowImageToggle(false)}
+                >
+                  <IoClose size={30} color="black" />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
       </div>
     </>
   );
