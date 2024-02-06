@@ -117,6 +117,12 @@ import Gorantala1 from "../image/Gorantala1.jpeg"
 import Gorantala2 from "../image/Gorantala2.jpeg"
 import Gorantala3 from "../image/Gorantala3.jpeg"
 import Gorantala4 from "../image/Gorantala4.jpeg"
+import KrPuram1 from "../image/krpuram1.jpeg"
+import KrPuram2 from "../image/krpuram2.jpeg"
+import KrPuram3 from "../image/krpuram3.jpeg"
+import KrPuram4 from "../image/krpuram4.jpeg"
+import KrPuram5 from "../image/krpuram5.jpeg"
+
 
 
 
@@ -129,7 +135,7 @@ export const store = [
     PinCode: "581115",
     map: "",
     category:"Karnataka",
-    number1: 8050397190,
+    number1: 9364099708,
     number2: "",
     image: [
       {
@@ -179,7 +185,7 @@ export const store = [
     PinCode: "577217",
     map: "https://maps.app.goo.gl/Zhnjd88hqRvKyfqn6",
     category:"Karnataka",
-    number1: 8147681971,
+    number1: 7483890855,
     number2: "",
     image: [
       {
@@ -216,7 +222,7 @@ export const store = [
     PinCode: "583277",
     map: "https://maps.app.goo.gl/mVPja8wK4wFtm8TT6",
     category:"Karnataka",
-    number1: 9740545439,
+    number1: 9364099709,
     number2: "",
     image: [
       {
@@ -261,7 +267,7 @@ export const store = [
     PinCode: "577002",
     map: "https://maps.app.goo.gl/Bq2Jr7nRXD2E8KwCA",
     category:"Karnataka",
-    number1: 7892570683,
+    number1: 9364099711,
     number2: "",
     image: [
       {
@@ -315,7 +321,7 @@ export const store = [
     PinCode: "571125",
     map: "https://maps.app.goo.gl/d2Fesvwzvo7f3q3WA",
     category:"Karnataka",
-    number1: 9980055481,
+    number1: 9364099693,
     number2: "",
     image: [
       {
@@ -341,7 +347,7 @@ export const store = [
     PinCode: "521201",
     map: "https://maps.app.goo.gl/ji6TKxX3ZVqbp6AS9",
     category: "Andhra" ,
-    number1: 8465840160,
+    number1: 9364099679,
     number2:"",
     image: [
       {
@@ -387,8 +393,8 @@ export const store = [
     PinCode: "522265",
     map: "https://maps.app.goo.gl/4fCCC6WF85uLJcETA",
     category: "Andhra" ,
-    number1: 9963160260,
-    number2: 7416751629,
+    number1: 9364099680,
+    number2: "",
     image: [
       {
         id: 1,
@@ -412,8 +418,8 @@ export const store = [
     PinCode: "515231",
     map: "https://maps.app.goo.gl/yRGg8pP3ZnhNThSS7",
     category: "Andhra" ,
-    number1: 9052769094,
-    number2: 8790263080,
+    number1: 9364099705,
+    number2: "",
     image: [
       {
         id: 1,
@@ -442,8 +448,8 @@ export const store = [
     PinCode: "515761",
     map: "https://maps.app.goo.gl/NEpWBpgMFbWtJEc36",
     category: "Andhra" ,
-    number1: 6304913826 ,
-    number2: 6301833177,
+    number1:  9364099703,
+    number2: "",
   },
   // Ananthpur
   {
@@ -454,7 +460,7 @@ export const store = [
     PinCode: "515001",
     map: "https://maps.app.goo.gl/HcUC23Js6Xc8xmLP9",
     category: "Andhra" ,
-    number1: 9652614269,
+    number1: 9364099701,
     number2:"",
     image: [
       {
@@ -484,8 +490,8 @@ export const store = [
     PinCode: "515591",
     map: "https://maps.app.goo.gl/nkpGZrHu3tGZA9dE8",
     category: "Andhra" ,
-    number1: 9032220043,
-    number2: 9948609711,
+    number1: 9364099707,
+    number2: "",
     image: [
       {
         id: 1,
@@ -534,8 +540,8 @@ export const store = [
     PinCode: "517408",
     map: "https://maps.app.goo.gl/mouMt97WdNGEDB6y9",
     category: "Andhra" ,
-    number1: 7288084653,
-    number2: 9346470212,
+    number1: 9364099704,
+    number2: "",
     image: [
       {
         id: 1,
@@ -571,7 +577,7 @@ export const store = [
     PinCode: "516267",
     map: "https://maps.app.goo.gl/ur7cVwVe2GNvXbnB7",
     category: "Andhra" ,
-    number1: 9490600851,
+    number1: 9364099706,
     number2: "",
     image: [
       {
@@ -605,7 +611,7 @@ export const store = [
     PinCode: "520002",
     map: "https://maps.app.goo.gl/n1KknTAqw9uBQdRc9",
     category: "Andhra" ,
-    number1: 7569684128,
+    number1: 9364099696,
     number2:"",
     image: [
       {
@@ -638,7 +644,7 @@ export const store = [
     PinCode: "571107",
     map: "https://maps.app.goo.gl/e4rH1joVmrFMHS7U9",
     category:"Karnataka",
-    number1: 7022466508,
+    number1: 9364099592,
     number2:"",
     image: [
       {
@@ -671,7 +677,7 @@ export const store = [
     PinCode: "516329",
     map: "https://maps.app.goo.gl/1nhQ131yEdCebjV19",
     category: "Andhra" ,
-    number1: 6302664746,
+    number1: 9364099695,
     number2: "",
     image: [
       {
@@ -696,7 +702,7 @@ export const store = [
     PinCode: "524228",
     map: "https://maps.app.goo.gl/8hGUhj1kb77jj3E99",
     category: "Andhra" ,
-    number1: 9490357765,
+    number1: 9364099694,
     number2: "",
     image: [
       {
@@ -730,7 +736,7 @@ export const store = [
     PinCode: "516269",
     map: "https://maps.app.goo.gl/tMW9PSut5kBkKVEN6",
     category: "Andhra" ,
-    number1: 9381672821,
+    number1: 9364099681,
     number2:"",
     image: [
       {
@@ -776,7 +782,7 @@ export const store = [
     PinCode: "517234",
     map: "https://maps.app.goo.gl/TgXhGZ7eSYcRhujZ7",
     category: "Andhra" ,
-    number1: 8217443794,
+    number1: 9364099677,
     number2: "",
     image: [
       {
@@ -802,7 +808,7 @@ export const store = [
     PinCode: "517370",
     map: "https://maps.app.goo.gl/DCCijZbdJveBHetB6",
     category: "Andhra" ,
-    number1: 9392952742,
+    number1: 9364099676,
     number2: "",
     image: [
       {
@@ -836,7 +842,7 @@ export const store = [
     PinCode: "",
     map: "https://maps.app.goo.gl/DCCijZbdJveBHetB6",
     category: "Andhra" ,
-    number1: 9110748899,
+    number1: 9364099681,
     number2: "",
     image: [
       {
@@ -870,7 +876,7 @@ export const store = [
     PinCode: "",
     map: "https://maps.app.goo.gl/DCCijZbdJveBHetB6",
     category:"Karnataka",
-    number1: 8867476667,
+    number1: 9364099684,
     number2:"",
     image: [
       {
@@ -892,6 +898,39 @@ export const store = [
       {
         id: 5,
         url: Kothakota5,
+      },
+    ],
+  },
+  // KR Puram, Bangalore
+  {
+    id: 23,
+    location: "KR Puram, Bangalore",
+    address:"Building at no 3, Roj Garden 4th Devasandra main road, KR Puram Bangalore North 560036",
+    PinCode: "",
+    map: "https://maps.app.goo.gl/Aa2tZox7UAkCjZa26",
+    category:"Bangalore",
+    number1: 9364099692,
+    number2:"",
+    image: [
+      {
+        id: 1,
+        url: KrPuram1,
+      },
+      {
+        id: 2,
+        url: KrPuram2,
+      },
+      {
+        id: 3,
+        url: KrPuram3,
+      },
+      {
+        id: 4,
+        url: KrPuram4,
+      },
+      {
+        id: 5,
+        url: KrPuram5,
       },
     ],
   },
