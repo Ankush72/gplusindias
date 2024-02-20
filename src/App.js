@@ -39,7 +39,7 @@ const App = () => {
             path="/luxury-appliances/:id"
             element={<HomeAppliancesDetails />}
           />
-          <Route path="/luxury-appliances/:id/:name" element={<HomeApp />} />
+          <Route path="/luxury-appliances/:id/:itemId/:route" element={<HomeApp />} />
           <Route path="/small-appliances" element={<KitchenAppliances />} />
           <Route
             path="/small-appliances/:id"

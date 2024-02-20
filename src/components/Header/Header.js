@@ -20,6 +20,7 @@ const Header = () => {
           return (
             <div className="">
               <img className="h-full w-full" src={items.imgUrl} alt="banner" />
+              <button></button>
             </div>
           );
         })}

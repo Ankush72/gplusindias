@@ -1,12 +1,13 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import ImageScroll from "../ImageScroll/ImageScroll";
 // import ImageHover from "../ImageHover/ImageHover";
 
 const HomeAppliancesCart = ({ datas }) => {
   // const [items,setItems] = useState(datas)
-
+  console.log(datas)
+  const {id} = useParams()
   // const OnMouseEnter = (items) =>{
   //   const item = items.imgurl.map((img)=>{
   //     return setItems(img)
@@ -24,7 +25,7 @@ const HomeAppliancesCart = ({ datas }) => {
         <div className="">
         <ImageScroll>
         {
-          datas.banner.map((item)=>{
+          datas?.banner.map((item)=>{
             return <>
               <img className="w-full opacity-90" src={item} alt={datas.name} />
             </>
@@ -52,15 +53,15 @@ const HomeAppliancesCart = ({ datas }) => {
           <span className="ml-2 mr-2">
             <IoIosArrowForward />
           </span>
-          <span>{datas.name}</span>
+          <span>{datas?.name}</span>
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-center mt-10">
-        {datas.data.map((item) => {
+        {datas?.data.map((item) => {
           return (
             <Link
               key={item.id}
-              to={`/luxury-appliances/${item.id}/${item.route}`}
+              to={`/luxury-appliances/${id}/${item.id}/${item.route}`}
               state={{ items: item }}
               className="flex flex-col w-[300px] flex items-center justify-center shadow m-4 pl-4 pr-4 rounded"
             >

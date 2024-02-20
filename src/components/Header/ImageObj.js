@@ -3,6 +3,7 @@
 // import HomeBanner3 from "../image/3.png"
 import HomeBanner4 from "../image/banner.jpg"
 // import AcBanners1 from "../image/AC Banner 2.jpeg"
+import WashingMachine1 from "../image/washingMachineBanner1.jpeg"
 
 
 const imageData = [
@@ -14,10 +15,10 @@ const imageData = [
     //     id: 1,
     //     imgUrl: HomeBanner3
     // },
-    // {
-    //     id: 2,
-    //     imgUrl: HomeBanner2
-    // },
+    {
+        id: 2,
+        imgUrl: WashingMachine1
+    },
    
     {
         id: 3,

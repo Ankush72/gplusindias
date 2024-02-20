@@ -1,10 +1,13 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Slider from "react-slick";
 import "./HomeApp.css";
+import HomeAppliancesObj from "./HomeAppliancesObj";
+
+
 
 const HomeApp = () => {
   const [showImg, setShowImg] = useState("");
@@ -12,13 +15,17 @@ const HomeApp = () => {
   const [textShow, setTextShow] = useState(true);
   const [toggle, setToggle] = useState(true);
   const [boxToggle, setBoxToggle] = useState(1);
+  const { id, itemId, route } = useParams();
+  const [matchedObject, setMatchedObject] = useState(null);
 
-  const { state } = useLocation();
-  const { items = {} } = state;
+
+
+  // const { state } = useLocation();
+  // const { items = {} } = state;
 
   const showMoreText = (item) => {
-    if (item.length <= 258) return item;
-    if (item.length > 258 && showMore) {
+    if (item?.length <= 258) return item;
+    if (item?.length > 258 && showMore) {
       return (
         <>
           <p>
@@ -33,7 +40,7 @@ const HomeApp = () => {
         </>
       );
     }
-    if (item.length > 258) {
+    if (item?.length > 258) {
       return (
         <>
           <p>
@@ -70,7 +77,28 @@ const HomeApp = () => {
     arrows: true,
   };
 
-  return (
+  useEffect(()=>{
+    // console.log(HomeAppliancesObj)
+    const matchedItem = HomeAppliancesObj.find(item =>
+      parseInt(id) === item.id &&
+      parseInt(itemId) === item.data[0].id &&
+      route === item.data[0].route
+    );
+  
+    if (matchedItem) {
+      console.log("Parameters matched!");
+      setMatchedObject(matchedItem.data[0]);
+    } else {
+      console.log("Parameters didn't match!");
+      setMatchedObject(null);
+    }
+  },[id,itemId,route])
+
+// console.log(matchedObject)
+
+
+
+   return (
     <>
       <div className="flex flex-col w-full h-full md:flex-row  justify-around pt-[150px] mb-20 font-roboto ">
         <div className="w-full md:w-3/6 h-full  bg-white shadow flex items-center justify-center md:justify-around sm:mt-10 md:mt-0 pl-3 m-2">
@@ -78,21 +106,21 @@ const HomeApp = () => {
             <div className="w-[300px] h-[300px] ">
               <img
                 className=""
-                src={showImg ? showImg : items.imgurl && items.imgurl[0]}
+                src={showImg ? showImg : matchedObject?.imgurl && matchedObject?.imgurl[0]}
                 alt=""
               />
             </div>
             <div className="flex flex-col space-x-3">
               <div className="float-left">
                 <h1 className="font-semibold text-lg underline ">
-                  Images ({items.imgurl.length})
+                  Images ({matchedObject?.imgurl?.length})
                 </h1>
               </div>
               <div className=" w-[300px]  mt-5 space-x-3">
                 <Slider {...settings}>
-                  {items.imgurl.map((item) => {
+                  {matchedObject?.imgurl.map((item) => {
                     return (
-                      <div className="border w-[100px]  h-[80px] flex items-center justify-center ">
+                      <div key={item.id} className="border w-[100px]  h-[80px] flex items-center justify-center ">
                         <img
                           className=""
                           src={item}
@@ -120,11 +148,11 @@ const HomeApp = () => {
               </div> */}
         <div className="flex shadow flex-col w-full md:w-4/6 rounded pr-3 sm:pr-10 pl-3 m-2 sm:pl-10 md:pl-5 pt-3 pb-3">
           <h1 className="font-bold text-xl capitalize">
-            <span className="">{items.name}</span>
+            <span className="">{matchedObject?.name}</span>
           </h1>
           <div className="font-normal text-base mt-5 flex  flex-col  justify-center">
             <span className="font-normal mr-10">
-              {showMoreText(items.description)}
+              {showMoreText(matchedObject?.description)}
             </span>
           </div>
           <div className="mt-5 ">
@@ -137,11 +165,11 @@ const HomeApp = () => {
               ) : (
                 <IoMdArrowDropdown size={30} />
               )}
-              {items.heading}
+              {matchedObject?.heading}
             </h1>
             {textShow ? (
               <div className="flex flex-col bg-gray1 pl-5 pb-5 rounded-b  transition duration-150 ease-out hover:ease-in">
-                {items.keyfeatures.map((items) => {
+                {matchedObject?.keyfeatures.map((items) => {
                   return (
                     <li className="font-normal text-base">
                       {toTitleCase(items)}
@@ -170,8 +198,8 @@ const HomeApp = () => {
       </div>
       <div className="flex items-center justify-center pb-20 font-roboto rounded">
         <div className="w-full sm:w-10/12 flex flex-col items-center justify-center shadow-xl rounded bg-gray">
-          {items.product &&
-            items.product.map((item) => {
+          {matchedObject?.product &&
+            matchedObject?.product.map((item) => {
               return (
                 <div className="w-full">
                   {/* <div>{item.name}</div> */}
@@ -367,6 +395,7 @@ const HomeApp = () => {
       </div> */}
     </>
   );
-};
+}
+
 
 export default HomeApp;
