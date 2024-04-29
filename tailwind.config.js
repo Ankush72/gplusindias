@@ -15,7 +15,8 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
         Agbalumo:["Lobster","Sans"],
         poppins: ["Poppins", "serif"],
-        Montserrat : ["Montserrat","sans-serif"]
+        Montserrat : ["Montserrat","sans-serif"],
+        Bank: ["Bank Gothic", "Sans serif"]
       },
       colors: {
         gray: "#F5F5F8",
@@ -23,7 +24,8 @@ module.exports = {
         lightgray: "#F6F8FA",
         lightblack: "#303030b1",
         blue: "#055da7",
-        orange:"#FFA500"
+        orange:"#FFA500",
+        red : "#FF0000"
       },
     },
   },

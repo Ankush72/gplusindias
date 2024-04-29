@@ -113,7 +113,7 @@ console.log(activeColor)
             </div>
           </div>
           <div className="w-full lg:w-1/2  relative mt-5 lg:mt-0">
-            <div className="md:h-[100px] pb-5 md:pb-0 pt-5 md:pt-0 overflow-hidden bg-blue flex flex-col items-center justify-center text-white lg:absolute left-0 lg:left-[-100px] right-0 lg:top-[-70px]">
+            <div className="md:h-[100px] pb-5 md:pb-0 pt-5 md:pt-0 overflow-hidden bg-[#800000] flex flex-col items-center justify-center text-white lg:absolute left-0 lg:left-[-100px] right-0 lg:top-[-70px]">
               <h1 className="text-center font-bold text-4xl font-Montserrat drop-shadow-lg ">
                 Gplus Home Appliances
               </h1>
@@ -127,7 +127,7 @@ console.log(activeColor)
           <h1 className="text-center font-bold text-3xl sm:pl-0 pl-10 sm:pr-0 pr-10">
             Have any questions? We would like to hear from you!
           </h1>
-          <div className="w-full h-full md:h-[200px] bg-blue pt-5 md:pt-0 pb-5 md:pb-0 md:pl-10 md:pr-10 flex flex-col md:flex-row justify-center md:justify-around items-center mb-20 mt-5">
+          <div className="w-full h-full md:h-[200px] bg-[#800000] pt-5 md:pt-0 pb-5 md:pb-0 md:pl-10 md:pr-10 flex flex-col md:flex-row justify-center md:justify-around items-center mb-20 mt-5">
             <div className="w-full md:w-auto flex flex-col items-center justify-center md:items-start ">
               <h1 className="text-white   text-[#FFFF00] font-bold">
                 CORPORATE OFFICE
@@ -314,7 +314,7 @@ console.log(activeColor)
                   <div className="w-full">
                     <button
                       type="submit"
-                      className=" py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      className=" py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#FF8800] hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     >
                       Submit
                     </button>

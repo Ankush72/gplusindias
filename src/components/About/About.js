@@ -182,7 +182,7 @@ const About = () => {
               comfort, and promote a sustainable lifestyle.
             </p>
           </div>
-          <div className=" bg-blue  rounded-lg md:rounded-full  shadow-2xl flex flex-col items-center justify-center  text-center p-5 font-poppins">
+          <div className=" bg-[#800000]  rounded-lg md:rounded-full  shadow-2xl flex flex-col items-center justify-center  text-center p-5 font-poppins">
             <h1 className="font-bold text-white text-xl mb-5">OUR MISSION</h1>
             <p className="text-white text-base ">
               Our mission is to design, manufacture, and deliver high-quality

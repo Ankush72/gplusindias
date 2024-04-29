@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../image/GPlus logo 4 web.png";
+import logo from "../image/Gplus Logo.png";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 import { FiMenu } from "react-icons/fi";
@@ -12,49 +12,42 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed shadow-2xl z-20 w-full flex items-center justify-between bg-[#F0F2EE] h-20 text-white pl-10 pr-10 font-poppins">
+      <div className="fixed uppercase shadow-2xl z-20 w-full flex items-center justify-between bg-[#800000] h-20 text-white pl-10 pr-10 ">
         <Link to="/">
-          <img className="h-[60px] w-full" src={logo} alt="" />
+          <img className="h-[70px] w-full" src={logo} alt="" />
         </Link>
         <div className="flex items-center hidden md:block">
-          <ul className=" flex items-center w-full justify-center space-x-4 ">
+          <ul className=" flex items-center w-full justify-center space-x-4">
             <li
               className={({ isActive }) =>
-                isActive ? `${isActive.active}` : ""
+                isActive ? `${isActive.active}` : " "
               }
             >
               <NavLink
                 to="/"
-                className="text-lg text-black cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in	"
+                className="text-base font-semibold text-white cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in	"
               >
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/about-us"
-                className="text-lg text-black cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
-              >
-                About Us
-              </NavLink>
-            </li>
+           
 
             <li>
               <div className="dropdown dropdown-hover">
                 <div
                   tabIndex={0}
-                  className="text-lg text-black cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
+                  className="text-base font-semibold text-white hover:text-[#F2DF93] cursor-pointer  hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
                 >
                   Products
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu  shadow-xl  bg-[#F0F2EE] rounded-lg absolute right-0 left-[-100px] z-10 w-60"
+                  className="dropdown-content menu  shadow-xl  bg-white rounded-lg absolute right-0 left-[-100px] z-10 w-60"
                 >
                   <li className="">
                     <Link
                       to="/luxury-appliances"
-                      className="hover:bg-white hover:text-black text-black capitalize flex items-center justify-between nav_link  "
+                      className="hover:bg-gray hover:text-black text-black capitalize flex items-center justify-between nav_link  "
                     >
                       luxury appliances
                       <span className="arrow-icons hidden">
@@ -65,7 +58,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/small-appliances"
-                      className="hover:bg-white hover:text-black text-black capitalize flex items-center justify-between nav_link "
+                      className="hover:bg-gray hover:text-black text-black capitalize flex items-center justify-between nav_link "
                     >
                       small Appliances
                       <span className="arrow-icons hidden">
@@ -76,24 +69,32 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
+            <li>
+              <NavLink
+                to="/about-us"
+                className="text-base font-semibold text-white hover:text-[#F2DF93] cursor-pointer hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
+              >
+                About Us
+              </NavLink>
+            </li>
 
             <li>
               <NavLink
                 to="/contact"
-                className="text-lg text-black cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
+                className="text-base font-semibold text-white hover:text-[#F2DF93] cursor-pointer  hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
               >
                 Contact Us
               </NavLink>
             </li>
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/support"
-                className="text-lg text-black cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
+                className="text-base font-semibold text-white cursor-pointer hover:underline hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
               >
                 Support
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div
@@ -101,9 +102,9 @@ const Navbar = () => {
           onClick={() => setHamberger(!hamberger)}
         >
           {hamberger ? (
-            <AiOutlineClose size={22} color="black" />
+            <AiOutlineClose size={22} color="white" />
           ) : (
-            <FiMenu size={22} color="black" className="" />
+            <FiMenu size={22} color="white" className="" />
           )}
         </div>
         <div className="block md:hidden">

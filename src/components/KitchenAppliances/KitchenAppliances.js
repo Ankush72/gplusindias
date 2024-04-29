@@ -17,7 +17,7 @@ const KitchenAppliances = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2  relative mt-5 lg:mt-0">
-            <div className="h-[100px] overflow-hidden bg-blue flex flex-col items-center justify-center text-white lg:absolute left-0 lg:left-[-100px] right-0 lg:top-[-70px]">
+            <div className="h-[100px] overflow-hidden bg-[#800000] flex flex-col items-center justify-center text-white lg:absolute left-0 lg:left-[-100px] right-0 lg:top-[-70px]">
               <h1 className="text-center font-bold text-4xl font-Montserrat drop-shadow-lg ">
                 Kitchen Appliances
               </h1>
