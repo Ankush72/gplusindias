@@ -6,7 +6,7 @@ import ImageScroll from "../ImageScroll/ImageScroll";
 
 const HomeAppliancesCart = ({ datas }) => {
   // const [items,setItems] = useState(datas)
-  console.log(datas)
+  // console.log(datas)
   const {id} = useParams()
   // const OnMouseEnter = (items) =>{
   //   const item = items.imgurl.map((img)=>{
@@ -24,10 +24,10 @@ const HomeAppliancesCart = ({ datas }) => {
       <div className="h-full flex flex-col">
         <div className="">
         <ImageScroll>
-        {
+        {datas?.banner &&
           datas?.banner.map((item)=>{
             return <>
-              <img className="w-full opacity-90" src={item} alt={datas.name} />
+              <img className="w-full opacity-90" src={item} alt={datas?.name} />
             </>
           })
         }
@@ -57,7 +57,8 @@ const HomeAppliancesCart = ({ datas }) => {
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-center mt-10">
-        {datas?.data.map((item) => {
+        {datas?.data && datas?.data.map((item) => {
+          // console.log(item)
           return (
             <Link
               key={item.id}
@@ -74,7 +75,7 @@ const HomeAppliancesCart = ({ datas }) => {
                 }
               </div> */}
               <div   >
-              <img src={item.imgurl[0] } alt={item.name}/>
+              <img src={item?.imgurl[0] } alt={item?.name}/>
               </div>
               <h1  className="font-medium  text-base mt-5 h-20 flex items-center justify-center text-center  capitalize">
                 {item.name}

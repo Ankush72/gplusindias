@@ -10,11 +10,11 @@ const HomeAppliancesDetails = () => {
   const [productItem, setProductItem] = useState(null);
 
 
-  console.log(productItem);
+  // console.log(productItem);
 
   useEffect(() => {
     function checkProductId(){
-      console.log(HomeAppliancesObj)
+      // console.log(HomeAppliancesObj)
       if (HomeAppliancesObj && HomeAppliancesObj.length > 0) {
         const item = HomeAppliancesObj.find(item => String(item.id) === String(id));
         console.log("Hello", item)
@@ -22,7 +22,6 @@ const HomeAppliancesDetails = () => {
           setProductItem(item);
         }
       }
-  
     };
     checkProductId();
   }, [id]);

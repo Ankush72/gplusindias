@@ -431,7 +431,7 @@ const HomeAppliances = [
       //   ],
       // },
       {
-        id: 4,
+        id: 3,
         diraction: "row",
         imgurl: [semi7_5, semi7_5kg],
         name: "Semi Automatic Washing Machine 7.5 KG",
@@ -619,7 +619,7 @@ const HomeAppliances = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         diraction: "row-reverse",
         imgurl: [semi8kg1, semi8kg2],
         name: "Semi Automatic Washing Machine 8 KG",

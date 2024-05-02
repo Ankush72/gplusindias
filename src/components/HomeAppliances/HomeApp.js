@@ -7,8 +7,6 @@ import Slider from "react-slick";
 import "./HomeApp.css";
 import HomeAppliancesObj from "./HomeAppliancesObj";
 
-
-
 const HomeApp = () => {
   const [showImg, setShowImg] = useState("");
   const [showMore, setShowMore] = useState(false);
@@ -18,7 +16,10 @@ const HomeApp = () => {
   const { id, itemId, route } = useParams();
   const [matchedObject, setMatchedObject] = useState(null);
 
-
+  console.log("HomeAppliancessObj", HomeAppliancesObj);
+  // console.log(id)
+  // console.log(itemId)
+  // console.log(route)
 
   // const { state } = useLocation();
   // const { items = {} } = state;
@@ -68,7 +69,6 @@ const HomeApp = () => {
     return titleCase;
   };
 
-
   var settings = {
     infinite: false,
     speed: 500,
@@ -77,28 +77,35 @@ const HomeApp = () => {
     arrows: true,
   };
 
-  useEffect(()=>{
-    // console.log(HomeAppliancesObj)
-    const matchedItem = HomeAppliancesObj.find(item =>
-      parseInt(id) === item.id &&
-      parseInt(itemId) === item.data[0].id &&
-      route === item.data[0].route
-    );
-  
-    if (matchedItem) {
-      console.log("Parameters matched!");
-      setMatchedObject(matchedItem.data[0]);
-    } else {
-      console.log("Parameters didn't match!");
-      setMatchedObject(null);
+  useEffect(() => {
+    // console.log(HomeAppliancesObj.find(item=>item))
+
+    for (let i = 0; i < HomeAppliancesObj.length; i++) {
+      const item = HomeAppliancesObj[i];
+
+      for (let j = 0; j < item.data.length; j++) {
+        const data = item.data[j];
+
+        if (
+          item && // Checking if item exists
+          parseInt(id) === item.id && // Comparing id
+          parseInt(itemId) === data?.id && // Comparing itemId from data at index j
+          route === data?.route // Comparing route from data at index j
+        ) {
+          console.log("Parameters matched!");
+          setMatchedObject(data); // Setting matched data
+          return; // If you want to stop after finding the first match
+        }
+      }
     }
-  },[id,itemId,route])
 
-// console.log(matchedObject)
+    console.log("Parameters didn't match!");
+    setMatchedObject(null);
+  }, [id, itemId, route]);
 
+  // console.log(matchedObject)
 
-
-   return (
+  return (
     <>
       <div className="flex flex-col w-full h-full md:flex-row  justify-around pt-[150px] mb-20 font-roboto ">
         <div className="w-full md:w-3/6 h-full  bg-white shadow flex items-center justify-center md:justify-around sm:mt-10 md:mt-0 pl-3 m-2">
@@ -106,13 +113,17 @@ const HomeApp = () => {
             <div className="w-[300px] h-[300px] ">
               <img
                 className=""
-                src={showImg ? showImg : matchedObject?.imgurl && matchedObject?.imgurl[0]}
+                src={
+                  showImg
+                    ? showImg
+                    : matchedObject?.imgurl && matchedObject?.imgurl[0]
+                }
                 alt=""
               />
             </div>
             <div className="flex flex-col space-x-3">
               <div className="float-left">
-                <h1 className="font-semibold text-lg underline ">
+                <h1 className="font-semibold text-lg underline">
                   Images ({matchedObject?.imgurl?.length})
                 </h1>
               </div>
@@ -120,7 +131,10 @@ const HomeApp = () => {
                 <Slider {...settings}>
                   {matchedObject?.imgurl.map((item) => {
                     return (
-                      <div key={item.id} className="border w-[100px]  h-[80px] flex items-center justify-center ">
+                      <div
+                        key={item.id}
+                        className="border w-[100px]  h-[80px] flex items-center justify-center "
+                      >
                         <img
                           className=""
                           src={item}
@@ -209,10 +223,12 @@ const HomeApp = () => {
                         return (
                           <div className="pt-10 flex flex-col ">
                             <div className="flex">
-                              <button disabled={box.disable}
+                              <button
+                                disabled={box.disable}
                                 style={{
-                                  backgroundColor :
-                                    boxToggle === index ? "#F9EECE" : "#F6F8FA",visibility: box.hidden
+                                  backgroundColor:
+                                    boxToggle === index ? "#F9EECE" : "#F6F8FA",
+                                  visibility: box.hidden,
                                 }}
                                 className="border capitalize hover:bg-[#F9EECE] font-semibold text-base flex  pl-3 pr-3 rounded m-1 sm:m-2  h-8 flex items-center justify-center"
                                 onClick={() => setBoxToggle(index)}
@@ -248,78 +264,83 @@ const HomeApp = () => {
                   </div>
 
                   <div className="w-full  flex flex-col">
-                    {item.variationsDetails && item?.variationsDetails.map((details) => {
-                      return (
-                        <div className="flex w-full flex-wrap">
-                          <div className="flex flex-col w-full">
-                            <h1
-                              className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-1 pl-6 cursor-pointer flex items-center justify-between pr-10"
+                    {item.variationsDetails &&
+                      item?.variationsDetails.map((details) => {
+                        return (
+                          <div className="flex w-full flex-wrap">
+                            <div className="flex flex-col w-full">
+                              <h1
+                                className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-1 pl-6 cursor-pointer flex items-center justify-between pr-10"
+                                onClick={() => setToggle(!toggle)}
+                              >
+                                {details.name}
+                                {toggle ? (
+                                  <IoIosArrowUp size={30} />
+                                ) : (
+                                  <IoIosArrowDown size={30} />
+                                )}
+                              </h1>
+
+                              {toggle ? (
+                                <div className="flex flex-wrap pl-3 pb-3 border-t w-full hover:bg-lightgray hover:text-black">
+                                  {details.details &&
+                                    details.details.map((item) => {
+                                      return (
+                                        <div className="w-[250px] mt-2 m-3">
+                                          <h1 className="capitalize font-semibold text-sm opacity-85">
+                                            {item.name}
+                                          </h1>
+                                          <p className="pt-1 font-normal text-sm">
+                                            {item.details}
+                                          </p>
+                                        </div>
+                                      );
+                                    })}
+                                </div>
+                              ) : (
+                                ""
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                  </div>
+                  <div>
+                    {item?.SpecialFeatures &&
+                      item?.SpecialFeatures.map((val) => {
+                        return (
+                          <div className="">
+                            <div
+                              className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-2 pl-6 cursor-pointer flex items-center justify-between pr-10"
                               onClick={() => setToggle(!toggle)}
                             >
-                              {details.name}
+                              <h1>{val.name}</h1>
                               {toggle ? (
                                 <IoIosArrowUp size={30} />
                               ) : (
                                 <IoIosArrowDown size={30} />
                               )}
-                            </h1>
-
+                            </div>
                             {toggle ? (
-                              <div className="flex flex-wrap pl-3 pb-3 border-t w-full hover:bg-lightgray hover:text-black">
-                                {details.details &&
-                                  details.details.map((item) => {
-                                    return (
-                                      <div className="w-[250px] mt-2 m-3">
-                                        <h1 className="capitalize font-semibold text-sm opacity-85">
-                                          {item.name}
-                                        </h1>
-                                        <p className="pt-1 font-normal text-sm">
-                                          {item.details}
-                                        </p>
-                                      </div>
-                                    );
-                                  })}
+                              <div className="pl-10 pt-3 pb-10 border-t">
+                                {val.details.details.map((item) => {
+                                  return (
+                                    <ul className="list-disc">
+                                      <li className="pt-1 font-normal text-sm">
+                                        {item}
+                                      </li>
+                                    </ul>
+                                  );
+                                })}
                               </div>
                             ) : (
                               ""
                             )}
+
+                            <div></div>
                           </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <div >
-                    {item?.SpecialFeatures &&  item?.SpecialFeatures.map((val) => {
-                      return (
-                        <div className="">
-                          <div className="font-semibold text-base capitalize w-full bg-[#F9EECE] p-2 pl-6 cursor-pointer flex items-center justify-between pr-10" onClick={() => setToggle(!toggle)}>
-                          <h1>{val.name}</h1>
-                          {toggle ? (
-                                <IoIosArrowUp size={30} />
-                              ) : (
-                                <IoIosArrowDown size={30} />
-                              )}
-                          </div>
-                          {
-                            toggle ? <div className="pl-10 pt-3 pb-10 border-t">
-                            {
-                              val.details.details.map((item)=>{
-                                return(
-                                    <ul className="list-disc">
-                                      <li className="pt-1 font-normal text-sm">{item}</li>
-                                    </ul>
-                                  )
-                              })
-                            }                       
-                             </div> :""
-                          }
-                         
-                         <div>
-                         
-                         </div>
-                        </div>
-                      );
-                    })}
+                        );
+                      })}
                   </div>
                 </div>
               );
@@ -395,7 +416,6 @@ const HomeApp = () => {
       </div> */}
     </>
   );
-}
-
+};
 
 export default HomeApp;
