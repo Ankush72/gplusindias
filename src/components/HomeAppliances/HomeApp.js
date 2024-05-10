@@ -16,7 +16,7 @@ const HomeApp = () => {
   const { id, itemId, route } = useParams();
   const [matchedObject, setMatchedObject] = useState(null);
 
-  console.log("HomeAppliancessObj", HomeAppliancesObj);
+  // console.log("HomeAppliancessObj", HomeAppliancesObj);
   // console.log(id)
   // console.log(itemId)
   // console.log(route)
@@ -265,7 +265,7 @@ const HomeApp = () => {
 
                   <div className="w-full  flex flex-col">
                     {item.variationsDetails &&
-                      item?.variationsDetails.map((details) => {
+                      item?.variationsDetails.map((details,index) => {
                         return (
                           <div className="flex w-full flex-wrap">
                             <div className="flex flex-col w-full">

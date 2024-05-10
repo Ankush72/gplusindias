@@ -168,7 +168,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center pb-5 bg-[#800000] ">
             <span className="text-sm text-white text-center">
-              © {years} Logistic. All Rights Reserved.
+              © {years} Gshoppi.
             </span>
           </div>
         </div>
