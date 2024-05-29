@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Product from "./components/Product/Product";
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop.js";
 import Privacypolicy from "./components/Privacy-policy";
