@@ -75,7 +75,7 @@ const Footer = () => {
 
                 <li className="mb-1">
                   <NavLink
-                    to="/contact"
+                    to="/contact-us"
                     className=" hover:text-[#F2DF93] text-sm"
                   >
                     Contact Us

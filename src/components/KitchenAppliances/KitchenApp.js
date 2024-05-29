@@ -1,21 +1,28 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Slider from "react-slick";
+import KitchenAppObj from "./KitchenAppliancesObj";
+
+
 
 const KitchenApp = () => {
   const [showImg, setShowImg] = useState("");
   const [showMore, setShowMore] = useState(false);
   const [keyfeature, setKeyFeature] = useState(true);
   const [toggle, setToggle] = useState(true);
+  const { id, itemId, route } = useParams();
+  const [matchedObject, setMatchedObject] = useState(null);
 
-  const { state } = useLocation();
-  const { items = {} } = state;
+
+
+  // const { state } = useLocation();
+  // const { items = {} } = state;
 
   const showMoreText = (item) => {
-    if (item.length <= 258) return item;
-    if (item.length > 258 && showMore) {
+    if (item?.length <= 258) return item;
+    if (item?.length > 258 && showMore) {
       return (
         <>
           <p>
@@ -30,7 +37,7 @@ const KitchenApp = () => {
         </>
       );
     }
-    if (item.length > 258) {
+    if (item?.length > 258) {
       return (
         <>
           <p>
@@ -70,6 +77,30 @@ const KitchenApp = () => {
     arrows: true,
   };
 
+  useEffect(()=>{
+    for (let i = 0; i < KitchenAppObj.length; i++) {
+      const item = KitchenAppObj[i];
+
+      for (let j = 0; j < item.data.length; j++) {
+        const data = item.data[j];
+
+        if (
+          item && // Checking if item exists
+          parseInt(id) === item.id && // Comparing id
+          parseInt(itemId) === data?.id && // Comparing itemId from data at index j
+          route === data?.route // Comparing route from data at index j
+        ) {
+          console.log("Parameters matched!");
+          setMatchedObject(data); // Setting matched data
+          return; // If you want to stop after finding the first match
+        }
+      }
+    }
+
+    console.log("Parameters didn't match!");
+    setMatchedObject(null);
+  },[id, itemId,route])
+
   return (
     <div className="font-roboto">
       <div className="pt-[150px] min-h-screen mb-10 flex flex-col md:flex-row justify-center md:justify-around w-full">
@@ -78,19 +109,23 @@ const KitchenApp = () => {
             <div className="w-[300px] h-[300px] ">
               <img
                 className=""
-                src={showImg ? showImg : items.imgurl && items.imgurl[0]}
+                src={
+                  showImg
+                    ? showImg
+                    : matchedObject?.imgurl && matchedObject?.imgurl[0]
+                }
                 alt=""
               />
             </div>
             <div className="flex flex-col space-x-3">
               <div className="float-left">
                 <h1 className="font-semibold text-lg underline ">
-                  Images ({items.imgurl.length})
+                  Images ({matchedObject?.imgurl.length})
                 </h1>
               </div>
               <div className=" w-[300px]  mt-5 space-x-3">
                 <Slider {...settings}>
-                  {items.imgurl.map((item) => {
+                  {matchedObject?.imgurl.map((item) => {
                     return (
                       <div className="border w-[100px]  h-[80px] flex items-center justify-center ">
                         <img
@@ -140,10 +175,10 @@ const KitchenApp = () => {
           </div>
         </div> */}
         <div className="flex shadow flex-col w-full md:w-4/6 rounded pr-3 sm:pr-10 pl-3 md:m-2 sm:pl-10 md:pl-5 pt-3 pb-3">
-          <h1 className="font-bold text-2xl capitalize">{items.name}</h1>
+          <h1 className="font-bold text-2xl capitalize">{matchedObject?.name}</h1>
           {/* <h1 className="font-bold text-xl mt-5">{datas.descriptionName}</h1> */}
           <p className="font-normal text-base mt-5">
-            {showMoreText(items.description)}
+            {showMoreText(matchedObject?.description)}
           </p>
           <div className="mt-5">
             <h1
@@ -155,11 +190,11 @@ const KitchenApp = () => {
               ) : (
                 <IoMdArrowDropdown size={30} />
               )}{" "}
-              {items.heading}
+              {matchedObject?.heading}
             </h1>
             {keyfeature ? (
               <div className="flex flex-col bg-gray1 pl-5 pb-5 rounded-b transition duration-150 ease-out hover:ease-in">
-                {items.keyfeatures.map((items) => {
+                {matchedObject?.keyfeatures.map((items) => {
                   return (
                     <li className="font-medium text-base ">
                       {toTitleCase(items)}
@@ -189,7 +224,7 @@ const KitchenApp = () => {
 
       <div className="flex items-center justify-center w-full mb-10">
         <div className="md:w-10/12 rounded bg-gray flex flex-col itesm-center justify-center">
-          {items.product.map((item, index) => {
+           {matchedObject?.product && matchedObject?.product.map((item, index) => {
             return (
               <div className="">
                 <div

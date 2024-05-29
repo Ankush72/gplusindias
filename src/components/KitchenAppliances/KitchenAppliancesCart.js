@@ -1,22 +1,26 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import ImageScroll from "../ImageScroll/ImageScroll";
 
 const KitchenAppliancesCart = ({ datas }) => {
+
+  const {id} = useParams()
+
+console.log(datas)
   return (
     <>
       <div className="min-h-full mb-[100px] pt-[100px]  font-roboto">
         <div className="h-full flex flex-col">
           <div className="">
             <ImageScroll>
-              {datas.banner.map((item) => {
+              {datas?.banner && datas?.banner.map((item) => {
                 return (
                   <>
                     <img
                       className="w-full opacity-90"
                       src={item}
-                      alt={datas.name}
+                      alt={datas?.name}
                     />
                   </>
                 );
@@ -42,16 +46,16 @@ const KitchenAppliancesCart = ({ datas }) => {
             <span className="ml-2 mr-2">
               <IoIosArrowForward />
             </span>
-            <span>{datas.name}</span>
+            <span>{datas?.name}</span>
           </div>
         </div>
 
         <div className="flex items-center justify-center pt-20">
-          {datas.data.map((item) => {
+          {datas?.data.map((item) => {
             return (
               <Link
                 key={item.id}
-                to={`/small-appliances/${item.id}/${item.route}`}
+                to={`/small-appliances/${id}/${item.id}/${item.route}`}
                 state={{ items: item }}
                 className="flex flex-col w-[300px] flex items-center justify-center shadow m-4 pl-4 pr-4 rounded"
               >

@@ -80,7 +80,7 @@ const Navbar = () => {
 
             <li>
               <NavLink
-                to="/contact"
+                to="/contact-us"
                 className="text-base font-semibold text-white hover:text-[#F2DF93] cursor-pointer  hover:rounded underline-offset-4 	transition duration-150 ease-out hover:ease-in"
               >
                 Contact Us

@@ -33,7 +33,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/all-product" element={<Product />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/luxury-appliances" element={<HomeAppliances />} />
           <Route
             path="/luxury-appliances/:id"
@@ -46,7 +46,7 @@ const App = () => {
             element={<KitchenAppliancesDetails />}
           />
           <Route path="/diwali-offer" element={<DiwaliPage />} />
-          <Route path="/small-appliances/:id/:name" element={<KitchenApp />} />
+          <Route path="/small-appliances/:id/:itemId/:route" element={<KitchenApp />} />
           <Route path="/support" element={<Support />} />
           <Route path="/privacy-policy" element={<Privacypolicy />} />
           <Route path="/terms-conditions" element={<Termconditions />} />

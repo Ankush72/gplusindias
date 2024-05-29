@@ -51,8 +51,8 @@ const KitchenAppliances = () => {
                     <div className="w-[280px]  h-[350px] rounded-lg  cursor-pointer shadow-balck bg-white pt-3 pb-3 flex flex-col items-center justify-between overflow-hidden">
                       <img
                         className="h-[230px] hover:scale-125 rounded-xl transition-all duration-500 cursor-pointer  w-[230px] "
-                        src={items.imgurl[0]}
-                        alt={items.name}
+                        src={items?.imgurl[0]}
+                        alt={items?.name}
                       />
 
                       <p className="font-medium text-2xl text-black capitalize pb-5 hover:text-lightblack  hover:border-t w-full flex items-center justify-center pt-2">
