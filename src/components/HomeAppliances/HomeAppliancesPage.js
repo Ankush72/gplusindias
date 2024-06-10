@@ -17,7 +17,7 @@ const HomeAppliancesDetails = () => {
       // console.log(HomeAppliancesObj)
       if (HomeAppliancesObj && HomeAppliancesObj.length > 0) {
         const item = HomeAppliancesObj.find(item => String(item.id) === String(id));
-        console.log("Hello", item)
+        // console.log("Hello", item)
         if (item) {
           setProductItem(item);
         }

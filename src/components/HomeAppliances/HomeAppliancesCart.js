@@ -74,8 +74,8 @@ const HomeAppliancesCart = ({ datas }) => {
                   })
                 }
               </div> */}
-              <div   >
-              <img src={item?.imgurl[0] } alt={item?.name}/>
+              <div   className="w-full h-[270px] flex items-center overflow-hidden">
+              <img className="" src={item?.imgurl[0] } alt={item?.name}/>
               </div>
               <h1  className="font-medium  text-base mt-5 h-20 flex items-center justify-center text-center  capitalize">
                 {item.name}

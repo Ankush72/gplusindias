@@ -58,7 +58,7 @@ const ElectronicsAppliances = () => {
                 >
                   <div className="w-[280px]  h-[350px] rounded-lg overflow-hidden  cursor-pointer shadow-lightblack bg-white pt-3 pb-3 flex flex-col items-center justify-between">
                   <img
-                      className="h-[250px] w-full hover:scale-125 rounded-xl transition-all duration-500 cursor-pointer  w-[230px] "
+                      className="h-[240px]  hover:scale-125 rounded-xl transition-all duration-500 cursor-pointer   "
                       src={items.imgurl[0]}
                       alt={items.name}
                     />
@@ -79,7 +79,7 @@ const ElectronicsAppliances = () => {
       <div className="flex items-center justify-center pb-10">
         <div>
           <Link
-            to="/contact"
+            to="/contact-us"
             className="text-center bg-[#800000] pl-5 pr-5 pt-3 pb-3 rounded-lg text-white text-xl font-bold capitalize"
           >
             Apply for dealership
