@@ -13,9 +13,8 @@ import Tv1 from "../image/TV 3.jpg";
 import Tv2 from "../image/1tv.png";
 import Tv3 from "../image/2tv.png";
 import tv4 from "../image/Screen Size 24-32-40.png"
-import tv5 from "../image/Screen Size 43-50.png"
-// import tv6 from "../image/Screen Size 55-65-75-85 (1).png"
-import tv7 from "../image/tv78.png"
+import tv5 from "../image/Screen Size 43-50.png" 
+import tv6 from "../image/40 inches tv.png"
 import tv8 from "../image/55 inches.jpeg"
 import tv9 from "../image/55 inches1.jpeg"
 import tv10 from "../image/65 inches.jpeg"
@@ -1002,7 +1001,7 @@ const HomeAppliances = [
         imgurl: [tv4, Tv2],
         heading: "Key Features : -",
         descriptionName: "description",
-        route: "smart-hd-led-tv",
+        route: "Gplus-32-Inch-(80-Cm)",
         name: "Gplus 32 Inch (80 Cm)",
         description:
           "Gplus TV, your living room becomes a gateway to an entertainment paradise. Indulge in breathtaking visuals, captivating sound, and an array of content that suits your preferences perfectly. Whether you're a movie enthusiast, a sports fanatic, or a binge-watching connoisseur, this TV caters to your every need.",
@@ -1349,7 +1348,7 @@ const HomeAppliances = [
       {
         id: 2,
         diraction: "row",
-        imgurl: [tv7, tv4],
+        imgurl: [tv6, tv4],
         heading: "Key Features : -",
         descriptionName: "description",
         route: "smart-hd-led-tv",
@@ -3330,7 +3329,7 @@ const HomeAppliances = [
         heading: "Key Features : -",
         descriptionName: "description",
         route: "QLED-85-Inches-(216-Cm)-Ultra-HD-4K",
-        name: "QLED 85 Inches (214 Cm) Ultra HD 4K",
+        name: "QLED 85 Inches (216 Cm) Ultra HD 4K",
         description:
         "GPLUS QLED 85-inch TV – a masterpiece of immersive entertainment and cutting-edge technology. Immerse yourself in a world of breath-taking visuals, stunning colors, and unparalleled clarity that will redefine your TV viewing experience. Elevate your home entertainment with the GPLUS QLED 85-inch TV. Immerse yourself in stunning visuals, captivating sound, and an array of smart features that redefine what a TV can be. Experience the future of entertainment today.",
         keyfeatures: [
@@ -3651,8 +3650,8 @@ const HomeAppliances = [
         id: 1,
         diraction: "row-reverse",
         imgurl: [Refrigerator1, Refrigerator2, Refrigerator3],
-        route: "refrigerator",
-        name: "refrigerator",
+        route: "refrigerator-270L",
+        name: "refrigerator 270L",
         heading: "Key Features : -",
         descriptionName: "description",
         description:
@@ -3854,8 +3853,8 @@ const HomeAppliances = [
           Refrigerator8,
           Refrigerator9,
         ],
-        route: "refrigerator",
-        name: "refrigerator",
+        route: "refrigerator-528L",
+        name: "refrigerator 528L",
         heading: "Key Features : -",
         descriptionName: "description",
         description:

@@ -9,9 +9,13 @@ import semiAutomatic  from "../image/semi (1).png"
 import Micro from "../image/micro oven.png"
 import SingleDoor from "../image/Single Door fridge.png"
 import { Link } from 'react-router-dom'
+// import HomeAppliancesObj from "../HomeAppliances/HomeAppliancesObj";
+
 
 
 const Banner = () => {
+  // console.log(HomeAppliancesObj)
+
   return (
     <div className='bg-[#d9dada] pt-5'>
     <div className="w-full h-[1px] bg-[#800000]"></div>
