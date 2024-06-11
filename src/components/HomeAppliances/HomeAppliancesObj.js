@@ -29,6 +29,8 @@ import washingMachine1 from "../image/01.jpg";
 import washingMachine2 from "../image/02.jpg";
 import washingMachine3 from "../image/03.jpg";
 import washingMachine4 from "../image/19.jpg";
+import washingMachine5 from "../image/29.jpg"
+import washingMachine6 from "../image/17.jpg"
 import semi7_5 from "../image/04.jpg";
 import semi7_5kg from "../image/05.jpg";
 import semi8kg1 from "../image/06.jpg";
@@ -50,7 +52,7 @@ const HomeAppliances = [
   // washing machine
   {
     id: 1,
-    imgurl: [washingMachine1, washingMachine2, washingMachine3],
+    imgurl: [washingMachine3, washingMachine2, washingMachine3],
     name: "washing machine",
     banner: [
       washingMachineBanner1,
@@ -60,189 +62,6 @@ const HomeAppliances = [
     data: [
       {
         id: 1,
-        diraction: "row-reverse",
-        imgurl: [
-          washingMachine1,
-          washingMachine2,
-          washingMachine4,
-          washingMachine3,
-        ],
-        heading: "Key Features : -",
-        route: "fully-automatic-washing-machine-6kg",
-        name: "Fully Automatic Washing Machine 6 KG",
-        description:
-          "Introducing Gplus Fully Automatic Washing Machine 6 kg: Effortless Laundry, Superior Performance. Experience the convenience of advanced laundry care with Gplus Fully Automatic Washing Machine 6 kg. Designed to handle your daily laundry needs with efficiency and precision, this washing machine delivers outstanding results every time. Upgrade your laundry routine with Gplus Fully Automatic Washing Machine 6 kg. Experience the joy of effortless laundry care and the confidence of knowing your clothes will be washed with care and efficiency. Simplify your life and embrace the convenience of this washing machine, designed to make your laundry tasks a breeze. Invest in Gplus Fully Automatic Washing Machine 6 kg and transform your laundry experience today. Say goodbye to manual washing and enjoy pristine laundry results with this reliable and efficient appliance   ",
-        keyfeatures: [
-          "16 WASH PROGRAM  6 KG CAPACITY",
-          "LARGE LED DISPLAY",
-          "METALIC BODY WITH EMBOSED COVER TO PREVENT RUSTING ",
-          "WITH 3 DIFFERENT MATALIC COLOUR OF WHITE , SILVER , GREY",
-          "SPIN RPM OF 1200 WITH 4 SPEED OF 600, 800, 1000, 1200 RPM",
-          "DIAMOUND STAINLESS STEEL DRUM ",
-        ],
-        product: [
-          {
-            box: [
-              {
-                boxname: "without box",
-                boxsize: [
-                  { name: "width", Icon: "", size: "598mm" },
-                  { name: "height", Icon: "", size: "845mm" },
-                  { name: "Depth", Icon: "", size: "445mm" },
-                  { name: "weight", Icon: "", size: "47kg" },
-                ],
-              },
-              {
-                boxname: "with box",
-                boxsize: [
-                  { name: "width", Icon: "", size: "652mm" },
-                  { name: "height", Icon: "", size: "845mm" },
-                  { name: "Depth", Icon: "", size: "485mm" },
-                  { name: "weight", Icon: "", size: "51kg" },
-                ],
-              },
-            ],
-            variationsDetails: [
-              {
-                name: "Variations Details",
-                details: [
-                  { name: "color", details: "Gray,silver,white" },
-                  { name: "design", details: "Majestic" },
-                  { name: "finish", details: "Metallic" },
-                ],
-              },
-              // washingMachineDetails
-              {
-                name: "Washing Machines Details",
-                details: [
-                  { name: "Gross Capacity (Kg)", details: "6 kg" },
-                  { name: "Motor Warranty", details: "10 years" },
-                ],
-              },
-              // washingDetails
-              {
-                name: "Washing Details",
-                details: [
-                  {
-                    name: "Types Of Washing Modes/Programs",
-                    details:
-                      "Mixed, Eco 40-60, Cotton, 20*c, Gentle, Wool, night, Antibactrial, Drum Clean, Rinse + Spin, Spin, Kids Wear, Shirts, Underwears, Quick 30, Quick 15",
-                  },
-                  { name: "Types Of Stain Removal", details: "100%" },
-                  { name: "No. Of Washing Modes/Programs", details: "16" },
-                  { name: "In-Built Heater", details: "Yes" },
-                  { name: "Express Wash", details: "Yes" },
-                ],
-              },
-              // General Information
-              {
-                name: "General Information",
-                details: [
-                  {
-                    name: "Net Quantity(Unit)",
-                    details: "1",
-                  },
-                  {
-                    name: "Product Type",
-                    details: "Fully Automatic Front Load Washing Machine",
-                  },
-                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
-
-                  {
-                    name: "In The Box Contents",
-                    details:
-                      "User Manual, Ratmesh & screws, Inlet Hose, Transport Caps, warnty card",
-                  },
-                  { name: "Installation Type", details: "Freestanding" },
-                ],
-              },
-              // Other Details
-              {
-                name: "Other Details",
-                details: [
-                  {
-                    name: "Motor Type",
-                    details: "Inverter",
-                  },
-                  { name: "Maximum Spin Speed", details: "1200 RPM" },
-                ],
-              },
-              // Manufacturer Information
-              {
-                name: "Manufacturer Information",
-                details: [
-                  {
-                    name: "Manufactured By",
-                    details: "Garuda Mart India Private Limited.",
-                  },
-                  { name: "Country Of Origin", details: "India" },
-                  { name: "Contact Us", details: "care@garudamartindia.com" },
-
-                  {
-                    name: "Packed By",
-                    details: "Garuda Mart India",
-                  },
-                ],
-              },
-              // Interior Details
-              {
-                name: "Interior Details",
-                details: [
-                  {
-                    name: "Auto Detergent Dosage",
-                    details: "No",
-                  },
-                  { name: "Rat Mesh", details: "Yes" },
-                ],
-              },
-              // Exterior Details
-              {
-                name: "Exterior Details",
-                details: [
-                  {
-                    name: "Wheel Support",
-                    details: "No",
-                  },
-                  { name: "Display ", details: "LED display" },
-                ],
-              },
-              // Energy Details
-              {
-                name: "Energy Details",
-                details: [
-                  // taalk with
-
-                  { name: "Voltage Range(V)", details: "220-240v" },
-                  {
-                    name: "Consuption power at wash cycle",
-                    details: "2000 Watts",
-                  },
-                  { name: "Frequency (Hz)", details: "50 Hz" },
-                ],
-              },
-            ],
-            // Special Features
-            SpecialFeatures: [
-              {
-                name: "Special Features",
-                details: {
-                  name: "",
-                  details: [
-                    "TRANSPERENT DOOR WITH BOROSIL GLASS",
-                    "TUMBLE WASH TO BETTER WASH QUALITY",
-                    "HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C",
-                    "DRUM CLEANING PROGRAM TO SELF CLEAN BY THE MACHINE",
-                    "ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF",
-                  ],
-                },
-              },
-            ],
-          },
-        ],
-      },
-     
-      {
-        id: 2,
         diraction: "row-reverse",
         imgurl: [washingMachine3],
         route: "fully-automatic-washing-machine-7kg",
@@ -424,10 +243,10 @@ const HomeAppliances = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         diraction: "row-reverse",
         imgurl: [
-          washingMachine3
+          washingMachine6,washingMachine5
         ],
         heading: "Key Features : -",
         route: "fully-automatic-washing-machine-8.5kg",
@@ -607,6 +426,190 @@ const HomeAppliances = [
           },
         ],
       },
+      {
+        id: 3,
+        diraction: "row-reverse",
+        imgurl: [
+          washingMachine1,
+          washingMachine2,
+          washingMachine4,
+          washingMachine3,
+        ],
+        heading: "Key Features : -",
+        route: "fully-automatic-washing-machine-6kg",
+        name: "Fully Automatic Washing Machine 6 KG",
+        description:
+          "Introducing Gplus Fully Automatic Washing Machine 6 kg: Effortless Laundry, Superior Performance. Experience the convenience of advanced laundry care with Gplus Fully Automatic Washing Machine 6 kg. Designed to handle your daily laundry needs with efficiency and precision, this washing machine delivers outstanding results every time. Upgrade your laundry routine with Gplus Fully Automatic Washing Machine 6 kg. Experience the joy of effortless laundry care and the confidence of knowing your clothes will be washed with care and efficiency. Simplify your life and embrace the convenience of this washing machine, designed to make your laundry tasks a breeze. Invest in Gplus Fully Automatic Washing Machine 6 kg and transform your laundry experience today. Say goodbye to manual washing and enjoy pristine laundry results with this reliable and efficient appliance   ",
+        keyfeatures: [
+          "16 WASH PROGRAM  6 KG CAPACITY",
+          "LARGE LED DISPLAY",
+          "METALIC BODY WITH EMBOSED COVER TO PREVENT RUSTING ",
+          "WITH 3 DIFFERENT MATALIC COLOUR OF WHITE , SILVER , GREY",
+          "SPIN RPM OF 1200 WITH 4 SPEED OF 600, 800, 1000, 1200 RPM",
+          "DIAMOUND STAINLESS STEEL DRUM ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "without box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "598mm" },
+                  { name: "height", Icon: "", size: "845mm" },
+                  { name: "Depth", Icon: "", size: "445mm" },
+                  { name: "weight", Icon: "", size: "47kg" },
+                ],
+              },
+              {
+                boxname: "with box",
+                boxsize: [
+                  { name: "width", Icon: "", size: "652mm" },
+                  { name: "height", Icon: "", size: "845mm" },
+                  { name: "Depth", Icon: "", size: "485mm" },
+                  { name: "weight", Icon: "", size: "51kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              {
+                name: "Variations Details",
+                details: [
+                  { name: "color", details: "Gray,silver,white" },
+                  { name: "design", details: "Majestic" },
+                  { name: "finish", details: "Metallic" },
+                ],
+              },
+              // washingMachineDetails
+              {
+                name: "Washing Machines Details",
+                details: [
+                  { name: "Gross Capacity (Kg)", details: "6 kg" },
+                  { name: "Motor Warranty", details: "10 years" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Washing Details",
+                details: [
+                  {
+                    name: "Types Of Washing Modes/Programs",
+                    details:
+                      "Mixed, Eco 40-60, Cotton, 20*c, Gentle, Wool, night, Antibactrial, Drum Clean, Rinse + Spin, Spin, Kids Wear, Shirts, Underwears, Quick 30, Quick 15",
+                  },
+                  { name: "Types Of Stain Removal", details: "100%" },
+                  { name: "No. Of Washing Modes/Programs", details: "16" },
+                  { name: "In-Built Heater", details: "Yes" },
+                  { name: "Express Wash", details: "Yes" },
+                ],
+              },
+              // General Information
+              {
+                name: "General Information",
+                details: [
+                  {
+                    name: "Net Quantity(Unit)",
+                    details: "1",
+                  },
+                  {
+                    name: "Product Type",
+                    details: "Fully Automatic Front Load Washing Machine",
+                  },
+                  { name: "Comprehensive Warranty (Year)", details: "2 Years" },
+
+                  {
+                    name: "In The Box Contents",
+                    details:
+                      "User Manual, Ratmesh & screws, Inlet Hose, Transport Caps, warnty card",
+                  },
+                  { name: "Installation Type", details: "Freestanding" },
+                ],
+              },
+              // Other Details
+              {
+                name: "Other Details",
+                details: [
+                  {
+                    name: "Motor Type",
+                    details: "Inverter",
+                  },
+                  { name: "Maximum Spin Speed", details: "1200 RPM" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "Manufacturer Information",
+                details: [
+                  {
+                    name: "Manufactured By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  { name: "Country Of Origin", details: "India" },
+                  { name: "Contact Us", details: "care@garudamartindia.com" },
+
+                  {
+                    name: "Packed By",
+                    details: "Garuda Mart India",
+                  },
+                ],
+              },
+              // Interior Details
+              {
+                name: "Interior Details",
+                details: [
+                  {
+                    name: "Auto Detergent Dosage",
+                    details: "No",
+                  },
+                  { name: "Rat Mesh", details: "Yes" },
+                ],
+              },
+              // Exterior Details
+              {
+                name: "Exterior Details",
+                details: [
+                  {
+                    name: "Wheel Support",
+                    details: "No",
+                  },
+                  { name: "Display ", details: "LED display" },
+                ],
+              },
+              // Energy Details
+              {
+                name: "Energy Details",
+                details: [
+                  // taalk with
+
+                  { name: "Voltage Range(V)", details: "220-240v" },
+                  {
+                    name: "Consuption power at wash cycle",
+                    details: "2000 Watts",
+                  },
+                  { name: "Frequency (Hz)", details: "50 Hz" },
+                ],
+              },
+            ],
+            // Special Features
+            SpecialFeatures: [
+              {
+                name: "Special Features",
+                details: {
+                  name: "",
+                  details: [
+                    "TRANSPERENT DOOR WITH BOROSIL GLASS",
+                    "TUMBLE WASH TO BETTER WASH QUALITY",
+                    "HOT WATER OPTION WITH 4 TYPE 20, 40, 60, 85 *C",
+                    "DRUM CLEANING PROGRAM TO SELF CLEAN BY THE MACHINE",
+                    "ERROR CODES TO CUSTOMER TO ACCESS BY CUSTOMER TO REPAIR BY THEMSELF",
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+     
+    
 
     //  semi Automatic washing machine
       {
