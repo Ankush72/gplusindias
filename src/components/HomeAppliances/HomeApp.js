@@ -127,7 +127,7 @@ const HomeApp = () => {
                   Images ({matchedObject?.imgurl?.length})
                 </h1>
               </div>
-              <div className=" w-[300px]  mt-5 space-x-3">
+              <div className=" w-[300px]  mt-5 space-x-3 ">
                 <Slider {...settings}>
                   {matchedObject?.imgurl.map((item) => {
                     return (

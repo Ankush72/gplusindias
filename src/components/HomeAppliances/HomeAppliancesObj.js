@@ -12,6 +12,20 @@ import Refrigerator9 from "../image/26.jpg";
 import Tv1 from "../image/TV 3.jpg";
 import Tv2 from "../image/1tv.png";
 import Tv3 from "../image/2tv.png";
+import tv4 from "../image/Screen Size 24-32-40.png"
+import tv5 from "../image/Screen Size 43-50.png"
+// import tv6 from "../image/Screen Size 55-65-75-85 (1).png"
+import tv7 from "../image/tv78.png"
+import tv8 from "../image/55 inches.jpeg"
+import tv9 from "../image/55 inches1.jpeg"
+import tv10 from "../image/65 inches.jpeg"
+import tv11 from "../image/65 inches 1.jpeg"
+import tv12 from "../image/75 inches.jpeg"
+import tv13 from "../image/75 inches1.jpeg"
+import tv14 from "../image/85 inches.jpeg"
+import tv15 from "../image/85 inches1.jpeg"
+import spac from "../image/sec.jpeg"
+import remote from "../image/remote.jpeg"
 import washingMachine1 from "../image/01.jpg";
 import washingMachine2 from "../image/02.jpg";
 import washingMachine3 from "../image/03.jpg";
@@ -985,7 +999,7 @@ const HomeAppliances = [
       {
         id: 1,
         diraction: "row",
-        imgurl: [Tv1, Tv2],
+        imgurl: [tv4, Tv2],
         heading: "Key Features : -",
         descriptionName: "description",
         route: "smart-hd-led-tv",
@@ -1335,7 +1349,7 @@ const HomeAppliances = [
       {
         id: 2,
         diraction: "row",
-        imgurl: [Tv1, Tv2],
+        imgurl: [tv7, tv4],
         heading: "Key Features : -",
         descriptionName: "description",
         route: "smart-hd-led-tv",
@@ -1660,7 +1674,7 @@ const HomeAppliances = [
       {
         id: 3,
         diraction: "row",
-        imgurl: [Tv3,Tv1],
+        imgurl: [tv5,Tv3],
         heading: "Key Features : -",
         descriptionName: "description",
         route: "Gplus-43-Inch-(108-Cm)-Ultra-HD-(4K)-LED-Smart-Android-TV",
@@ -1988,7 +2002,7 @@ const HomeAppliances = [
       {
         id: 4,
         diraction: "row",
-        imgurl: [Tv1,Tv2],
+        imgurl: [Tv2,tv5],
         heading: "Key Features : -",
         descriptionName: "description",
         route: "Gplus-127-Cm-(50-Inches)-Frameless-Series-4K-Ultra-HD-Smart",
@@ -2311,22 +2325,1016 @@ const HomeAppliances = [
         ],
       },
 
-
-
-
-   
       {
-        id: 1,
+        id: 4,
         diraction: "row",
-        imgurl: [Tv1, Tv2],
+        imgurl: [tv9,tv8,spac,remote],
         heading: "Key Features : -",
         descriptionName: "description",
-        route: "smart-hd-led-tv",
-        name: "QLED-85 inches",
+        route: "gplus-55-Inches-(140-Cm)-QLED-Ultra-Hd(4k)",
+        name: "55 Inches (140 Cm) QLED Ultra Hd(4k)",
         description:
-          "Introducing the VYOM QLED 85-inch TV – a masterpiece of immersive entertainment and cutting-edge technology. Immerse yourself in a world of breath-taking visuals, stunning colors, and unparalleled clarity that will redefine your TV viewing experience. Elevate your home entertainment with the VYOM QLED 85-inch TV. Immerse yourself in stunning visuals, captivating sound, and an array of smart features that redefine what a TV can be. Experience the future of entertainment today.",
+        "Bezel-less Design The elegant bezel-less design of this TV seamlessly blends into your decor, improving not only your viewing experience with the elegant design makes your home look premium. Google Assistant: Press the Google Assistant button on your remote to do more on your TV with your voice. Ask Google to search for the latest blockbuster, stream shows, or open multiplayer games. Have it dim the lights by connecting smart home devices. Manage tasks and see your calendar. Multiple Connectivity You can connect almost any peripheral to this TV. It comes with multiple ports including USB, HDMI, and Bluetooth. You can even utilize the Chrome cast (Android) or Airplay (iOS) app to cast your mobile, tablet, or laptop onto your TV screen.        ",
         keyfeatures: [
-          "Display: QLED, 3840 x 2160 pixels, 60 Hz",
+          "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+          "Operating System: webOs.",
+          "Resolution: Ultra HD (4K) 3840 x 2160 Pixels",
+          "Sound Output: 30 W ",
+          "Refresh Rate: 60 Hz ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "",
+                boxsize: [
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                ],
+              },
+              {
+                boxname: "Dimensions(mm)",
+                boxsize: [
+                  { name: "width", Icon: "", size: "123.2 cm" },
+                  { name: "height", Icon: "", size: "71.6 cm" },
+                  { name: "Depth", Icon: "", size: "6.36 cm" },
+                  // { name: "weight", Icon: "", size: "55-5Kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              // washingMachineDetails
+              {
+                name: "General",
+                details: [
+                  { name: "Display Size", details: "140 cm (55 inch)"},
+                  { name: "Screen Type", details: "LED" },
+                  { name: "HD Technology & Resolution", details: "Ultra HD (4k) , 3840 x 2160" },
+                  { name: "Motion Sensor", details: "No" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Smart Tv Features ",
+                details: [
+                  {
+                    name: "Processor",
+                    details: "Quad Core ",
+                  },
+                  {
+                    name: "Ram Capacity",
+                    details: "2 GB",
+                  },
+                  { name: "Storage Memory", details: "16 GB" },
+                  {
+                    name: "Supported App - Netflix ",
+                    details: "yes",
+                  },
+                  {
+                    name: "Supported App - Youtube ",
+                    details: "yes",
+                  },
+                  { name: "Supported App - Disney+Hotstar ", details: "yes" },
+                  {
+                    name: "Supported App - Prime Video ",
+                    details: "yes",
+                  },
+                  { name: "Built In Wi-Fi", details: "yes" },
+                  { name: "Ethernet", details: "8 ms" },
+                  {
+                    name: "Screen Mirroring ",
+                    details: "yes",
+                  },
+                ],
+              },
+              // General Information
+              {
+                name: "Audio Features",
+                details: [
+                  {
+                    name: "Number Of Speakers",
+                    details: "2",
+                  },
+                  {
+                    name: "Speaker Type",
+                    details: "Box Speaker",
+                  },
+                  { name: "Surround Sound", details: "yes" },
+                 
+                  {
+                    name:"Speaker Output RMS" ,details:"30w"
+                  }, {
+                    name:"other Audio Features" ,details:"Sound Mode (Standard, Music, News, Movie, Game, User), Sound Output Device (TV Speaker, ARC, S/PDIF)"
+                  },
+
+                ],
+              },
+              // video feartures
+              {
+                name: "Video Features",
+                details: [
+                  {
+                    name: "Analog TV Reception",
+                    details: "PAL B/G",
+                  },
+                  {
+                    name: "Digital Noise Filter ",
+                    details: "yes",
+                  },
+                  {
+                    name:"Aspect Ratio " ,details:"16:09:00"
+                  },
+                  { name: "Refresh Rate", details: "60 HZ" },
+                 
+                  {
+                    name:"View Angle" ,details:"Wide Viewing Angle degree"
+                  }, {
+                    name:"Panel Type" ,details:"IPS"
+                  }, 
+                  {
+                    name:"Other Video Features" ,details:"ChromeCast, Stream"
+                  },
+
+                ],
+              },
+              // Other Details
+              {
+                name: "TELEVISION OPERATING SYSTEM",
+                details: [
+                  {
+                    name: "OS Type",
+                    details: "WebOs",
+                  },
+                  { name: "OS Name & Version", details: "WebOs" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "MANUFACTURER DETAILS",
+                details: [
+                  {
+                    name: "Manufacturer By ",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "LED TV",
+                  },   {
+                    name: "Brand",
+                    details: "GPLUS", 
+                  },
+                  { name: "Model Number", details: "GM50FLMV" },
+                ],
+              },
+
+         
+              // TELEVISION PORTS & SLOTS
+              {
+                name: "TELEVISION PORTS & SLOTS",
+                details: [
+                  {
+                    name: "Number Of USB Ports",
+                    details: "2 x USB",
+                  },
+                  {
+                    name: "HDMI Type",
+                    details: "HDMI",
+                  },
+                  {
+                    name : "Headphone Jack",
+                    details:"Yes"
+                  },
+                  {
+                    name: "Number Of HDMI Ports",
+                    details: "3 x HDMI",
+                  },
+                ],
+              },
+
+              // TELEVISION NETWORK CONNECTIVITY
+              {
+                name: "TELEVISION NETWORK CONNECTIVITY",
+                details: [
+                  {
+                    name: "WiFi Supported",
+                    details: "Yes",
+                  },
+                  
+                ],
+              },
+
+              // Convenience Features
+
+             
+                {
+                  name: "Convenience Features",
+                  details: [
+                    {
+                      name: "On/Off Timer",
+                      details: "yes",
+                    },
+                    
+                  ],
+                },
+
+              // REMOTE CONTROL DETAILS
+             
+              // TELEVISION ADDITIONAL FEATURES
+              {
+                name: "TELEVISION ADDITIONAL FEATURES",
+                details: [
+                  {
+                    name: "",
+                    details: "Netflix",
+                  },
+                  {
+                    name: "",
+                    details: "Prime Video",
+                  },
+                ],
+              },
+              // TELEVISION PLUG DETAILS
+              {
+                name: "TELEVISION PLUG DETAILS",
+                details: [
+                  {
+                    name: "Frequency",
+                    details: "50/60 Hz",
+                  },
+                  {
+                    name: "Power Requirement",
+                    details: "AC 100 - 240 V, 50/60 Hz",
+                  },
+                  {
+                    name: "Power Consumption",
+                    details: "0.5 W (Standby)",
+                  },
+                  {
+                    name: "Watts",
+                    details: "45 Watts",
+                  },
+                ],
+              },
+              // AESTHETICS
+              {
+                name: "AESTHETICS",
+                details: [
+                  {
+                    name: "Color",
+                    details: "Black",
+                  },
+                  {
+                    name: "Color Family",
+                    details: "BLACK",
+                  },
+                ],
+              },
+              // IN THE BOX
+              {
+                name: "IN THE BOX",
+                details: [
+                  {
+                    name: "Documents",
+                    details: "User-Manual",
+                  },
+                  {
+                    name: "Main product",
+                    details: "1 x Television U",
+                  },
+                  {
+                    name: "Accessories",
+                    details: "RemoteControl | RemoteControlBattery",
+                  },
+                  {
+                    name: "Others",
+                    details: "Wall Mounting Brackets | Table Top Stand Pair",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "Television",
+                  },
+                ],
+              },
+
+              // COMPANY CONTACT INFORMATION
+              {
+                name: "COMPANY CONTACT INFORMATION",
+                details: [
+                  {
+                    name: "Customer Support Number",
+                    details: "1800 123 986 666",
+                  },
+                  {
+                    name: "Customer Support Email",
+                    details: "info@garudamartindia.com",
+                  },
+                  {
+                    name: "Country of Manufacture",
+                    details: "India",
+                  },
+                ],
+              },
+            ],
+            // Special Features
+            // SpecialFeatures: [
+            //   {
+            //     name: "",
+            //     details: {
+            //       name: "",
+            //       details: [],
+            //     },
+            //   },
+            // ],
+          },
+        ],
+      },
+
+
+      {
+        id: 5,
+        diraction: "row",
+        imgurl: [tv10,tv11,spac,remote],
+        heading: "Key Features : -",
+        descriptionName: "description",
+        route: "gplus-65-Inches-(165-Cm)-QLED-Ultra-Hd(4k)",
+        name: "65 Inches (165 Cm) QLED Ultra Hd(4k)",
+        description:
+        "Bezel-less Design The elegant bezel-less design of this TV seamlessly blends into your decor, improving not only your viewing experience with the elegant design makes your home look premium. Google Assistant: Press the Google Assistant button on your remote to do more on your TV with your voice. Ask Google to search for the latest blockbuster, stream shows, or open multiplayer games. Have it dim the lights by connecting smart home devices. Manage tasks and see your calendar. Multiple Connectivity You can connect almost any peripheral to this TV. It comes with multiple ports including USB, HDMI, and Bluetooth. You can even utilize the Chrome cast (Android) or Airplay (iOS) app to cast your mobile, tablet, or laptop onto your TV screen.",
+        keyfeatures: [
+          "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+          "Operating System: webOs.",
+          "Resolution: Ultra HD (4K) 3840 x 2160 Pixels",
+          "Sound Output: 30 W ",
+          "Refresh Rate: 60 Hz ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "",
+                boxsize: [
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                ],
+              },
+              {
+                boxname: "Dimensions(mm)",
+                boxsize: [
+                  { name: "width", Icon: "", size: "1454 mm" },
+                  { name: "height", Icon: "", size: "831 mm" },
+                  { name: "Depth", Icon: "", size: "25.7 mm" },
+                  // { name: "weight", Icon: "", size: "55-5Kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              // washingMachineDetails
+              {
+                name: "General",
+                details: [
+                  { name: "Display Size", details: "165 cm (65 inch)"},
+                  { name: "Screen Type", details: "LED" },
+                  { name: "HD Technology & Resolution", details: "Ultra HD (4k) , 3840 x 2160" },
+                  { name: "Motion Sensor", details: "No" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Smart Tv Features ",
+                details: [
+                  {
+                    name: "Processor",
+                    details: "Quantum Processor ",
+                  },
+                  {
+                    name: "Ram Capacity",
+                    details: "2 GB",
+                  },
+                  { name: "Storage Memory", details: "16 GB" },
+                  {
+                    name: "Supported App - Netflix ",
+                    details: "yes",
+                  },
+                  {
+                    name: "Supported App - Youtube ",
+                    details: "yes",
+                  },
+                  { name: "Supported App - Disney+Hotstar ", details: "yes" },
+                  {
+                    name: "Supported App - Prime Video ",
+                    details: "yes",
+                  },
+                  { name: "Built In Wi-Fi", details: "yes" },
+                  { name: "Ethernet", details: "8 ms" },
+                  {
+                    name: "Screen Mirroring ",
+                    details: "yes",
+                  },
+                ],
+              },
+              // General Information
+              {
+                name: "Audio Features",
+                details: [
+                  {
+                    name: "Number Of Speakers",
+                    details: "2",
+                  },
+                  {
+                    name: "Speaker Type",
+                    details: "Box Speaker",
+                  },
+                  { name: "Surround Sound", details: "yes" },
+                 
+                  {
+                    name:"Speaker Output RMS" ,details:"30w"
+                  }, {
+                    name:"other Audio Features" ,details:"Dolby Digital Decoder, Dolby Atmos, Surround Sound, AI Sound, WiSA Speakers, Speaker System: 4.2 Channel Speaker, Sub Woofer, Clear Voice, AI Acoustic Tuning, Smart Speaker Compatible, Optical Sound Sync, Wireless Sound Sync"
+                  },
+
+                ],
+              },
+              // video feartures
+              {
+                name: "Video Features",
+                details: [
+                  {
+                    name: "Analog TV Reception",
+                    details: "PAL B/G",
+                  },
+                  {
+                    name: "Digital Noise Filter ",
+                    details: "yes",
+                  },
+                  {
+                    name:"Aspect Ratio " ,details:"16:09:00"
+                  },
+                  { name: "Refresh Rate", details: "60 HZ" },
+                 
+                  {
+                    name:"View Angle" ,details:"178 degree"
+                  }, {
+                    name:"Panel Type" ,details:"IPS (A Plus Grade)"
+                  }, 
+                  {
+                    name:"Supported Video Formats" ,details:"WMV, ASF, AVI, MP4, M4V, MOV, MPG, MPEG, MKV, MPEG, DAT, MTS, TS, TP, TRP, DIVX, MKV, RM"
+                  }, 
+                  {
+                    name:"Other Video Features" ,details:"ChromeCast, Stream"
+                  },
+
+                ],
+              },
+              // Other Details
+              {
+                name: "TELEVISION OPERATING SYSTEM",
+                details: [
+                  {
+                    name: "OS Type",
+                    details: "WebOs",
+                  },
+                  { name: "OS Name & Version", details: "WebOs" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "MANUFACTURER DETAILS",
+                details: [
+                  {
+                    name: "Manufacturer By ",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "LED TV",
+                  },   {
+                    name: "Brand",
+                    details: "GPLUS", 
+                  },
+                  { name: "Model Number", details: "GM65QLEDGPLUS" },
+                ],
+              },
+
+         
+              // TELEVISION PORTS & SLOTS
+              {
+                name: "TELEVISION PORTS & SLOTS",
+                details: [
+                  {
+                    name: "Number Of USB Ports",
+                    details: "2 x USB",
+                  },
+                  {
+                    name: "HDMI Type",
+                    details: "HDMI",
+                  },
+                  {
+                    name : "Headphone Jack",
+                    details:"Yes"
+                  },
+                  {
+                    name: "Number Of HDMI Ports",
+                    details: "3 x HDMI",
+                  },
+                ],
+              },
+
+              // TELEVISION NETWORK CONNECTIVITY
+              {
+                name: "TELEVISION NETWORK CONNECTIVITY",
+                details: [
+                  {
+                    name: "WiFi Supported",
+                    details: "Yes",
+                  },
+                  
+                ],
+              },
+
+              // Convenience Features
+
+             
+                {
+                  name: "Convenience Features",
+                  details: [
+                    {
+                      name: "On/Off Timer",
+                      details: "yes",
+                    },
+                    {
+                      name: "Other Convenience Features",
+                      details: "Display: One Billion Color, PQI 3400, Dual LED, 100% Color Volume with Quantum Dot, Wide Viewing Angle, AI Upscale, Motion Xcelerator Turbo Plus, AI Upscale",
+                    },
+                    
+                  ],
+                },
+
+              // REMOTE CONTROL DETAILS
+             
+              // TELEVISION ADDITIONAL FEATURES
+              {
+                name: "TELEVISION ADDITIONAL FEATURES",
+                details: [
+                  {
+                    name: "",
+                    details: "Netflix",
+                  },
+                  {
+                    name: "",
+                    details: "Prime Video",
+                  },
+                ],
+              },
+              // TELEVISION PLUG DETAILS
+              {
+                name: "TELEVISION PLUG DETAILS",
+                details: [
+                  {
+                    name: "Frequency",
+                    details: "50/60 Hz",
+                  },
+                  {
+                    name: "Power Requirement",
+                    details: "AC 100 - 240 V, 50/60 Hz",
+                  },
+                  {
+                    name: "Power Consumption",
+                    details: "0.5 W (Standby)",
+                  },
+                  {
+                    name: "Watts",
+                    details: "45 Watts",
+                  },
+                ],
+              },
+              // AESTHETICS
+              {
+                name: "AESTHETICS",
+                details: [
+                  {
+                    name: "Color",
+                    details: "Black",
+                  },
+                  {
+                    name: "Color Family",
+                    details: "BLACK",
+                  },
+                ],
+              },
+              // IN THE BOX
+              {
+                name: "IN THE BOX",
+                details: [
+                  {
+                    name: "Documents",
+                    details: "User-Manual",
+                  },
+                  {
+                    name: "Main product",
+                    details: "1 x Television U",
+                  },
+                  {
+                    name: "Accessories",
+                    details: "RemoteControl | RemoteControlBattery",
+                  },
+                  {
+                    name: "Others",
+                    details: "Wall Mounting Brackets | Table Top Stand Pair",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "Television",
+                  },
+                ],
+              },
+
+              // COMPANY CONTACT INFORMATION
+              {
+                name: "COMPANY CONTACT INFORMATION",
+                details: [
+                  {
+                    name: "Customer Support Number",
+                    details: "1800 123 986 666",
+                  },
+                  {
+                    name: "Customer Support Email",
+                    details: "info@garudamartindia.com",
+                  },
+                  {
+                    name: "Country of Manufacture",
+                    details: "India",
+                  },
+                ],
+              },
+            ],
+            // Special Features
+            // SpecialFeatures: [
+            //   {
+            //     name: "",
+            //     details: {
+            //       name: "",
+            //       details: [],
+            //     },
+            //   },
+            // ],
+          },
+        ],
+      },
+
+
+      
+      {
+        id: 6,
+        diraction: "row",
+        imgurl: [tv13,tv12,spac,remote],
+        heading: "Key Features : -",
+        descriptionName: "description",
+        route: "gplus-75-Inches-(191-Cm)-QLED-smart",
+        name: "75 Inches (191 Cm) QLED Smart WebOS TV",
+        description:
+        "Bezel-less Design The elegant bezel-less design of this TV seamlessly blends into your decor, improving not only your viewing experience with the elegant design makes your home look premium. Google Assistant: Press the Google Assistant button on your remote to do more on your TV with your voice. Ask Google to search for the latest blockbuster, stream shows, or open multiplayer games. Have it dim the lights by connecting smart home devices. Manage tasks and see your calendar. Multiple Connectivity You can connect almost any peripheral to this TV. It comes with multiple ports including USB, HDMI, and Bluetooth. You can even utilize the Chrome cast (Android) or Airplay (iOS) app to cast your mobile, tablet, or laptop onto your TV screen.",
+        keyfeatures: [
+          "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+          "Operating System: webOs.",
+          "Resolution: Ultra HD (4K) 3840 x 2160 Pixels",
+          "Sound Output: 30 W ",
+          "Refresh Rate: 60 Hz ",
+        ],
+        product: [
+          {
+            box: [
+              {
+                boxname: "",
+                boxsize: [
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                ],
+              },
+              {
+                boxname: "Dimensions(mm)",
+                boxsize: [
+                  { name: "width", Icon: "", size: "1682 mm" },
+                  { name: "height", Icon: "", size: "1085 mm" },
+                  { name: "Depth", Icon: "", size: "80 mm" },
+                  // { name: "weight", Icon: "", size: "55-5Kg" },
+                ],
+              },
+            ],
+            variationsDetails: [
+              // washingMachineDetails
+              {
+                name: "General",
+                details: [
+                  { name: "Display Size", details: "165 cm (65 inch)"},
+                  { name: "Screen Type", details: "LED" },
+                  { name: "HD Technology & Resolution", details: "Ultra HD (4k) , 3840 x 2160" },
+                  { name: "Motion Sensor", details: "No" },
+                ],
+              },
+              // washingDetails
+              {
+                name: "Smart Tv Features ",
+                details: [
+                  {
+                    name: "Processor",
+                    details: "Quantum Processor ",
+                  },
+                  {
+                    name: "Ram Capacity",
+                    details: "2 GB",
+                  },
+                  { name: "Storage Memory", details: "16 GB" },
+                  {
+                    name: "Supported App - Netflix ",
+                    details: "yes",
+                  },
+                  {
+                    name: "Supported App - Youtube ",
+                    details: "yes",
+                  },
+                  { name: "Supported App - Disney+Hotstar ", details: "yes" },
+                  {
+                    name: "Supported App - Prime Video ",
+                    details: "yes",
+                  },
+                  { name: "Built In Wi-Fi", details: "yes" },
+                  { name: "Ethernet", details: "8 ms" },
+                  {
+                    name: "Screen Mirroring ",
+                    details: "yes",
+                  },
+                ],
+              },
+              // General Information
+              {
+                name: "Audio Features",
+                details: [
+                  {
+                    name: "Number Of Speakers",
+                    details: "2",
+                  },
+                  {
+                    name: "Speaker Type",
+                    details: "Box Speaker",
+                  },
+                  { name: "Speaker Surround Sound Channel Configuration", details: "Dolby Audio | DTS-HD | Dolby Atmos Pass through e-ARC" },
+                 
+                  {
+                    name:"Speaker Output RMS" ,details:"30w"
+                  }, {
+                    name:"other Audio Features" ,details:"Dolby Digital Decoder, Dolby Atmos, Surround Sound, AI Sound, WiSA Speakers, Speaker System: 4.2 Channel Speaker, Sub Woofer, Clear Voice, AI Acoustic Tuning, Smart Speaker Compatible, Optical Sound Sync, Wireless Sound Sync"
+                  },
+
+                ],
+              },
+              // video feartures
+              {
+                name: "Video Features",
+                details: [
+                  {
+                    name: "Analog TV Reception",
+                    details: "PAL B/G",
+                  },
+                  {
+                    name: "Digital Noise Filter ",
+                    details: "yes",
+                  },
+                  {
+                    name:"Aspect Ratio " ,details:"16:09:00"
+                  },
+                  { name: "Refresh Rate", details: "60 HZ" },
+                 
+                  {
+                    name:"View Angle" ,details:"178 degree"
+                  }, {
+                    name:"Panel Type" ,details:"IPS (A Plus Grade)"
+                  }, 
+                  {
+                    name:"LED Display Type" ,details:"QLED"
+                  }, 
+                  {
+                    name:"Supported Video Formats" ,details:"WMV, ASF, AVI, MP4, M4V, MOV, MPG, MPEG, MKV, MPEG, DAT, MTS, TS, TP, TRP, DIVX, MKV, RM"
+                  }, 
+                  {
+                    name:"Other Video Features" ,details:"ChromeCast, Stream"
+                  },
+
+                ],
+              },
+              // Other Details
+              {
+                name: "TELEVISION OPERATING SYSTEM",
+                details: [
+                  {
+                    name: "OS Type",
+                    details: "WebOs",
+                  },
+                  { name: "OS Name & Version", details: "WebOs" },
+                ],
+              },
+              // Manufacturer Information
+              {
+                name: "MANUFACTURER DETAILS",
+                details: [
+                  {
+                    name: "Manufacturer By ",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "QLED TV",
+                  },   {
+                    name: "Brand",
+                    details: "GPLUS", 
+                  },
+                  { name: "Model Number", details: "GM65QLEDGPLUS" },
+                ],
+              },
+
+         
+              // TELEVISION PORTS & SLOTS
+              {
+                name: "TELEVISION PORTS & SLOTS",
+                details: [
+                  {
+                    name: "Number Of USB Ports",
+                    details: "2 x USB",
+                  },
+                  {
+                    name: "HDMI Type",
+                    details: "HDMI",
+                  },
+                  {
+                    name : "Headphone Jack",
+                    details:"Yes"
+                  },
+                  {
+                    name: "Number Of HDMI Ports",
+                    details: "3 x HDMI",
+                  },
+                ],
+              },
+
+              // TELEVISION NETWORK CONNECTIVITY
+              {
+                name: "TELEVISION NETWORK CONNECTIVITY",
+                details: [
+                  {
+                    name: "WiFi Supported",
+                    details: "Yes",
+                  },
+                  
+                ],
+              },
+
+              // Convenience Features
+
+             
+                {
+                  name: "Convenience Features",
+                  details: [
+                    {
+                      name: "On/Off Timer",
+                      details: "yes",
+                    },
+                    {
+                      name: "Other Convenience Features",
+                      details: "Display: One Billion Color, PQI 3400, Dual LED, 100% Color Volume with Quantum Dot, Wide Viewing Angle, AI Upscale, Motion Xcelerator Turbo Plus, AI Upscale",
+                    },
+                    
+                  ],
+                },
+
+              // REMOTE CONTROL DETAILS
+             
+              // TELEVISION ADDITIONAL FEATURES
+              {
+                name: "TELEVISION ADDITIONAL FEATURES",
+                details: [
+                  {
+                    name: "",
+                    details: "Netflix",
+                  },
+                  {
+                    name: "",
+                    details: "Prime Video",
+                  },
+                ],
+              },
+              // TELEVISION PLUG DETAILS
+              {
+                name: "TELEVISION PLUG DETAILS",
+                details: [
+                  {
+                    name: "Frequency",
+                    details: "50/60 Hz",
+                  },
+                  {
+                    name: "Power Requirement",
+                    details: "AC 100 - 240 V, 50/60 Hz",
+                  },
+                  {
+                    name: "Power Consumption",
+                    details: "0.5 W (Standby)",
+                  },
+                  {
+                    name: "Watts",
+                    details: "45 Watts",
+                  },
+                ],
+              },
+              // AESTHETICS
+              {
+                name: "AESTHETICS",
+                details: [
+                  {
+                    name: "Color",
+                    details: "Black",
+                  },
+                  {
+                    name: "Color Family",
+                    details: "BLACK",
+                  },
+                ],
+              },
+              // IN THE BOX
+              {
+                name: "IN THE BOX",
+                details: [
+                  {
+                    name: "Documents",
+                    details: "User-Manual",
+                  },
+                  {
+                    name: "Main product",
+                    details: "1 x Television U",
+                  },
+                  {
+                    name: "Accessories",
+                    details: "RemoteControl | RemoteControlBattery",
+                  },
+                  {
+                    name: "Others",
+                    details: "Wall Mounting Brackets | Table Top Stand Pair",
+                  },
+                  {
+                    name: "Generic Name",
+                    details: "Television",
+                  },
+                ],
+              },
+
+              // COMPANY CONTACT INFORMATION
+              {
+                name: "COMPANY CONTACT INFORMATION",
+                details: [
+                  {
+                    name: "Customer Support Number",
+                    details: "1800 123 986 666",
+                  },
+                  {
+                    name: "Customer Support Email",
+                    details: "info@garudamartindia.com",
+                  },
+                  {
+                    name: "Country of Manufacture",
+                    details: "India",
+                  },
+                ],
+              },
+            ],
+            // Special Features
+            // SpecialFeatures: [
+            //   {
+            //     name: "",
+            //     details: {
+            //       name: "",
+            //       details: [],
+            //     },
+            //   },
+            // ],
+          },
+        ],
+      },
+   
+      {
+        id: 7,
+        diraction: "row",
+        imgurl: [tv15, tv14,spac,remote],
+        heading: "Key Features : -",
+        descriptionName: "description",
+        route: "QLED-85-Inches-(216-Cm)-Ultra-HD-4K",
+        name: "QLED 85 Inches (214 Cm) Ultra HD 4K",
+        description:
+        "GPLUS QLED 85-inch TV – a masterpiece of immersive entertainment and cutting-edge technology. Immerse yourself in a world of breath-taking visuals, stunning colors, and unparalleled clarity that will redefine your TV viewing experience. Elevate your home entertainment with the GPLUS QLED 85-inch TV. Immerse yourself in stunning visuals, captivating sound, and an array of smart features that redefine what a TV can be. Experience the future of entertainment today.",
+        keyfeatures: [
+          "Qled, 3840 X 2160 Pixels, 60 Hz",
           "Connectivity: 3 HDMI | 2 USB | Wi-Fi.",
           "Operating System: WebOS.",
           "Apps: Netflix, Prime Video, YouTube, Disney+ Hotstar.",
@@ -2341,21 +3349,21 @@ const HomeAppliances = [
           {
             box: [
               {
-                boxname: "Dimensions(cm)",
+                boxname: "",
                 boxsize: [
-                  { name: "width", Icon: "", size: "216cm" },
-                  { name: "height", Icon: "", size: "109cm" },
-                  { name: "Depth", Icon: "", size: "10cm" },
-                  { name: "weight", Icon: "", size: "55-5Kg" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
+                  { name: "", Icon: "", size: "" },
                 ],
               },
               {
                 boxname: "Dimensions(inches)",
                 boxsize: [
-                  { name: "width", Icon: "", size: "85 inches" },
-                  { name: "height", Icon: "", size: "43 inches" },
-                  { name: "Depth", Icon: "", size: "4 inches" },
-                  { name: "weight", Icon: "", size: "55-5Kg" },
+                  { name: "width", Icon: "", size: "1900 mm" },
+                  { name: "height", Icon: "", size: "1090 mm" },
+                  { name: "Depth", Icon: "", size: "80 mm" },
+                  { name: "weight", Icon: "", size: "38 kg" },
                 ],
               },
             ],
@@ -2364,7 +3372,7 @@ const HomeAppliances = [
               {
                 name: "TELEVISION CATEGORY",
                 details: [
-                  { name: "Television Features", details: "Q LED" },
+                  { name: "Television Features", details: "QLED" },
                   { name: "Television Format", details: "Ultra HD 4K" },
                   { name: "Television Type", details: "Flat Panel" },
                   { name: "Ideal Viewing Distance", details: "8 - 10 Ft" },
@@ -2383,7 +3391,7 @@ const HomeAppliances = [
                     details: "A+ Grade Panel",
                   },
                   { name: "Screen Size in Inches", details: "85 Inches" },
-                  { name: "Type", details: "Q LED" },
+                  { name: "Type", details: "QLED" },
                   { name: "Refresh Rate", details: "60 Hz" },
                   { name: "Horizontal Viewing Angle", details: "178 Degrees" },
                   { name: "Vertical Viewing Angle", details: "178 Degrees" },
@@ -2424,9 +3432,14 @@ const HomeAppliances = [
                 details: [
                   {
                     name: "Brand",
-                    details: "VYOM QLED",
+                    details: "Gplus",
                   },
-                  { name: "Model Number", details: "GM85QLED" },
+                  {
+                    name: "Manufacturer By",
+                    details: "Garuda Mart India Private Limited.",
+                  },
+
+                  { name: "Model Number", details: "GMGMTV85GPLUS" },
                 ],
               },
 
