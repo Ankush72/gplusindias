@@ -40,7 +40,7 @@ import ACBanner2 from "../image/AC Banner 3.jpeg";
 import washingMachineBanner1 from "../image/WashingMachineBanner1.png";
 import washingMachineBanner2 from "../image/WashingMachineBanner2.png";
 import washingMachineBanner3 from "../image/WashingMachineBanner3.png";
-import LEDTVBanner1 from "../image/LEDTVBanner.png";
+import LEDTVBanner1 from "../image/LEDTVBanner.jpeg";
 // import { "" } from "react-icons/ai";
 // import {BsFillBoxFill} from "react-icons/bs"
 import Dishwasher1 from "../image/09.jpg";
